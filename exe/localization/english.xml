@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<localization>
+  <!--Main Buttons-->
+  <add key="LOAD_BUTTON" value="Load" />
+  <add key="SAVE_BUTTON" value="Save" />
+  <add key="IMPORT_BUTTON" value="Import" />
+  <add key="EXPORT_BUTTON" value="Export" />
+  <add key="START_BUTTON" value="Start" />
+  <add key="OPEN_BUTTON" value="Open" />
+  <add key="CLEAR_BUTTON" value="Clear" />
+  <add key="LOCK" value="Lock?" />
+  <!--Main Tabs-->
+  <add key="DAT_TAB" value="dat Files" />  
+  <add key="INI_TAB" value="ini Files" />
+  <!--Main Menu-->
+  <add key="MENU_FILE" value="File" /> 
+  <add key="MENU_SERVICE" value="Service" />
+  <!--File_>-->
+  <add key="MENU_FILE_OPEN_FOLDER" value="Open Folder..." />
+  <add key="MENU_FILE_QUIT" value="Quit" /> 
+  <!--Service_>-->
+  <add key="MENU_SERVICE_PATH_SYSTEM" value="Path System" />
+  <add key="MENU_SERVICE_SETTINGS" value="Settings" />  
+  <add key="MENU_SERVICE_FAST_SETTINGS" value="Fast Settings" />  
+  <!--Title-->
+  <add key="CHRONICLE" value="Chronicle:" /> 
+  <add key="NUMBER_OF_LINES" value="Number of lines:" />      
+  <!--Hide Menu-->
+  <add key="HIDE_MENU_SHOW" value="Show" />  
+  <add key="HIDE_MENU_ABOUT" value="About {0}" />
+  <!--Right Click-->  
+  <add key="RIGHT_CLICK_CUT" value="Cut" />
+  <add key="RIGHT_CLICK_COPY" value="Copy" /> 
+  <add key="RIGHT_CLICK_PUT" value="Put" /> 
+  <add key="RIGHT_CLICK_SELECT_ALL" value="Select All" />
+  <!--About Form-->
+  <add key="DESCRIPTION" value="This program made from source code L2Dat Enc_Dec. I remake this program. The copyright of L2Dat Enc_Dec L2J_JP / LM(furi-curi). Some icons from JetBrains IDEA. Editor write by idea by La2 Utils (c) mexer, but not code. Code is new." /> 
+  <add key="PRODUCT_NAME" value="Name:" /> 
+  <add key="VERSION" value="Version:" /> 
+  <add key="COMPANY" value="Company:" /> 
+  <add key="COPYRIGHT" value="Copyright:" /> 
+  <add key="AUTHOR" value="Author:" />  
+  <add key="INFO" value="Info" />  
+  <!--Settings-->
+  <add key="LANGUAGE" value="Language:" /> 
+  <add key="TEXT_ENCODING" value="Encoding:" />
+  <add key="USE_TRAY" value="Use tray?" /> 
+  <add key="SAVE_BAK_FILES" value="Save *.bak files?" /> 
+  <add key="FILE_TO_RUN" value="File to run:" />   
+  <add key="MINIMIZED_ON_START_L2" value="Minimized on start file?" />
+  <!--Fast Settings l2.ini--> 
+  <add key="INTERNET_GROUP" value="Internet settings" /> 
+  <add key="OTHER_GROUP" value="Other settings" /> 
+  <add key="SECOND_CLIENT" value="Allow second window ?" />
+  <add key="TEST_SERVER" value="Test Server" />
+  <add key="REFRESH" value="Refresh" /> 
+  <add key="NETWORK_LOG" value="Use Network Log in Network.log ?" />  
+  <add key="HOST" value="Host(IP):" /> 
+  <add key="PORT" value="Port:" /> 
+  <!--Status-->   
+  <add key="COMPLETE" value="[COMPLETE]" /> 
+  <add key="PLEASE_WAIT" value="Please wait..." /> 
+  <add key="LOADED_DATA" value=" Loaded {0} datas." /> 
+  <add key="SAVED_DATA" value=" Saved {0} datas." /> 
+  <add key="IMPORTED_DATA" value=" Imported {0} datas." />
+  <add key="EXPORTED_DATA" value=" Exported {0} datas." />
+  <add key="ERROR" value="Error" /> 
+  <add key="SYSTEM_FOLDER_IS_EMPTY" value="System folder is empty" />  
+  <add key="PLEASE_SELECT_SYSTEM_FOLDER" value="Please select System folder of client Lineage 2" /> 
+  <add key="COMPLETE_PATH_SYSTEM_FOLDER" value="Complete path system" />
+  <add key="FILE_NOT_FOUND" value="File not found" />
+	<add key="LICENSE" value="License" />
+	<!--Editor-->
+	<add key="EDITOR" value="Editor" />
+</localization>

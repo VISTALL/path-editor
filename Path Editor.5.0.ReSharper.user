@@ -1,0 +1,59 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:Properties/f:AssemblyInfo.cs" caret="579" fromTop="0" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.designer.cs" caret="33902" fromTop="20" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:EditForm.Designer.cs" caret="10530" fromTop="18" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MessageBox.cs" caret="2746" fromTop="22" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:SplashForm.cs" caret="813" fromTop="18" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MessageBox.designer.cs" caret="4033" fromTop="18" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:AboutForm.cs" caret="5321" fromTop="18" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="9640" fromTop="39" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:LogService.cs" caret="91" fromTop="3" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/f:Program.cs" caret="1179" fromTop="43" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ArmorGrp.cs" caret="13232" fromTop="9" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ActionName.cs" caret="2423" fromTop="17" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:Message.cs" caret="0" fromTop="0" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:mothers/f:Definition.cs" caret="1469" fromTop="33" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:CharGrp.cs" caret="447" fromTop="12" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="10932" fromTop="11" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:Properties/f:AssemblyInfo.cs" caret="579" fromTop="18" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:Properties/f:AssemblyInfo.cs" caret="579" fromTop="0" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.designer.cs" caret="33902" fromTop="18" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.designer.cs" caret="33902" fromTop="5" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.designer.cs" caret="33902" fromTop="17" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.designer.cs" caret="33902" fromTop="18" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.designer.cs" caret="33902" fromTop="5" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.designer.cs" caret="33902" fromTop="20" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:EditForm.Designer.cs" caret="10530" fromTop="18" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MessageBox.cs" caret="2746" fromTop="18" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:SplashForm.cs" caret="813" fromTop="18" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MessageBox.designer.cs" caret="4033" fromTop="18" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:AboutForm.cs" caret="5321" fromTop="18" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:LogService.cs" caret="78" fromTop="2" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/f:Program.cs" caret="1179" fromTop="43" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ArmorGrp.cs" caret="34610" fromTop="9" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="10716" fromTop="8" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

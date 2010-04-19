@@ -1,0 +1,332 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>com.jds.PathEditor</RootNamespace>
+    <AssemblyName>Path Editor</AssemblyName>
+    <ApplicationIcon>Resources\MainIcon.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\exe\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\exe\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="classes\client\DatFileType.cs" />
+    <Compile Include="classes\client\DatVersion.cs" />
+    <Compile Include="classes\client\definitions\ActionName.cs" />
+    <Compile Include="classes\client\definitions\AdditionalEffect.cs" />
+    <Compile Include="classes\client\definitions\ArmorGrp.cs" />
+    <Compile Include="classes\client\definitions\BrItemGrp.cs" />
+    <Compile Include="classes\client\definitions\CastleName.cs" />
+    <Compile Include="classes\client\definitions\CharCreateGrp.cs" />
+    <Compile Include="classes\client\definitions\CharGrp.cs" />
+    <Compile Include="classes\client\definitions\ClassInfo.cs" />
+    <Compile Include="classes\client\definitions\CommandName.cs" />
+    <Compile Include="classes\client\definitions\CreditGrp.cs" />
+    <Compile Include="classes\client\definitions\EnterEventGrp.cs" />
+    <Compile Include="classes\client\definitions\EtcItemGrp.cs" />
+    <Compile Include="classes\client\definitions\Eula.cs" />
+    <Compile Include="classes\client\definitions\GameTip.cs" />
+    <Compile Include="classes\client\definitions\HairAccessoryLocGrp.cs" />
+    <Compile Include="classes\client\definitions\HennaGrp.cs" />
+    <Compile Include="classes\client\definitions\HuntingZone.cs" />
+    <Compile Include="classes\client\definitions\InstantZoneData.cs" />
+    <Compile Include="classes\client\definitions\ItemName.cs" />
+    <Compile Include="classes\client\definitions\ItemPrime.cs" />
+    <Compile Include="classes\client\definitions\LogonGrp.cs" />
+    <Compile Include="classes\client\definitions\MobSkillAnimGrp.cs" />
+    <Compile Include="classes\client\definitions\MusicInfo.cs" />
+    <Compile Include="classes\client\definitions\NpcGrp.cs" />
+    <Compile Include="classes\client\definitions\NpcName.cs" />
+    <Compile Include="classes\client\definitions\NpcString.cs" />
+    <Compile Include="classes\client\definitions\Obscene.cs" />
+    <Compile Include="classes\client\definitions\OptionData_Client.cs" />
+    <Compile Include="classes\client\definitions\ProductName.cs" />
+    <Compile Include="classes\client\definitions\QuestName.cs" />
+    <Compile Include="classes\client\definitions\RaidData.cs" />
+    <Compile Include="classes\client\definitions\Recipe.cs" />
+    <Compile Include="classes\client\definitions\RideData.cs" />
+    <Compile Include="classes\client\definitions\ScenePlayerData.cs" />
+    <Compile Include="classes\client\definitions\ServerName.cs" />
+    <Compile Include="classes\client\definitions\ShortcutAlias.cs" />
+    <Compile Include="classes\client\definitions\SkillGrp.cs" />
+    <Compile Include="classes\client\definitions\SkillName.cs" />
+    <Compile Include="classes\client\definitions\SkillSoundGrp.cs" />
+    <Compile Include="classes\client\definitions\SkillSoundSource.cs" />
+    <Compile Include="classes\client\definitions\StaticObject.cs" />
+    <Compile Include="classes\client\definitions\SymbolName.cs" />
+    <Compile Include="classes\client\definitions\SysString.cs" />
+    <Compile Include="classes\client\definitions\SystemMsg.cs" />
+    <Compile Include="classes\client\definitions\TransformData.cs" />
+    <Compile Include="classes\client\definitions\VariationEffectGrp.cs" />
+    <Compile Include="classes\client\definitions\VehiclePartsGrp.cs" />
+    <Compile Include="classes\client\definitions\WarningNotice.cs" />
+    <Compile Include="classes\client\definitions\WeaponGrp.cs" />
+    <Compile Include="classes\client\definitions\ZoneName.cs" />
+    <Compile Include="classes\client\IniFileType.cs" />
+    <Compile Include="classes\client\ListColor.cs" />
+    <Compile Include="classes\client\mothers\DatParser.cs" />
+    <Compile Include="classes\client\mothers\Definition.cs" />
+    <Compile Include="classes\client\mothers\IType.cs" />
+    <Compile Include="classes\client\types\ASCF.cs" />
+    <Compile Include="classes\client\types\ASCF_PAIR.cs" />
+    <Compile Include="classes\client\types\CNTINT_PAIR.cs" />
+    <Compile Include="classes\client\types\CNTRINT_PAIR.cs" />
+    <Compile Include="classes\client\types\CNTTXT_PAIR.cs" />
+    <Compile Include="classes\client\types\CNTTXT_THIRD.cs" />
+    <Compile Include="classes\client\types\COLOR.cs" />
+    <Compile Include="classes\client\types\FILLER_360.cs" />
+    <Compile Include="classes\client\types\FILLER_90.cs" />
+    <Compile Include="classes\client\types\FLOAT.cs" />
+    <Compile Include="classes\client\types\FLOAT_119.cs" />
+    <Compile Include="classes\client\types\HEX.cs" />
+    <Compile Include="classes\client\types\INT.cs" />
+    <Compile Include="classes\client\types\MTX.cs" />
+    <Compile Include="classes\client\types\MTX2.cs" />
+    <Compile Include="classes\client\types\MTX3.cs" />
+    <Compile Include="classes\client\types\STRING.cs" />
+    <Compile Include="classes\client\types\UINT.cs" />
+    <Compile Include="classes\client\types\UNICODE.cs" />
+    <Compile Include="classes\forms\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="classes\forms\AboutForm.designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="classes\forms\EditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="classes\forms\EditForm.Designer.cs">
+      <DependentUpon>EditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="classes\forms\EditTextForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="classes\forms\EditTextForm.Designer.cs">
+      <DependentUpon>EditTextForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="classes\forms\FastL2INIOptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="classes\forms\FastL2INIOptionForm.Designer.cs">
+      <DependentUpon>FastL2INIOptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="classes\forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="classes\forms\MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="classes\forms\MessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="classes\forms\MessageBox.designer.cs">
+      <DependentUpon>MessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="classes\forms\MSG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="classes\forms\MSG.Designer.cs">
+      <DependentUpon>MSG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="classes\forms\SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="classes\forms\SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="classes\forms\SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="classes\forms\SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="classes\gui\JButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="classes\gui\JButton.designer.cs">
+      <DependentUpon>JButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="classes\lm\ConvertUtilities.cs" />
+    <Compile Include="classes\lm\FileUtilities.cs" />
+    <Compile Include="classes\lm\GlobalUtilities.cs" />
+    <Compile Include="classes\parser\DatTool.cs" />
+    <Compile Include="classes\parser\L2EncDec.cs" />
+    <Compile Include="classes\services\LogService.cs" />
+    <Compile Include="classes\services\Message.cs" />
+    <Compile Include="classes\services\RConfig.cs" />
+    <Compile Include="classes\services\TypesEditors.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Preferences.png" />
+    <None Include="Resources\Information.png" />
+    <None Include="Resources\Help.png" />
+    <None Include="Resources\Error.png" />
+    <None Include="Resources\Clock.png" />
+    <None Include="Resources\Info.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l2.ico" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\editor.png" />
+    <Content Include="Resources\find.png" />
+    <None Include="Resources\Fire.png" />
+    <Content Include="Resources\l2.bmp" />
+    <None Include="Resources\logo.png" />
+    <Content Include="Resources\menu-open.png" />
+    <Content Include="Resources\menu-saveall.png" />
+    <Content Include="Resources\nextfile.png" />
+    <Content Include="Resources\notepad.ico" />
+    <Content Include="Resources\prevfile.png" />
+    <Content Include="Resources\remove.png" />
+    <Content Include="Resources\start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\log4net-1.2.10\src\Log4 NET.csproj">
+      <Project>{F6A02431-167E-4347-BC43-65532C31CDB7}</Project>
+      <Name>Log4 NET</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\windows7support\Windows 7 Support.csproj">
+      <Project>{AA0C00CB-8699-4F37-BFAE-40CA87ACC06D}</Project>
+      <Name>Windows 7 Support</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="classes\forms\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="classes\forms\EditForm.resx">
+      <DependentUpon>EditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="classes\forms\EditTextForm.resx">
+      <DependentUpon>EditTextForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="classes\forms\FastL2INIOptionForm.resx">
+      <DependentUpon>FastL2INIOptionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="classes\forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="classes\forms\MessageBox.resx">
+      <DependentUpon>MessageBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="classes\forms\MSG.resx">
+      <DependentUpon>MSG.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="classes\forms\SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="classes\forms\SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="classes\gui\JButton.resx">
+      <DependentUpon>JButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

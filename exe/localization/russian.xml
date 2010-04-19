@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<localization>
+  <!--Main Buttons-->
+  <add key="LOAD_BUTTON" value="Загрузить" />
+  <add key="SAVE_BUTTON" value="Сохранить" />
+  <add key="IMPORT_BUTTON" value="Импорт" />
+  <add key="EXPORT_BUTTON" value="Экспорт" />
+  <add key="START_BUTTON" value="Старт" />
+  <add key="OPEN_BUTTON" value="Открыть" />
+  <add key="CLEAR_BUTTON" value="Очистить" />
+  <add key="LOCK" value="Блокировать?" />
+  <!--Main Tabs-->
+  <add key="DAT_TAB" value="dat Файлы" />  
+  <add key="INI_TAB" value="ini Файлы" /> 
+  <!--Main Menu-->
+  <add key="MENU_FILE" value="Файл" /> 
+  <add key="MENU_SERVICE" value="Сервис" />
+   <!--File_>-->
+  <add key="MENU_FILE_OPEN_FOLDER" value="Открыть папку..." />
+  <add key="MENU_FILE_QUIT" value="Выйти" /> 
+  <!--Service_>--> 
+  <add key="MENU_SERVICE_PATH_SYSTEM" value="Пропачить папку System" />   
+  <add key="MENU_SERVICE_SETTINGS" value="Параметры" />  
+  <add key="MENU_SERVICE_FAST_SETTINGS" value="Быстрые настройки" />  
+  <!--Title-->
+  <add key="CHRONICLE" value="Хроники:" />
+  <add key="NUMBER_OF_LINES" value="Количество строк:" />  
+  <!--Hide Menu-->
+  <add key="HIDE_MENU_SHOW" value="Показать" />  
+  <add key="HIDE_MENU_ABOUT" value="О программе {0}" />
+  <!--Right Click-->  
+  <add key="RIGHT_CLICK_CUT" value="Вырезать" />
+  <add key="RIGHT_CLICK_COPY" value="Копировать" /> 
+  <add key="RIGHT_CLICK_PUT" value="Вставить" /> 
+  <add key="RIGHT_CLICK_SELECT_ALL" value="Выделить все" /> 
+  <!--About Form-->
+  <add key="DESCRIPTION" value="Эта программа сделана с исходных кодов L2Dat Enc_Dec. Я переписал её. Права на L2Dat Enc_Dec L2J_JP / LM(furi-curi). Некоторые иконки взяты с JetBrains IDEA. Редактор сделан по идеи La2 Utils (c) mexer, но не КОД. Код личный." /> 
+  <add key="PRODUCT_NAME" value="Название:" /> 
+  <add key="VERSION" value="Версия:" /> 
+  <add key="COMPANY" value="Компания:" /> 
+  <add key="COPYRIGHT" value="Копирайт:" /> 
+  <add key="AUTHOR" value="Автор:" />  
+  <add key="INFO" value="Информация" />  
+  <!--Settings-->
+  <add key="LANGUAGE" value="Язык:" /> 
+  <add key="TEXT_ENCODING" value="Кодировка:" />
+  <add key="USE_TRAY" value="Использовать трей?" /> 
+  <add key="SAVE_BAK_FILES" value="Сохранять *.bak файлы?" />
+  <add key="FILE_TO_RUN" value="Файл для запуска:" />    
+  <add key="MINIMIZED_ON_START_L2" value="Минимизировать при старте файла?" />
+  <!--Fast Settings l2.ini--> 
+  <add key="INTERNET_GROUP" value="Интернет настройки" /> 
+  <add key="OTHER_GROUP" value="Другие настройки" /> 
+  <add key="SECOND_CLIENT" value="Разрешать второе окно ?" />
+  <add key="TEST_SERVER" value="Тестовый сервер" />
+  <add key="REFRESH" value="Обновить" /> 
+  <add key="NETWORK_LOG" value="Использовать лог пакетов. Cохраняется в Network.log ?" />  
+  <add key="HOST" value="Хост(IP):" /> 
+  <add key="PORT" value="Порт:" /> 
+  <!--Status-->   
+  <add key="COMPLETE" value="[СДЕЛАНО]" /> 
+  <add key="PLEASE_WAIT" value="Пожалуйста подождите..." />
+  <add key="LOADED_DATA" value=" Загружено {0} даных." /> 
+  <add key="SAVED_DATA" value=" Сохранено {0} даных." /> 
+  <add key="IMPORTED_DATA" value=" Импортировано {0} даных." />
+  <add key="EXPORTED_DATA" value=" Экспортировано {0} даных." />
+  <add key="ERROR" value="Ошибка" /> 
+  <add key="SYSTEM_FOLDER_IS_EMPTY" value="Папка System пуста" />  
+  <add key="PLEASE_SELECT_SYSTEM_FOLDER" value="Виберите папку System клиента Lineage 2" /> 
+  <add key="COMPLETE_PATH_SYSTEM_FOLDER" value="Закончечилась процедура пропачения папки System" />
+  <add key="FILE_NOT_FOUND" value="Файл не найден..." />
+	<add key="LICENSE" value="Лицензия" />
+	<!--Editor-->
+	<add key="EDITOR" value="Редактор" />	
+</localization>
