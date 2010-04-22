@@ -26,23 +26,23 @@ namespace com.jds.PathEditor.classes.client.definitions
         /*
         Info from l2asm-disasm
         */
-        public INT UNK_0;
-        public INT UNK_1;
-        public UNICODE ani_char;
-        public INT cast_range;
-        public UINT cast_style;
-        public UNICODE desc;
-        public UINT ench_skill_id;
-        public UINT extra_eff;
-        public FLOAT hit_time;
-        public UINT hp_consume;
-        public UNICODE icon_name;
-        public UINT is_ench;
-        public INT is_magic;
-        public UINT mp_consume;
-        public UINT oper_type;
         public UINT skill_id;
         public UINT skill_level;
+        public UINT oper_type;
+        public UINT mp_consume;
+        public INT cast_range;
+        public UINT cast_style;
+        public FLOAT hit_time;
+        public INT is_magic;
+        public UNICODE ani_char;
+        public UNICODE desc;
+        public UNICODE icon_name;
+        public UINT extra_eff;
+        public UINT is_ench;
+        public UINT ench_skill_id;
+        public UINT hp_consume;
+        public INT UNK_0;
+        public INT UNK_1;
     }
 
     public class SkillgrpInfo_CT1 : Definition
@@ -50,49 +50,49 @@ namespace com.jds.PathEditor.classes.client.definitions
         /*
         Info from l2asm-disasm
         */
+        public UINT skill_id;
+        public UINT skill_level;
         public UINT UNK_0;
+        public UINT oper_type;
+        public UINT mp_consume;
+        public INT cast_range;
+        public UINT cast_style;
+        public FLOAT hit_time;
+        public INT is_magic;
+        public UNICODE ani_char;
+        public UNICODE desc;
+        public UNICODE icon_name;
+        public UNICODE extra_eff;
+        public UINT is_ench;
+        public UINT ench_skill_id;
+        public UINT hp_consume;
         public INT UNK_1;
         public INT UNK_2;
         public INT UNK_3;
-        public UNICODE ani_char;
-        public INT cast_range;
-        public UINT cast_style;
-        public UNICODE desc;
-        public UINT ench_skill_id;
-        public UNICODE extra_eff;
-        public FLOAT hit_time;
-        public UINT hp_consume;
-        public UNICODE icon_name;
-        public UINT is_ench;
-        public INT is_magic;
-        public UINT mp_consume;
-        public UINT oper_type;
-        public UINT skill_id;
-        public UINT skill_level;
     }
 
     public class SkillgrpInfo_Gracia_Plus : Definition
     {
-        public UINT UNK_0;
-        public UINT UNK_1;
-        public INT UNK_2;
-        public INT UNK_3;
-        public UNICODE ani_char;
-        public INT cast_range;
-        public UINT cast_style;
-        public UNICODE desc;
-        public UINT ench_skill_id;
-        public ASCF enchant_type;
-        public UNICODE extra_eff;
-        public FLOAT hit_time;
-        public UINT hp_consume;
-        public UNICODE icon_name;
-        public UINT is_ench;
-        public INT is_magic;
-        public UINT mp_consume;
-        public UINT oper_type;
         public UINT skill_id;
         public UINT skill_level;
+        public UINT UNK_0;
+        public UINT oper_type;
+        public UINT mp_consume;
+        public INT cast_range;
+        public UINT cast_style;
+        public FLOAT hit_time;
+        public INT is_magic;
+        public UNICODE ani_char;
+        public UNICODE desc;
+        public UNICODE icon_name;
+        public UNICODE extra_eff;
+        public UINT is_ench;
+        public UINT ench_skill_id;
+        public UINT UNK_1;
+        public ASCF enchant_type;
+        public UINT hp_consume;
+        public INT UNK_2;
+        public INT UNK_3;
     }
 
     #endregion

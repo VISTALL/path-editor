@@ -26,8 +26,8 @@ namespace com.jds.PathEditor.classes.client.definitions
          Info from l2asm-disasm
          */
         public UINT id;
-        public ASCF name;
         public UINT nbr;
+        public ASCF name;
 
         [Description("Nbr")]
         public uint Nbr

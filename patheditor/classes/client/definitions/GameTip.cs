@@ -27,10 +27,10 @@ namespace com.jds.PathEditor.classes.client.definitions
         /*
         Info from l2asm-disasm
         */
-        public UINT enable;
         public UINT id;
         public UINT int1;
         public UINT int2;
+        public UINT enable;
         public ASCF tip;
 
         [Description("Id")]

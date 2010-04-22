@@ -23,15 +23,15 @@ namespace com.jds.PathEditor.classes.client.definitions
         /*
         Info from l2asm-disasm
         */
-        public ASCF UNK_0;
-        public UNICODE anim_name;
-        public UNICODE effect_name;
         public UINT id;
-        public UINT isrise;
+        public ASCF UNK_0;
         public ASCF skill_sound;
-        public FLOAT sound_rad;
         public FLOAT sound_vol;
+        public FLOAT sound_rad;
+        public UINT isrise;
         public UINT spawn_type;
+        public UNICODE effect_name;
+        public UNICODE anim_name;
     }
 
     #endregion

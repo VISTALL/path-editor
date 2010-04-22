@@ -24,12 +24,12 @@ namespace com.jds.PathEditor.classes.client.definitions
         /*
         Info from l2asm-disasm
         */
-        public ASCF castle_name;
-        public ASCF desc;
-        public UINT id;
-        public ASCF location;
         public UINT nbr;
         public UINT tag;
+        public UINT id;
+        public ASCF castle_name;
+        public ASCF location;
+        public ASCF desc;
     }
 
     public class CastleNameInfo_Gracia_Final : Definition
@@ -37,16 +37,17 @@ namespace com.jds.PathEditor.classes.client.definitions
         /*
         Info from l2asm-disasm
         */
-        public ASCF castle_name;
-        public ASCF desc;
-        public UINT id;
-        public ASCF location;
         public UINT nbr;
         public UINT tag;
+        public UINT id;
+        public ASCF castle_name;
+        public ASCF location;
+        public ASCF desc;
         public ASCF unk_1;
         public ASCF unk_2;
         public ASCF unk_3;
         public ASCF unk_4;
+
     }
 
     #endregion

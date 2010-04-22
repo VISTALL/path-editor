@@ -25,15 +25,15 @@ namespace com.jds.PathEditor.classes.client.definitions
 		 * by VISTALL
 		 */
         public UINT unknown;
+        public FLOAT x;
+        public FLOAT y;
+        public FLOAT z;
         public UINT wear1;
         public UINT wear2;
         public UINT wear3;
         public UINT wear4;
         public UINT wear5;
         public UINT wear6;
-        public FLOAT x;
-        public FLOAT y;
-        public FLOAT z;
 
         [Description("Unknown")]
         public uint Unknown

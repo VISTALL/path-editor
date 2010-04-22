@@ -25,9 +25,9 @@ namespace com.jds.PathEditor.classes.client.definitions
         /*
         Info from l2asm-disasm
         */
-        public FLOAT dat;
         public UINT id;
         public UNICODE str;
+        public FLOAT dat;
 
         [Description("Id")]
         public uint Id

@@ -23,13 +23,13 @@ namespace com.jds.PathEditor.classes.client.definitions
         /*
         Info from l2asm-disasm
         */
-        public ASCF attribute;
-        public UNICODE effect;
         public UINT int1;
         public UINT int2;
         public UINT int3;
         public UINT int4;
         public UINT int5;
+        public UNICODE effect;
+        public ASCF attribute;
     }
 
     #endregion

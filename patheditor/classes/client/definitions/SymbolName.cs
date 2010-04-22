@@ -26,10 +26,10 @@ namespace com.jds.PathEditor.classes.client.definitions
         /*
         Info from l2asm-disasm
         */
-        public UINT UNK_0;
-        public ASCF alias;
-        public ASCF filename;
         public UINT id;
+        public ASCF filename;
+        public ASCF alias;
+        public UINT UNK_0;
 
         public uint Id
         {

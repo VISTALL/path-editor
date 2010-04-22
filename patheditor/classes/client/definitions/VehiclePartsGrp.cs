@@ -24,9 +24,13 @@ namespace com.jds.PathEditor.classes.client.definitions
         Info from l2asm-disasm
         */
         public UINT id;
+        public UNICODE name;
+        public CNTRINT_PAIR tab1;
+        public CNTRINT_PAIR tab2;
+        public UINT unk1;
+        public UINT unk2;
         public CNTTXT_PAIR mshtex1;
         public CNTTXT_PAIR mshtex2;
-        public UNICODE name;
         //public MTX mshtex; 
         //public UNICODE sound0;
         public UNICODE sound1;
@@ -35,10 +39,6 @@ namespace com.jds.PathEditor.classes.client.definitions
         public UNICODE sound4;
         public UNICODE sound5;
         public CNTTXT_PAIR sounds2;
-        public CNTRINT_PAIR tab1;
-        public CNTRINT_PAIR tab2;
-        public UINT unk1;
-        public UINT unk2;
     }
 
     #endregion

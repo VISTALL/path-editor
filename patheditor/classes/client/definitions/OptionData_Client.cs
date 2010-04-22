@@ -23,12 +23,12 @@ namespace com.jds.PathEditor.classes.client.definitions
         /*
         Info from l2asm-disasm
         */
-        public ASCF effect1_desc;
-        public ASCF effect2_desc;
-        public ASCF effect3_desc;
         public UINT id;
         public UINT level;
         public UINT var_of_level;
+        public ASCF effect1_desc;
+        public ASCF effect2_desc;
+        public ASCF effect3_desc;
     }
 
     #endregion

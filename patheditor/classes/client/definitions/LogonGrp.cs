@@ -27,8 +27,8 @@ namespace com.jds.PathEditor.classes.client.definitions
     {
         public FLOAT x;
         public FLOAT y;
-        public FLOAT yaw;
         public FLOAT z;
+        public FLOAT yaw;
 
         [Description("X")]
         public float X

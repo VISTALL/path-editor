@@ -22,7 +22,6 @@ using com.jds.PathEditor.classes.services;
 
 namespace com.jds.PathEditor.classes.client.definitions
 {
-
     #region Definition
 
     public class NpcNameInfo : Definition
@@ -30,42 +29,66 @@ namespace com.jds.PathEditor.classes.client.definitions
         /*
         Info from l2asm-disasm
         */
-        public ASCF description;
         public UINT id;
         public ASCF name;
+        public ASCF description;
         public COLOR rgb;
+
+        public override string ToString()
+        {
+            return id.ToString();
+        }
 
         [Description("Npc Id")]
         public uint Id
         {
-            get { return id.Value; }
-            set { id.Value = value; }
+            get
+            {
+                return id.Value;
+            }
+            set
+            {
+                id.Value = value;
+            }
         }
 
         [Description("Npc Name")]
         public String Name
         {
-            get { return name.Text; }
-            set { name.Text = value; }
+            get
+            {
+                return name.Text;
+            }
+            set
+            {
+                name.Text = value;
+            }
         }
 
         [Description("Npc Title")]
         public String Title
         {
-            get { return description.Text; }
-            set { description.Text = value; }
+            get
+            {
+                return description.Text;
+            }
+            set
+            {
+                description.Text = value;
+            }
         }
 
-        [Description("Npc Name Color"), Editor(typeof (ColorValueEditor), typeof (UITypeEditor)), ListColor]
+        [Description("Npc Name Color"), Editor(typeof(ColorValueEditor), typeof(UITypeEditor)), ListColor]
         public String NameColor
         {
-            get { return ConvertUtilities.ColorToHtmlColor(rgb.Value); }
-            set { rgb.Value = ConvertUtilities.HtmlColorToColor(value); }
-        }
-
-        public override string ToString()
-        {
-            return id.ToString();
+            get
+            {
+                return ConvertUtilities.ColorToHtmlColor(rgb.Value);
+            }
+            set
+            {
+                rgb.Value = ConvertUtilities.HtmlColorToColor(value);
+            }
         }
     }
 

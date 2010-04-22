@@ -23,11 +23,11 @@ namespace com.jds.PathEditor.classes.client.definitions
         /*
         Info from l2asm-disasm
         */
-        public UINT align;
-        public ASCF html;
         public UINT id;
+        public ASCF html;
         public ASCF image;
         public UINT time;
+        public UINT align;
     }
 
     #endregion

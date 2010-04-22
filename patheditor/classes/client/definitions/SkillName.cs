@@ -22,7 +22,6 @@ using com.jds.PathEditor.classes.services;
 
 namespace com.jds.PathEditor.classes.client.definitions
 {
-
     #region Definition
 
     public class SkillNameInfo : Definition
@@ -30,58 +29,93 @@ namespace com.jds.PathEditor.classes.client.definitions
         /*
         Info from l2asm-disasm
         */
-        public ASCF desc_add1;
-        public ASCF desc_add2;
-        public ASCF description;
         public UINT id;
         public UINT level;
         public ASCF name;
+        public ASCF description;
+        public ASCF desc_add1;
+        public ASCF desc_add2;
 
+        public override string ToString()
+        {
+            return id.ToString();
+        }
         [Description("Skill Id")]
         public uint Id
         {
-            get { return id.Value; }
-            set { id.Value = value; }
+            get
+            {
+                return id.Value;
+            }
+            set
+            {
+                id.Value = value;
+            }
         }
 
         [Description("Skill Level")]
         public uint Level
         {
-            get { return level.Value; }
-            set { level.Value = value; }
+            get
+            {
+                return level.Value;
+            }
+            set
+            {
+                level.Value = value;
+            }
         }
 
         [Description("Skill Name")]
         public String Name
         {
-            get { return name.Text; }
-            set { name.Text = value; }
+            get
+            {
+                return name.Text;
+            }
+            set
+            {
+                name.Text = value;
+            }
         }
 
         [Description("Skill Description")]
         public String Description
         {
-            get { return description.Text; }
-            set { description.Text = value; }
+            get
+            {
+                return description.Text;
+            }
+            set
+            {
+                description.Text = value;
+            }
         }
 
         [Description("Skill Enchant Type")]
         public String EnchantType
         {
-            get { return desc_add1.Text; }
-            set { desc_add1.Text = value; }
+            get
+            {
+                return desc_add1.Text;
+            }
+            set
+            {
+                desc_add1.Text = value;
+            }
         }
 
         [Description("Skill Enchant Description")]
         public String EnchantDesc
         {
-            get { return desc_add2.Text; }
-            set { desc_add2.Text = value; }
-        }
-
-        public override string ToString()
-        {
-            return id.ToString();
+            get
+            {
+                return desc_add2.Text;
+            }
+            set
+            {
+                desc_add2.Text = value;
+            }
         }
     }
 

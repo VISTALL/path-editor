@@ -24,12 +24,12 @@ namespace com.jds.PathEditor.classes.client.definitions
         /*
         Info from l2asm-disasm
         */
-        public UINT dye_id;
-        public ASCF icon;
         public UINT id;
+        public UINT dye_id;
         public ASCF name;
-        public ASCF symbol_add_desc;
+        public ASCF icon;
         public ASCF symbol_add_name;
+        public ASCF symbol_add_desc;
 
         public UINT Id
         {

@@ -25,11 +25,11 @@ namespace com.jds.PathEditor.classes.client.definitions
         Info from l2asm-disasm
         */
         public UINT id;
+        public UINT unk;
         public UINT npc_id;
+        public UINT weapon_id;
         public UNICODE transform_effect_a;
         public UNICODE transform_effect_b;
-        public UINT unk;
-        public UINT weapon_id;
     }
 
     public class TransformDataInfo_Gracia_2 : Definition
@@ -38,12 +38,12 @@ namespace com.jds.PathEditor.classes.client.definitions
         Info from l2asm-disasm
         */
         public UINT id;
+        public UINT unk;
         public UINT npc_id;
+        public UINT weapon_id;
         public UNICODE transform_effect_a;
         public UNICODE transform_effect_b;
-        public UINT unk;
         public UINT unk_1;
-        public UINT weapon_id;
     }
 
     public class TransformDataInfo_Gracia_Final : Definition
@@ -52,15 +52,15 @@ namespace com.jds.PathEditor.classes.client.definitions
         Info from l2asm-disasm
         */
         public UINT id;
+        public UINT unk;
         public UINT npc_id;
+        public UINT weapon_id;
         public UNICODE transform_effect_a;
         public UNICODE transform_effect_b;
-        public UINT unk;
         public UINT unk1;
         public UINT unk2;
         public UINT unk3;
         public UINT unk4;
-        public UINT weapon_id;
     }
 
     #endregion

@@ -26,21 +26,21 @@ namespace com.jds.PathEditor.classes.client.definitions
         /*
         Info from l2asm-disasm
         */
-        public FLOAT UNK_1;
+        public UINT nbr;
+        public UINT zone_color_id;
+        public UINT x_world_grid;
+        public UINT y_world_grid;
+        public FLOAT top_z;
         public FLOAT bottom_z;
+        public ASCF zone_name;
         public INT coords1;
         public INT coords2;
         public INT coords3;
         public INT coords4;
         public INT coords5;
         public INT coords6;
+        public FLOAT UNK_1;
         public ASCF map;
-        public UINT nbr;
-        public FLOAT top_z;
-        public UINT x_world_grid;
-        public UINT y_world_grid;
-        public UINT zone_color_id;
-        public ASCF zone_name;
     }
 
     public class ZoneNameInfo_Gracia_Final : Definition
@@ -48,25 +48,26 @@ namespace com.jds.PathEditor.classes.client.definitions
         /*
         Info from l2asm-disasm
         */
-        public FLOAT UNK_1;
-        public UINT UNK_2;
+        public UINT nbr;
+        public UINT zone_color_id;
+        public UINT x_world_grid;
+        public UINT y_world_grid;
+        public FLOAT top_z;
         public FLOAT bottom_z;
+        public ASCF zone_name;
         public INT coords1;
         public INT coords2;
         public INT coords3;
         public INT coords4;
         public INT coords5;
         public INT coords6;
+        public FLOAT UNK_1;
         public ASCF map;
-        public UINT nbr;
-        public FLOAT top_z;
-        public UINT x_world_grid;
-        public UINT y_world_grid;
-        public UINT zone_color_id;
-        public ASCF zone_name;
+        public UINT UNK_2;
+
     }
 
-    #endregion
+    #endregion 
 
     #region Parser
 

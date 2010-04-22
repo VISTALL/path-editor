@@ -22,7 +22,7 @@ namespace com.jds.PathEditor.classes.parser
             try
             {
                 process_decoder.StartInfo.FileName = Path.Combine(GlobalUtilities.GetStartDirectory(false),
-                                                                  @"l2encdec\l2encdec.exe");
+                                                                  "l2encdec\\l2encdec.exe");
                 process_decoder.StartInfo.UseShellExecute = false;
                 process_decoder.StartInfo.CreateNoWindow = true;
                 process_decoder.StartInfo.RedirectStandardOutput = true;
@@ -51,6 +51,7 @@ namespace com.jds.PathEditor.classes.parser
                 }
                 catch
                 {
+                    return null;
                 }
 
                 return new BinaryReader(File.OpenRead(fname_decoded), enc);
@@ -64,6 +65,8 @@ namespace com.jds.PathEditor.classes.parser
             {
                 process_decoder.Dispose();
             }
+
+            return null;
         }
 
         public static void Encrypt(string fname, Int32 coding)

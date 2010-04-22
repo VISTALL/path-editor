@@ -27,12 +27,12 @@ namespace com.jds.PathEditor.classes.client.definitions
         /*
         Info from l2asm-disasm
         */
-        public ASCF npc_class;
         public UINT npc_id;
-        public ASCF npc_name;
-        public UNICODE seq_name;
         public UINT skill_id;
+        public UNICODE seq_name;
         public ASCF skill_name;
+        public ASCF npc_name;
+        public ASCF npc_class;
 
         [Description("Npc id")]
         public uint NpcId

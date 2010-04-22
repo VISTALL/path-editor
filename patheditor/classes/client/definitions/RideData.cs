@@ -20,12 +20,11 @@ namespace com.jds.PathEditor.classes.client.definitions
 
     public class RideDataInfo : Definition
     {
+        public UINT tag;
         public HEX extra;
         public UNICODE name;
-        public UINT tag;
         public FLOAT_119 unk;
     }
-
     #endregion
 
     #region Parser

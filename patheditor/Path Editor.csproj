@@ -114,7 +114,7 @@
     <Compile Include="classes\client\definitions\WarningNotice.cs" />
     <Compile Include="classes\client\definitions\WeaponGrp.cs" />
     <Compile Include="classes\client\definitions\ZoneName.cs" />
-    <Compile Include="classes\client\IniFileType.cs" />
+    <Compile Include="classes\client\mothers\IniFileType.cs" />
     <Compile Include="classes\client\ListColor.cs" />
     <Compile Include="classes\client\mothers\DatParser.cs" />
     <Compile Include="classes\client\mothers\Definition.cs" />

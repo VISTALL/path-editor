@@ -29,19 +29,19 @@ namespace com.jds.PathEditor.classes.client.definitions
 
     public class SystemMsgInfo : Definition
     {
+        public UINT id;
         public UINT UNK_0;
+        public ASCF message;
+        public UINT group;
+        public COLOR rgb;
+        public ASCF item_sound;
+        public ASCF sys_msg_ref;
         public UINT UNK_1_1;
         public UINT UNK_1_2;
         public UINT UNK_1_3;
         public UINT UNK_1_4;
         public UINT UNK_1_5;
-        public UINT group;
-        public UINT id;
-        public ASCF item_sound;
-        public ASCF message;
-        public COLOR rgb;
         public ASCF sub_msg;
-        public ASCF sys_msg_ref;
         public ASCF type;
 
         [Description("Id of System Message")]

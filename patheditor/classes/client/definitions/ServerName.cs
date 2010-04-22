@@ -26,10 +26,10 @@ namespace com.jds.PathEditor.classes.client.definitions
         /*
         Info from l2asm-disasm
         */
-        public ASCF server_desc;
         public UINT server_id;
-        public ASCF server_name;
         public UINT tag;
+        public ASCF server_name;
+        public ASCF server_desc;
 
         public uint ServerId
         {

@@ -26,15 +26,15 @@ namespace com.jds.PathEditor.classes.client.definitions
         /*
          Info from l2asm-disasm
          */
-        public CNTRINT_PAIR cat2;
-        public UINT category;
-        public ASCF cmd;
-        public UNICODE desc;
-        public ASCF icon;
-        public UINT id;
-        public ASCF name;
         public UINT tag;
+        public UINT id;
         public INT type;
+        public UINT category;
+        public CNTRINT_PAIR cat2;
+        public ASCF cmd;
+        public ASCF icon;
+        public ASCF name;
+        public UNICODE desc;
 
         public uint Tag
         {

@@ -27,79 +27,79 @@ namespace com.jds.PathEditor.classes.client.definitions
         /*
         Info from l2asm-disasm
         */
-        public CNTTXT_PAIR UNK_0_NEW;
-        public UINT UNK_0_OLD;
-        public CNTRINT_PAIR UNK_1_NEW;
-        public UINT UNK_1_OLD;
-        public UINT UNK_2;
-        public UINT class_lim;
-        public CNTRINT_PAIR dtab1;
-        public UNICODE effect;
-        public UINT level_lim_dn;
-        public UINT level_lim_up;
-        public UNICODE mesh;
+        public UINT tag;
         public UNICODE npc_class;
+        public UNICODE mesh;
+        public CNTTXT_PAIR tex1;
+        public CNTTXT_PAIR tex2;
+        public CNTRINT_PAIR dtab1;
         public FLOAT npc_speed;
-        public UINT quest_be;
-        public UNICODE rb_effect;
-        public FLOAT rb_effect_fl;
-        public UINT rb_effect_on;
+        public UINT UNK_0_OLD;
+        public CNTTXT_PAIR UNK_0_NEW;
         public CNTTXT_PAIR snd1;
         public CNTTXT_PAIR snd2;
         public CNTTXT_PAIR snd3;
+        public UINT rb_effect_on;
+        public UNICODE rb_effect;
+        public FLOAT rb_effect_fl;
+        public UINT UNK_1_OLD;
+        public CNTRINT_PAIR UNK_1_NEW;
+        public UINT level_lim_dn;
+        public UINT level_lim_up;
+        public UNICODE effect;
+        public UINT UNK_2;
         public FLOAT sound_rad;
-        public FLOAT sound_rnd;
         public FLOAT sound_vol;
-        public UINT tag;
-        public CNTTXT_PAIR tex1;
-        public CNTTXT_PAIR tex2;
+        public FLOAT sound_rnd;
+        public UINT quest_be;
+        public UINT class_lim;
     }
 
     public class NpcgrpInfo_Gracia_Plus : Definition
     {
-        public CNTTXT_PAIR UNK_0_NEW;
-        public UINT UNK_0_OLD; //
-        public CNTRINT_PAIR UNK_1_NEW;
-        public UINT UNK_1_OLD;
-        public UINT UNK_2;
-        public UINT class_lim;
-        public CNTRINT_PAIR dtab1; //
-        public UNICODE effect;
-        public UINT level_lim_dn;
-        public UINT level_lim_up;
-        public UNICODE mesh;
-        public UNICODE npc_class;
-        public ASCF_PAIR npc_end;
-        public FLOAT npc_speed;
-        public UINT quest_be;
-        public UNICODE rb_effect; //
-        public FLOAT rb_effect_fl;
-        public UINT rb_effect_on;
-        public CNTTXT_PAIR snd1;
-        public CNTTXT_PAIR snd2;
-        public CNTTXT_PAIR snd3; //
-        public FLOAT sound_rad; //
-        public FLOAT sound_rnd;
-        public FLOAT sound_vol;
         public UINT tag;
+        public UNICODE npc_class;
+        public UNICODE mesh;
         public CNTTXT_PAIR tex1;
         public CNTTXT_PAIR tex2;
+        public CNTRINT_PAIR dtab1;//
+        public FLOAT npc_speed;
+        public UINT UNK_0_OLD;//
+        public CNTTXT_PAIR UNK_0_NEW;
+        public CNTTXT_PAIR snd1;
+        public CNTTXT_PAIR snd2;
+        public CNTTXT_PAIR snd3;//
+        public UINT rb_effect_on;
+        public UNICODE rb_effect;//
+        public FLOAT rb_effect_fl;
+        public UINT UNK_1_OLD;
+        public CNTRINT_PAIR UNK_1_NEW;
+        public UINT level_lim_dn;
+        public UINT level_lim_up;
+        public UNICODE effect;
+        public UINT UNK_2;
+        public FLOAT sound_rad;//
+        public FLOAT sound_vol;
+        public FLOAT sound_rnd;
+        public UINT quest_be;
+        public UINT class_lim;
+        public ASCF_PAIR npc_end;
     }
 
     public class NpcGrpInfo_Freya : Definition
     {
-        public UNICODE mesh;
-        public CNTTXT_PAIR new_0; //
-        public UNICODE npc_class;
         public UINT npc_id;
-        public FLOAT npc_speed;
-        public CNTRINT_PAIR skills; //
-        public CNTTXT_PAIR snd1;
-        public CNTTXT_PAIR snd2;
-        public CNTTXT_PAIR snd3; //
+        public UNICODE npc_class;
+        public UNICODE mesh;
         public CNTTXT_PAIR tex1;
         public CNTTXT_PAIR tex2;
-        public UINT unk_0; //
+        public CNTRINT_PAIR skills;//
+        public FLOAT npc_speed;
+        public UINT unk_0;//
+        public CNTTXT_PAIR snd1;
+        public CNTTXT_PAIR snd2;
+        public CNTTXT_PAIR snd3;//
+        public CNTTXT_PAIR new_0;//
     }
 
     #endregion

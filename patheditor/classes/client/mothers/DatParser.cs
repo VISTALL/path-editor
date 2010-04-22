@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
+using com.jds.PathEditor.classes.client.types;
 using com.jds.PathEditor.classes.forms;
 using com.jds.PathEditor.classes.parser;
 using log4net;
@@ -16,12 +17,7 @@ namespace com.jds.PathEditor.classes.client.mothers
     {
         private static readonly ILog _log = LogManager.GetLogger(typeof (DatParser));
 
-        private readonly List<String> DatDefFields;
-
-        public DatParser()
-        {
-            DatDefFields = new List<String>();
-        }
+        private readonly List<String> DatDefFields = new List<String>();
 
         #region Definitions && Fields
 
@@ -85,58 +81,48 @@ namespace com.jds.PathEditor.classes.client.mothers
 
         public virtual Definition ParseMain(BinaryReader f, int RecNo)
         {
-            var info = new Definition();
-            info = MainForm.Instance.DatInfo.getDefinition();
+            //var info = new Definition();
+
+            Definition info = MainForm.Instance.DatInfo.getDefinition();
             List<String> TmpArr = MainForm.Instance.DatInfo.getFieldNames();
+            
             for (int i = 0; i < TmpArr.Count; i++)
             {
                 String FName = TmpArr[i];
                 info = ReadFieldValue(f, info, FName);
             }
+
             return info;
         }
-
-        public Definition ReadFieldValue(BinaryReader f, Definition info, String FromName, String ToName)
-        {
-            int startPos = 0, endPos = 0;
-            List<String> TmpArr = MainForm.Instance.DatInfo.getFieldNames();
-            for (int i = 0; i < TmpArr.Count; i++)
-            {
-                if (TmpArr[i] == FromName)
-                    startPos = i;
-                if (TmpArr[i] == ToName)
-                    endPos = i;
-            }
-            for (int i = startPos; i <= endPos; i++)
-                info = ReadFieldValue(f, info, i);
-            return info;
-        }
-
-        public Definition ReadFieldValue(BinaryReader f, Definition info, int FNumber)
-        {
-            String FName = MainForm.Instance.DatInfo.getFieldNames()[FNumber];
-            return ReadFieldValue(f, info, FName);
-        }
-
+       
         public Definition ReadFieldValue(BinaryReader f, Definition info, String FName)
         {
             Definition TmpInfo = info;
             long curPos = f.BaseStream.Position;
+
             try
             {
                 FieldInfo FType = MainForm.Instance.DatInfo.getDefinition().GetType().GetField(FName);
 
                 Type field = FType.FieldType;
-                Object obj = field.InvokeMember(null, BindingFlags.CreateInstance, null, null, null);
 
-                if (obj is IType)
+                if (FType.GetValue(info) == null)
                 {
-                    var type = (IType) obj;
-                    FType.SetValue(info, type.read(f));
+                    Object obj = field.InvokeMember(null, BindingFlags.CreateInstance, null, null, null);
+
+                    if (obj is IType)
+                    {
+                        var type = (IType)obj;
+                        FType.SetValue(info, type.read(f));
+                    }
+                    else
+                    {
+                        throw new NotImplementedException("Format " + obj.GetType().Name + " is not implement IType");
+                    }
                 }
                 else
                 {
-                    throw new NotImplementedException("Format " + obj.GetType().Name + " is not implement IType");
+                    FType.SetValue(info, ((IType)FType.GetValue(info)).read(f));
                 }
             }
             catch (Exception ex)
@@ -147,6 +133,33 @@ namespace com.jds.PathEditor.classes.client.mothers
                                   FName, f.BaseStream.Position, DatTool.Debug_DumpString(f, curPos, 8)), ex);
             }
             return info;
+        }
+
+        public Definition ReadFieldValue(BinaryReader f, Definition info, String FromName, String ToName)
+        {
+            int startPos = 0, endPos = 0;
+            List<String> TmpArr = MainForm.Instance.DatInfo.getFieldNames();
+            
+            for (int i = 0; i < TmpArr.Count; i++)
+            {
+                if (TmpArr[i] == FromName)
+                    startPos = i;
+                if (TmpArr[i] == ToName)
+                    endPos = i;
+            }
+
+            for (int i = startPos; i <= endPos; i++)
+            {
+                info = ReadFieldValue(f, info, i);
+            }
+
+            return info;
+        }
+
+        public Definition ReadFieldValue(BinaryReader f, Definition info, int FNumber)
+        {
+            String FName = MainForm.Instance.DatInfo.getFieldNames()[FNumber];
+            return ReadFieldValue(f, info, FName);
         }
 
         #endregion

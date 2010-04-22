@@ -33,12 +33,7 @@ namespace com.jds.PathEditor.classes.forms
 
         public static MainForm Instance
         {
-            get
-            {
-                if (_instance == null)
-                    _instance = new MainForm();
-                return _instance;
-            }
+            get { return _instance ?? (_instance = new MainForm()); }
         }
 
         #region Config
@@ -304,7 +299,7 @@ namespace com.jds.PathEditor.classes.forms
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.StackTrace);
+               _log.Info(e.StackTrace, e);
             }
         }
 

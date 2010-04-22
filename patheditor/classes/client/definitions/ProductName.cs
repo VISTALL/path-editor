@@ -21,10 +21,10 @@ namespace com.jds.PathEditor.classes.client.definitions
 
     public class ProductName_Info : Definition
     {
-        public UNICODE icon;
         public UINT id;
         public UNICODE name;
         public ASCF str;
+        public UNICODE icon;
     }
 
     #endregion

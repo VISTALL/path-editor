@@ -11,7 +11,6 @@ namespace com.jds.PathEditor.classes.client.definitions
 {
 
     #region Definition
-
     public class SkillSoundSourceInfo : Definition
     {
         public UINT skill_id;
@@ -25,7 +24,6 @@ namespace com.jds.PathEditor.classes.client.definitions
         public UINT unk_8;
         public UINT unk_9;
     }
-
     #endregion
 
     #region Parser

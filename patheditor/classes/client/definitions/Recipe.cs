@@ -27,19 +27,20 @@ namespace com.jds.PathEditor.classes.client.definitions
         /*
         Info from l2asm-disasm
         */
-        public UINT UNK0;
-        public UINT count;
-        public UINT id_item;
+        public ASCF name;
         public UINT id_mk;
         public UINT id_recipe;
         public UINT level;
-        public STRING materials;
+        public UINT id_item;
+        public UINT count;
         public UINT mp_cost;
-        public ASCF name;
         public UINT success_rate;
+        public STRING materials;
+        public UINT UNK0;
     }
 
     #endregion
+
 
     #region Parser
 

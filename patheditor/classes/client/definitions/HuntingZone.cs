@@ -23,15 +23,15 @@ namespace com.jds.PathEditor.classes.client.definitions
         /*
         Info from l2asm-disasm
         */
-        public UINT UNK_1;
-        public ASCF UNK_2;
-        public UINT affiliated_area_id;
-        public UINT hunting_type;
         public UINT id;
+        public UINT hunting_type;
         public UINT level;
+        public UINT UNK_1;
         public FLOAT loc_x;
         public FLOAT loc_y;
         public FLOAT loc_z;
+        public ASCF UNK_2;
+        public UINT affiliated_area_id;
         public ASCF name;
     }
 

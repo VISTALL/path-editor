@@ -25,10 +25,10 @@ namespace com.jds.PathEditor.classes.client.definitions
         /*
          By VISTALL
          */
-        public UNICODE effect;
         public UINT item_id;
         public UINT zero_1;
         public UINT zero_2;
+        public UNICODE effect;
 
         [Description("Item Id")]
         public uint ItemId

@@ -26,31 +26,31 @@ namespace com.jds.PathEditor.classes.client.definitions
         /*
         Info from l2asm-disasm
         */
-        public UINT UNK_0;
-        public UINT UNK_1;
-        public UINT crystallizable;
-        public UINT drop_anim_type;
-        public UINT drop_height;
-        public UNICODE drop_mesh;
-        public UINT drop_radius;
-        public UNICODE drop_tex;
+        public UINT tag;
+        public UINT id;
         public UINT drop_type;
-        public UINT durability;
-        public UNICODE equip_sound;
-        public UINT family;
-        public UINT grade;
+        public UINT drop_anim_type;
+        public UINT drop_radius;
+        public UINT drop_height;
+        public UINT UNK_0;
+        public UNICODE drop_mesh;
+        public UNICODE drop_tex;
         public UNICODE icon1;
         public UNICODE icon2;
         public UNICODE icon3;
         public UNICODE icon4;
         public UNICODE icon5;
-        public UINT id;
-        public UNICODE item_sound;
-        public UINT material;
-        public MTX mesh_tex_pair;
-        public UINT stackable;
-        public UINT tag;
+        public UINT durability;
         public UINT weight;
+        public UINT material;
+        public UINT crystallizable;
+        public UINT UNK_1;
+        public MTX mesh_tex_pair;
+        public UNICODE item_sound;
+        public UNICODE equip_sound;
+        public UINT stackable;
+        public UINT family;
+        public UINT grade;
     }
 
     public class EtcitemgrpInfo_C4 : Definition
@@ -58,19 +58,15 @@ namespace com.jds.PathEditor.classes.client.definitions
         /*
         Info from l2asm-disasm
         */
-        public UINT UNK_0;
-        public UINT UNK_1;
-        public UINT crystallizable;
-        public UINT drop_anim_type;
-        public UINT drop_height;
-        public UNICODE drop_mesh;
-        public UINT drop_radius;
-        public UNICODE drop_tex;
+        public UINT tag;
+        public UINT id;
         public UINT drop_type;
-        public UINT durability;
-        public UNICODE equip_sound;
-        public UINT family;
-        public UINT grade;
+        public UINT drop_anim_type;
+        public UINT drop_radius;
+        public UINT drop_height;
+        public UINT UNK_0;
+        public UNICODE drop_mesh;
+        public UNICODE drop_tex;
         public UNICODE icon1;
         public UNICODE icon2;
         public UNICODE icon3;
@@ -80,13 +76,17 @@ namespace com.jds.PathEditor.classes.client.definitions
         public UNICODE icon7;
         public UNICODE icon8;
         public UNICODE icon9;
-        public UINT id;
-        public UNICODE item_sound;
-        public UINT material;
-        public MTX mesh_tex_pair;
-        public UINT stackable;
-        public UINT tag;
+        public UINT durability;
         public UINT weight;
+        public UINT material;
+        public UINT crystallizable;
+        public UINT UNK_1;
+        public MTX mesh_tex_pair;
+        public UNICODE item_sound;
+        public UNICODE equip_sound;
+        public UINT stackable;
+        public UINT family;
+        public UINT grade;
     }
 
     public class EtcitemgrpInfo_CT1 : Definition
@@ -94,22 +94,15 @@ namespace com.jds.PathEditor.classes.client.definitions
         /*
         Info from l2asm-disasm
         */
-        public UINT UNK_0;
-        public UINT UNK_1;
-        public CNTINT_PAIR UNK_2;
-        public UINT UNK_3;
-        public UINT crystallizable;
-        public UINT drop_anim_type;
-        public UINT drop_height;
-        public UNICODE drop_mesh;
-        public UINT drop_radius;
-        public UNICODE drop_tex;
+        public UINT tag;
+        public UINT id;
         public UINT drop_type;
-        public INT durability;
-        public UNICODE equip_sound;
-        public UINT family;
-        public UNICODE fort;
-        public UINT grade;
+        public UINT drop_anim_type;
+        public UINT drop_radius;
+        public UINT drop_height;
+        public UINT UNK_0;
+        public UNICODE drop_mesh;
+        public UNICODE drop_tex;
         public UNICODE icon1;
         public UNICODE icon2;
         public UNICODE icon3;
@@ -119,49 +112,40 @@ namespace com.jds.PathEditor.classes.client.definitions
         public UNICODE icon7;
         public UNICODE icon8;
         public UNICODE icon9;
-        public UINT id;
-        public UNICODE item_sound;
-        public UINT material;
-        public MTX mesh_tex_pair;
-        public UINT stackable;
-        public UINT tag;
+        public INT durability;
         public UINT weight;
+        public UINT material;
+        public UINT crystallizable;
+        public UINT UNK_1;
+        public CNTINT_PAIR UNK_2;
+        public UINT UNK_3;
+        public UNICODE fort;
+        public MTX mesh_tex_pair;
+        public UNICODE item_sound;
+        public UNICODE equip_sound;
+        public UINT stackable;
+        public UINT family;
+        public UINT grade;
     }
 
     public class EtcitemgrpInfo_Gracia_Final : Definition
     {
-        public UINT UNK_0;
-        public UINT UNK_1;
-        public CNTINT_PAIR UNK_2;
-        public UINT UNK_3;
-        public UINT crystallizable;
+        public UINT tag;
+        public UINT id;
+        public UINT drop_type;
         public UINT drop_anim_type;
-        public UNICODE drop_extratex1;
+        public UINT drop_radius;
         public UINT drop_height;
+        public UINT UNK_0;
 
         public UNICODE drop_mesh1;
         public UNICODE drop_mesh2;
         public UNICODE drop_mesh3;
-        public UINT drop_radius;
 
         public UNICODE drop_tex1;
         public UNICODE drop_tex2;
         public UNICODE drop_tex3;
-        public UINT drop_type;
-        public INT durability;
-        public UNICODE equip_sound;
-        public UINT family;
-        public UNICODE fort;
-        public UINT grade;
-        public UNICODE icon1;
-        public UNICODE icon2;
-        public UNICODE icon3;
-        public UNICODE icon4;
-        public UNICODE icon5;
-        public UINT id;
-        public UNICODE item_sound;
-        public UINT material;
-        public MTX mesh_tex_pair;
+        public UNICODE drop_extratex1;
 
         public INT newdata1;
         public INT newdata2;
@@ -172,12 +156,30 @@ namespace com.jds.PathEditor.classes.client.definitions
         public INT newdata7;
         public INT newdata8;
 
-        public UINT stackable;
-        public UINT tag;
+        public UNICODE icon1;
+        public UNICODE icon2;
+        public UNICODE icon3;
+        public UNICODE icon4;
+        public UNICODE icon5;
+
+        public INT durability;
         public UINT weight;
+        public UINT material;
+        public UINT crystallizable;
+        public UINT UNK_1;
+        public CNTINT_PAIR UNK_2;
+        public UINT UNK_3;
+        public UNICODE fort;
+        public MTX mesh_tex_pair;
+        public UNICODE item_sound;
+        public UNICODE equip_sound;
+        public UINT stackable;
+        public UINT family;
+        public UINT grade;
     }
 
     #endregion
+
 
     #region Parser
 

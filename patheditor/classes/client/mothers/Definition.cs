@@ -61,7 +61,7 @@ namespace com.jds.PathEditor.classes.client.mothers
                     String TmpStr = "";
                     if (FType.GetValue(this) != null)
                     {
-                        String text = FType.GetValue(this).ToString();
+                        TmpStr = FType.GetValue(this).ToString();
                     }
                     _log.Info(m.Name + ": " + TmpStr);
                 }
