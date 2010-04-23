@@ -130,7 +130,7 @@ namespace com.jds.PathEditor.classes.forms
             // 
             this.labelProductName.AutoSize = true;
             this.labelProductName.BackColor = System.Drawing.Color.Black;
-            this.labelProductName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelProductName.ForeColor = System.Drawing.Color.White;
             this.labelProductName.Location = new System.Drawing.Point(128, 141);
             this.labelProductName.Name = "labelProductName";
             this.labelProductName.Size = new System.Drawing.Size(38, 13);
@@ -142,7 +142,7 @@ namespace com.jds.PathEditor.classes.forms
             this.Version.AutoSize = true;
             this.Version.BackColor = System.Drawing.Color.Black;
             this.Version.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Version.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Version.ForeColor = System.Drawing.Color.White;
             this.Version.Location = new System.Drawing.Point(33, 158);
             this.Version.Name = "Version";
             this.Version.Size = new System.Drawing.Size(52, 13);
@@ -153,7 +153,7 @@ namespace com.jds.PathEditor.classes.forms
             // 
             this.labelVersion.AutoSize = true;
             this.labelVersion.BackColor = System.Drawing.Color.Black;
-            this.labelVersion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelVersion.ForeColor = System.Drawing.Color.White;
             this.labelVersion.Location = new System.Drawing.Point(128, 158);
             this.labelVersion.Name = "labelVersion";
             this.labelVersion.Size = new System.Drawing.Size(38, 13);
@@ -164,7 +164,7 @@ namespace com.jds.PathEditor.classes.forms
             // 
             this.labelCompanyName.AutoSize = true;
             this.labelCompanyName.BackColor = System.Drawing.Color.Black;
-            this.labelCompanyName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelCompanyName.ForeColor = System.Drawing.Color.White;
             this.labelCompanyName.Location = new System.Drawing.Point(128, 174);
             this.labelCompanyName.Name = "labelCompanyName";
             this.labelCompanyName.Size = new System.Drawing.Size(38, 13);
@@ -176,7 +176,7 @@ namespace com.jds.PathEditor.classes.forms
             this.Company.AutoSize = true;
             this.Company.BackColor = System.Drawing.Color.Black;
             this.Company.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Company.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Company.ForeColor = System.Drawing.Color.White;
             this.Company.Location = new System.Drawing.Point(33, 174);
             this.Company.Name = "Company";
             this.Company.Size = new System.Drawing.Size(63, 13);
@@ -189,7 +189,7 @@ namespace com.jds.PathEditor.classes.forms
             this.textBoxDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxDescription.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBoxDescription.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxDescription.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.textBoxDescription.ForeColor = System.Drawing.Color.White;
             this.textBoxDescription.HideSelection = false;
             this.textBoxDescription.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.textBoxDescription.Location = new System.Drawing.Point(36, 246);
@@ -219,7 +219,7 @@ namespace com.jds.PathEditor.classes.forms
             this.Author.AutoSize = true;
             this.Author.BackColor = System.Drawing.Color.Black;
             this.Author.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Author.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Author.ForeColor = System.Drawing.Color.White;
             this.Author.Location = new System.Drawing.Point(33, 190);
             this.Author.Name = "Author";
             this.Author.Size = new System.Drawing.Size(49, 13);
@@ -230,7 +230,7 @@ namespace com.jds.PathEditor.classes.forms
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Black;
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(128, 190);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(50, 13);

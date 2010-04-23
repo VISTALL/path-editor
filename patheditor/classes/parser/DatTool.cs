@@ -20,25 +20,34 @@ namespace com.jds.PathEditor.classes.parser
             return len;
         }
 
+        public static readonly byte BYTE_MAX_VALUE = 128;
+
         public static string ReadString(BinaryReader f)
         {
             int len = f.ReadByte();
             if (len == 0)
+            {
                 return "";
+            }
 
             if (len >= 192)
-                f.BaseStream.Seek(1, SeekOrigin.Current);
+            {
+                byte len2 = f.ReadByte();
+                
+                if (len2 >= BYTE_MAX_VALUE)
+                {
+                    f.BaseStream.Seek(-2, SeekOrigin.Current); //go to start read
+                    len = GetMediumInt(f);
+                }
+            }
 
-            /*     if (len >= 32768)
-                f.BaseStream.Seek(1, SeekOrigin.Current);
-*/
             long start_pos = f.BaseStream.Position;
             long end_pos = start_pos;
 
             Encoding enc = Encoding.Default;
             byte one_ch_len = 1;
 
-            /*  if (len >= 32768)
+            if (len >= short.MaxValue)
             {
                 // unicode string
                 enc = Encoding.Unicode;
@@ -54,8 +63,7 @@ namespace com.jds.PathEditor.classes.parser
                     }
                 }                    
             }
-			else*/
-            if (len >= 128)
+            else if (len >= BYTE_MAX_VALUE)
             {
                 // unicode string
                 enc = Encoding.Unicode;
@@ -103,6 +111,26 @@ namespace com.jds.PathEditor.classes.parser
             return res;
         }
 
+        private static int GetMediumInt(BinaryReader binaryReader)
+        {
+            var b1 = binaryReader.ReadByte();
+            var b2 = binaryReader.ReadByte();
+            var b3 = binaryReader.ReadByte();
+
+            return GetMediumInt(b3, b2, b1);
+        }
+
+        private static int GetMediumInt(byte b1, byte b2, byte b3)
+        {
+            long ret = b1 << 16 & 0xff0000 | b2 << 8 & 0xff00 | b3 & 0xff;
+            // Check to see if the medium int is negative (high bit in b1 set)
+            if ((b1 & 0x80) == 0x80)
+            {
+                // Make the the whole int negative
+                ret |= 0xff000000;
+            }
+            return (int)ret;
+        }
 
         public static string ReadStringSimple_UnicodeInt32Length(BinaryReader f)
         {
@@ -154,6 +182,24 @@ namespace com.jds.PathEditor.classes.parser
                 }
 
                 int len = str.Length + 1;
+                
+              /**  if (len >= 16384)//(short.Max_value + 1 / 2) TODO how it write
+                {
+                    int len_part3 = len / 16384;
+                    int len_part2 = len - ((len_part3 - 1) * 16384);
+                    int len_part1 = len - ((len_part2 - 1) * 16384);
+
+                    // set highest bit cause to indicate it is Unicode
+                    if (is_unicode)
+                    {
+                        len_part1 += 128;
+                    }
+
+                    f.Write(len_part1);
+                    f.Write(len_part2);
+                    f.Write(len_part3);
+                }
+                else*/
                 if (len >= 64)
                 {
                     int len_part2 = len/64;
@@ -161,7 +207,9 @@ namespace com.jds.PathEditor.classes.parser
 
                     // set highest bit cause to indicate it is Unicode
                     if (is_unicode)
+                    {
                         len_part1 += 128;
+                    }
 
                     f.Write((byte) len_part1);
                     f.Write((byte) len_part2);

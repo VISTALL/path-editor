@@ -88,18 +88,33 @@ namespace com.jds.PathEditor.classes.client.definitions
 
     public class NpcGrpInfo_Freya : Definition
     {
-        public UINT npc_id;
+        /**
+         * thx janiii 
+         */
+        public UINT tag;
         public UNICODE npc_class;
         public UNICODE mesh;
         public CNTTXT_PAIR tex1;
         public CNTTXT_PAIR tex2;
-        public CNTRINT_PAIR skills;//
+        public CNTRINT_PAIR dtab1;
         public FLOAT npc_speed;
-        public UINT unk_0;//
+        public CNTTXT_PAIR UNK_0_NEW;
         public CNTTXT_PAIR snd1;
         public CNTTXT_PAIR snd2;
-        public CNTTXT_PAIR snd3;//
-        public CNTTXT_PAIR new_0;//
+        public CNTTXT_PAIR snd3;
+        public UINT rb_effect_on;
+        public UNICODE rb_effect;
+        public FLOAT rb_effect_fl;
+        public CNTRINT_PAIR UNK_1_NEW;
+        public CNTRINT_PAIR UNK_2_NEW; // this is new in freya 
+        public UNICODE effect;
+        public UINT UNK_2;
+        public FLOAT sound_rad;
+        public FLOAT sound_vol;
+        public FLOAT sound_rnd;
+        public UINT quest_be;
+        public UINT class_lim;
+        public ASCF_PAIR npc_end;
     }
 
     #endregion
@@ -110,7 +125,9 @@ namespace com.jds.PathEditor.classes.client.definitions
     {
         public override Definition getDefinition()
         {
-            if (RConfig.Instance.DatVersionAsEnum >= DatVersion.Gracia_Plus__Epilogue)
+            if(RConfig.Instance.DatVersionAsEnum >= DatVersion.Freya)
+                return new NpcGrpInfo_Freya();
+            else  if (RConfig.Instance.DatVersionAsEnum >= DatVersion.Gracia_Plus__Epilogue)
                 return new NpcgrpInfo_Gracia_Plus();
             else
                 return new NpcgrpInfo();
@@ -121,6 +138,25 @@ namespace com.jds.PathEditor.classes.client.definitions
             Definition dat;
 
             if (RConfig.Instance.DatVersionAsEnum >= DatVersion.Gracia_Plus__Epilogue)
+            {
+                var info = new NpcGrpInfo_Freya();
+                info.InitFieldValues();
+
+                info = (NpcGrpInfo_Freya)base.ReadFieldValue(f, info, "tag", "npc_speed");
+                info = (NpcGrpInfo_Freya)base.ReadFieldValue(f, info, "UNK_0_NEW");
+                info = (NpcGrpInfo_Freya)base.ReadFieldValue(f, info, "snd1", "snd3");
+
+                info = (NpcGrpInfo_Freya)base.ReadFieldValue(f, info, "rb_effect_on");
+                if (info.rb_effect_on.Value == 1)
+                    info = (NpcGrpInfo_Freya)base.ReadFieldValue(f, info, "rb_effect", "rb_effect_fl");
+
+                info = (NpcGrpInfo_Freya)base.ReadFieldValue(f, info, "UNK_1_NEW", "UNK_2_NEW");
+                info = (NpcGrpInfo_Freya)base.ReadFieldValue(f, info, "effect", "npc_end");
+
+                dat = info;  
+            }
+
+            else if (RConfig.Instance.DatVersionAsEnum >= DatVersion.Gracia_Plus__Epilogue)
             {
                 var info = new NpcgrpInfo_Gracia_Plus();
                 info.InitFieldValues();
@@ -133,7 +169,7 @@ namespace com.jds.PathEditor.classes.client.definitions
                 if (info.rb_effect_on.Value == 1)
                     info = (NpcgrpInfo_Gracia_Plus) base.ReadFieldValue(f, info, "rb_effect", "rb_effect_fl");
 
-                info = (NpcgrpInfo_Gracia_Plus) base.ReadFieldValue(f, info, "UNK_1_NEW");
+                info = (NpcgrpInfo_Gracia_Plus)base.ReadFieldValue(f, info, "UNK_1_NEW");
                 info = (NpcgrpInfo_Gracia_Plus) base.ReadFieldValue(f, info, "effect", "npc_end");
 
                 dat = info;

@@ -16,6 +16,8 @@ using com.jds.PathEditor.classes.services;
  * - Gracia 2 [WORK]
  * - Gracia Final [WORK]
  * - Gracia Plus [WORK]
+ * 
+ * Если больше Short.MAX_VALUE - креш
  */
 
 namespace com.jds.PathEditor.classes.client.definitions
