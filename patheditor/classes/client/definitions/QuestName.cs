@@ -1,4 +1,4 @@
-﻿#region Using
+#region Using
 
 using System.Collections.Generic;
 using System.IO;
@@ -103,7 +103,7 @@ namespace com.jds.PathEditor.classes.client.definitions
     public class QuestNameInfo_Freya : Definition
     {
         /*
-        Info from l2asm-disasm
+		  by VISTALL
         */
         public UINT tag;
         public UINT quest_id;
