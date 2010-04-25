@@ -1,5 +1,7 @@
 ﻿#region Using
 
+using System.ComponentModel;
+using System.Drawing.Design;
 using com.jds.PathEditor.classes.client.mothers;
 using com.jds.PathEditor.classes.client.types;
 using com.jds.PathEditor.classes.services;
@@ -12,8 +14,9 @@ using com.jds.PathEditor.classes.services;
  * - Gracia 2 [WORK]
  * - Gracia Final [WORK]
  * - Gracia Plus [WORK]
+ * 
+ * - Property Editor
  */
-
 namespace com.jds.PathEditor.classes.client.definitions
 {
 
@@ -25,6 +28,62 @@ namespace com.jds.PathEditor.classes.client.definitions
         public UNICODE name;
         public ASCF str;
         public UNICODE icon;
+
+        public override string ToString()
+        {
+            return id.ToString();
+        }
+       
+        public uint Id
+        {
+            get
+            {
+                return id.Value;
+            }
+            set
+            {
+                id.Value = value;
+            }
+        }
+
+        [Editor(typeof(TextValueEditor), typeof(UITypeEditor))]
+        public string Name
+        {
+            get
+            {
+                return name.Text;
+            }
+            set
+            {
+                name.Text = value;
+            }
+        }
+
+        [Editor(typeof(TextValueEditor), typeof(UITypeEditor))]
+        public string Str
+        {
+            get
+            {
+                return str.Text;
+            }
+            set
+            {
+                str.Text = value;
+            }
+        }
+
+        [Editor(typeof(TextValueEditor), typeof(UITypeEditor))]
+        public string Icon
+        {
+            get
+            {
+                return icon.Text;
+            }
+            set
+            {
+                icon.Text = value;
+            }
+        }
     }
 
     #endregion
@@ -35,10 +94,7 @@ namespace com.jds.PathEditor.classes.client.definitions
     {
         public override Definition getDefinition()
         {
-            if (RConfig.Instance.DatVersionAsEnum >= DatVersion.Gracia_Final)
-                return new ProductName_Info();
-            else
-                return null;
+            return RConfig.Instance.DatVersionAsEnum >= DatVersion.Gracia_Final ? new ProductName_Info() : null;
         }
     }
 

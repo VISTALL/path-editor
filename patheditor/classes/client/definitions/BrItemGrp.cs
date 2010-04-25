@@ -30,28 +30,24 @@ namespace com.jds.PathEditor.classes.client.definitions
         public UINT zero_2;
         public UNICODE effect;
 
-        [Description("Item Id")]
         public uint ItemId
         {
             get { return item_id.Value; }
             set { item_id.Value = value; }
         }
 
-        [Description("Unknown")]
         public uint Zero_1
         {
             get { return zero_1.Value; }
             set { zero_1.Value = value; }
         }
 
-        [Description("Unknown")]
         public uint Zero_2
         {
             get { return zero_2.Value; }
             set { zero_2.Value = value; }
         }
 
-        [Description("Effect. Dont Tested :(")]
         public String Effect
         {
             get { return effect.Text; }

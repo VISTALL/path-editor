@@ -12,7 +12,7 @@ using com.jds.PathEditor.classes.services;
  * - Gracia Final [WORK]
  * - Gracia Plus [WORK]
  * 
- * Property Editor
+ * - Property Editor
  */
 
 namespace com.jds.PathEditor.classes.client.definitions
@@ -25,14 +25,12 @@ namespace com.jds.PathEditor.classes.client.definitions
         public UINT id;
         public UINT val;
 
-        [Description("Id")]
         public uint Id
         {
             get { return id.Value; }
             set { id.Value = value; }
         }
 
-        [Description("Value")]
         public uint Val
         {
             get { return val.Value; }

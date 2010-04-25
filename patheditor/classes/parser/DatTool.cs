@@ -10,11 +10,11 @@ namespace com.jds.PathEditor.classes.parser
 
         public static int ReadByteCount(BinaryReader f)
         {
-            byte tmp = f.ReadByte();
+            int tmp = f.ReadByte() & 0xFF;
             int len = tmp & 0x3F;
             if ((tmp & 0x40) > 0)
             {
-                tmp = f.ReadByte();
+                tmp = f.ReadByte() & 0xFF;
                 len += tmp << 6;
             }
             return len;

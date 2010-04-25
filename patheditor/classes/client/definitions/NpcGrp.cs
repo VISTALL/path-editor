@@ -14,7 +14,7 @@ using com.jds.PathEditor.classes.services;
  * - Gracia 2 [WORK]
  * - Gracia Final [WORK]
  * - Gracia Plus [WORK]
- * - Frey [NOT WORK]
+ * - Frey [WORK]
  */
 
 namespace com.jds.PathEditor.classes.client.definitions
