@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Text;
 
@@ -34,7 +34,7 @@ namespace com.jds.PathEditor.classes.parser
             {
                 byte len2 = f.ReadByte();
                 
-                if (len2 >= BYTE_MAX_VALUE)
+                if (len2 >= BYTE_MAX_VALUE)    // ?? 192??
                 {
                     f.BaseStream.Seek(-2, SeekOrigin.Current); //go to start read
                     len = GetMediumInt(f);
