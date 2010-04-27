@@ -17,6 +17,9 @@ namespace com.jds.PathEditor.classes.client.definitions
 
     public class NpcString_Info : Definition
     {
+        /**
+         * by janiii 
+         */
         public UINT id;
         public ASCF text;
 

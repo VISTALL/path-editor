@@ -13,6 +13,9 @@ namespace com.jds.PathEditor.classes.client.definitions
     #region Definition
     public class SkillSoundSourceInfo : Definition
     {
+        /**
+         * by VISTALL
+         */
         public UINT skill_id;
         public UINT unk_0;
         public UINT unk_2;

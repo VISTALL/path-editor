@@ -197,7 +197,14 @@ namespace com.jds.PathEditor.classes.client.definitions
 
         public override void CompileMain(BinaryWriter f, List<Definition> infos, int RecNo)
         {
-            if (RConfig.Instance.DatVersionAsEnum >= DatVersion.Gracia_Final)
+            if (RConfig.Instance.DatVersionAsEnum >= DatVersion.Freya)
+            {
+                var info = (QuestNameInfo_Gracia_Final)infos[RecNo];
+                base.WriteFieldValue(f, info, "id", "get_item_in_quest");
+                base.WriteFieldValue(f, info, "UNK_1", "short_description");
+                base.WriteFieldValue(f, info, "req_class", "tab7");
+            } 
+            else if (RConfig.Instance.DatVersionAsEnum >= DatVersion.Gracia_Final)
             {
                 var info = (QuestNameInfo_Gracia_Final) infos[RecNo];
                 base.WriteFieldValue(f, info, "id", "get_item_in_quest");

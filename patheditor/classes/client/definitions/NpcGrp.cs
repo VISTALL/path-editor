@@ -57,6 +57,9 @@ namespace com.jds.PathEditor.classes.client.definitions
 
     public class NpcgrpInfo_Gracia_Plus : Definition
     {
+        /**
+         * thx janiii 
+         */
         public UINT tag;
         public UNICODE npc_class;
         public UNICODE mesh;
@@ -206,7 +209,22 @@ namespace com.jds.PathEditor.classes.client.definitions
 
         public override void CompileMain(BinaryWriter f, List<Definition> infos, int RecNo)
         {
-            if (RConfig.Instance.DatVersionAsEnum >= DatVersion.Gracia_Plus__Epilogue)
+            if (RConfig.Instance.DatVersionAsEnum >= DatVersion.Freya)
+            {
+                var info = (NpcGrpInfo_Freya)infos[RecNo];
+                base.WriteFieldValue(f, info, "tag", "npc_speed");
+                base.WriteFieldValue(f, info, "UNK_0_NEW");
+                base.WriteFieldValue(f, info, "snd1", "snd3");
+
+                base.WriteFieldValue(f, info, "rb_effect_on");
+                if (info.rb_effect_on.Value == 1)
+                    base.WriteFieldValue(f, info, "rb_effect", "rb_effect_fl");
+
+                base.WriteFieldValue(f, info, "UNK_1_NEW");
+
+                base.WriteFieldValue(f, info, "effect", "npc_end");    
+            }
+            else if (RConfig.Instance.DatVersionAsEnum >= DatVersion.Gracia_Plus__Epilogue)
             {
                 var info = (NpcgrpInfo_Gracia_Plus) infos[RecNo];
                 base.WriteFieldValue(f, info, "tag", "npc_speed");

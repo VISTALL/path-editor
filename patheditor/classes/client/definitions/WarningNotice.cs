@@ -18,6 +18,9 @@ namespace com.jds.PathEditor.classes.client.definitions
 
     public class WarningNotice_Info : Definition
     {
+        /**
+         * by VISTALL 
+         */
         public ASCF text;
 
         public String Text
