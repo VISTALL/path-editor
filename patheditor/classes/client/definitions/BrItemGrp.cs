@@ -11,8 +11,6 @@ using com.jds.PathEditor.classes.services;
 /**
  * Tested:
  * - Gracia Plus [WORK]
- * 
- * - Property Editor
  */
 
 namespace com.jds.PathEditor.classes.client.definitions
@@ -29,35 +27,17 @@ namespace com.jds.PathEditor.classes.client.definitions
         public UINT zero_1;
         public UINT zero_2;
         public UNICODE effect;
-
-        public uint ItemId
-        {
-            get { return item_id.Value; }
-            set { item_id.Value = value; }
-        }
-
-        public uint Zero_1
-        {
-            get { return zero_1.Value; }
-            set { zero_1.Value = value; }
-        }
-
-        public uint Zero_2
-        {
-            get { return zero_2.Value; }
-            set { zero_2.Value = value; }
-        }
-
-        public String Effect
-        {
-            get { return effect.Text; }
-            set { effect.Text = value; }
-        }
-
-        public override string ToString()
-        {
-            return item_id.ToString();
-        }
+        public UINT item_id_1;
+        public UINT item_id_2;
+        public UINT item_id_3;
+        public UINT item_id_4;
+        public UINT item_id_5;
+        public UINT item_id_6;
+        public UINT item_id_7;
+        public UINT item_id_8;
+        public UINT item_id_9;
+        public UINT item_id_10;
+        public INT unk_1;
     }
 
     #endregion
