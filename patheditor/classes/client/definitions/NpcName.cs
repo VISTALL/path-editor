@@ -102,6 +102,27 @@ namespace com.jds.PathEditor.classes.client.definitions
         {
             return new NpcNameInfo();
         }
+
+        public override Definition ParseMain(System.IO.BinaryReader f, int RecNo)
+        {
+            NpcNameInfo definition = base.ParseMain(f, RecNo) as NpcNameInfo;
+            if(definition == null)
+            {
+                return null;
+            }
+            String devString = " (id: " + definition.Id + ")";
+
+            if (RConfig.Instance.DevelopMode && !definition.Name.EndsWith(devString))
+            {
+                definition.Name = definition.Name + devString;
+            }
+            else if (!RConfig.Instance.DevelopMode && definition.Name.EndsWith(devString))
+            {
+                definition.Name = definition.Name.Replace(devString, "");
+            }
+
+            return definition;
+        }
     }
 
     #endregion

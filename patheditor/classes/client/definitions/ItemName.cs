@@ -646,42 +646,63 @@ namespace com.jds.PathEditor.classes.client.definitions
         {
             if (RConfig.Instance.DatVersionAsEnum >= DatVersion.Gracia_Final)
                 return new ItemNameInfo_Gracia_Final();
-            else
-                return new ItemNameInfo();
+            
+            return new ItemNameInfo();
         }
 
         public override Definition ParseMain(BinaryReader f, int RecNo)
         {
-            var ret = new Definition();
             if (RConfig.Instance.DatVersionAsEnum >= DatVersion.Gracia_Final)
             {
-                var info = new ItemNameInfo_Gracia_Final();
+                ItemNameInfo_Gracia_Final info = new ItemNameInfo_Gracia_Final();
 
-                info = (ItemNameInfo_Gracia_Final) base.ReadFieldValue(f, info, "id", "popup");
-                info = (ItemNameInfo_Gracia_Final) base.ReadFieldValue(f, info, "supercnt0");
-                info = (ItemNameInfo_Gracia_Final) base.ReadFieldValue(f, info, "set_ids");
-                info = (ItemNameInfo_Gracia_Final) base.ReadFieldValue(f, info, "set_bonus_desc");
-                info = (ItemNameInfo_Gracia_Final) base.ReadFieldValue(f, info, "supercnt1");
-                info = (ItemNameInfo_Gracia_Final) base.ReadFieldValue(f, info, "set_extra_ids");
-                info = (ItemNameInfo_Gracia_Final) base.ReadFieldValue(f, info, "set_extra_desc");
-                info = (ItemNameInfo_Gracia_Final) base.ReadFieldValue(f, info, "UNK1_1", "UNK1_9");
-                info = (ItemNameInfo_Gracia_Final) base.ReadFieldValue(f, info, "special_enchant_amount");
-                info = (ItemNameInfo_Gracia_Final) base.ReadFieldValue(f, info, "special_enchant_desc");
-                info = (ItemNameInfo_Gracia_Final) base.ReadFieldValue(f, info, "UNK2");
+                info = (ItemNameInfo_Gracia_Final) ReadFieldValue(f, info, "id", "popup");
+                info = (ItemNameInfo_Gracia_Final) ReadFieldValue(f, info, "supercnt0");
+                info = (ItemNameInfo_Gracia_Final) ReadFieldValue(f, info, "set_ids");
+                info = (ItemNameInfo_Gracia_Final) ReadFieldValue(f, info, "set_bonus_desc");
+                info = (ItemNameInfo_Gracia_Final) ReadFieldValue(f, info, "supercnt1");
+                info = (ItemNameInfo_Gracia_Final) ReadFieldValue(f, info, "set_extra_ids");
+                info = (ItemNameInfo_Gracia_Final) ReadFieldValue(f, info, "set_extra_desc");
+                info = (ItemNameInfo_Gracia_Final) ReadFieldValue(f, info, "UNK1_1", "UNK1_9");
+                info = (ItemNameInfo_Gracia_Final) ReadFieldValue(f, info, "special_enchant_amount");
+                info = (ItemNameInfo_Gracia_Final) ReadFieldValue(f, info, "special_enchant_desc");
+                info = (ItemNameInfo_Gracia_Final) ReadFieldValue(f, info, "UNK2");
 
-                ret = info;
+                String devString = " (id: " + info.id + ")";
+
+                if(RConfig.Instance.DevelopMode && !info.Name.EndsWith(devString))
+                {
+                    info.Name = info.Name + devString;      
+                }
+                else if(!RConfig.Instance.DevelopMode && info.Name.EndsWith(devString))
+                {
+                    info.Name = info.Name.Replace(devString, "");
+                }
+
+                return info;
             }
             else
             {
-                var info = new ItemNameInfo();
-                info = (ItemNameInfo) base.ReadFieldValue(f, info, "id", "popup");
+                ItemNameInfo info = new ItemNameInfo();
+                info = (ItemNameInfo) ReadFieldValue(f, info, "id", "popup");
                 if (RConfig.Instance.DatVersionAsEnum >= DatVersion.C5)
-                    info = (ItemNameInfo) base.ReadFieldValue(f, info, "set_ids", "special_enchant_desc");
+                    info = (ItemNameInfo) ReadFieldValue(f, info, "set_ids", "special_enchant_desc");
                 if (RConfig.Instance.DatVersionAsEnum >= DatVersion.Gracia_1__Gracia_2)
-                    info = (ItemNameInfo) base.ReadFieldValue(f, info, "UNK1");
-                ret = info;
+                    info = (ItemNameInfo) ReadFieldValue(f, info, "UNK1");
+
+                String devString = " (id: " + info.id + ")";
+
+                if (RConfig.Instance.DevelopMode && !info.Name.EndsWith(devString))
+                {
+                    info.Name = info.Name + devString;
+                }
+                else if (!RConfig.Instance.DevelopMode && info.Name.EndsWith(devString))
+                {
+                    info.Name = info.Name.Replace(devString, "");
+                }
+
+                return info;
             }
-            return ret;
         }
 
         public override void CompileMain(BinaryWriter f, List<Definition> infos, int RecNo)

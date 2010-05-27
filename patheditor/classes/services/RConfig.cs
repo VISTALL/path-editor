@@ -13,7 +13,7 @@ namespace com.jds.PathEditor.classes.services
     public class RConfig
     {
         private static RConfig _instance;
-        private static readonly String KEY = "Software\\J Develop Station\\Path Editor";
+        private const String KEY = "Software\\J Develop Station\\Path Editor";
 
         private readonly Dictionary<String, Dictionary<String, int>> _columnSize =
             new Dictionary<String, Dictionary<String, int>>();
@@ -265,17 +265,20 @@ namespace com.jds.PathEditor.classes.services
 
         #endregion
 
+        #region Develop Mode
+
+        [DisplayName("Develop Mode"), Description("DevelopMode"), Category("Editor"),
+         Editor(typeof(ColorValueEditor), typeof(UITypeEditor))]
+        public bool DevelopMode
+        {
+            get; set;
+        }
+
+        #endregion
+
         public static RConfig Instance
         {
-            get
-            {
-                if (_instance == null)
-                {
-                    _instance = new RConfig();
-                }
-
-                return _instance;
-            }
+            get { return _instance ?? (_instance = new RConfig()); }
         }
     }
 }
