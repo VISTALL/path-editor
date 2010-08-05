@@ -11,6 +11,7 @@
         Gracia_1__Gracia_2,
         Gracia_Final,
         Gracia_Plus__Epilogue,
-        Freya
+        Freya,
+        High_Five
     }
 }

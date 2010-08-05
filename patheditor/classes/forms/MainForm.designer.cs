@@ -49,7 +49,7 @@ namespace com.jds.PathEditor.classes.forms
             this.PasteR = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.SelectAll = new System.Windows.Forms.ToolStripMenuItem();
-            this.path = new System.Windows.Forms.Label();
+            this.path = new GlassLabel();
             this.StatusLabel = new System.Windows.Forms.Label();
             this.ChLabel = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -57,24 +57,24 @@ namespace com.jds.PathEditor.classes.forms
             this.FileDialog = new System.Windows.Forms.OpenFileDialog();
             this.ColorDialog = new System.Windows.Forms.ColorDialog();
             this.IniTab = new System.Windows.Forms.TabPage();
-            this.OpenL2iniText = new System.Windows.Forms.Button();
-            this.IniTextBox = new System.Windows.Forms.RichTextBox();
-            this.savel2ini = new System.Windows.Forms.Button();
-            this.clearl2ini = new System.Windows.Forms.Button();
-            this.FileIniComboName = new System.Windows.Forms.ComboBox();
-            this.EnCod = new System.Windows.Forms.Label();
-            this.EncText = new System.Windows.Forms.Label();
-            this.Counts = new System.Windows.Forms.Label();
             this.NumLines = new System.Windows.Forms.Label();
+            this.Counts = new System.Windows.Forms.Label();
+            this.EncText = new System.Windows.Forms.Label();
+            this.EnCod = new System.Windows.Forms.Label();
+            this.FileIniComboName = new System.Windows.Forms.ComboBox();
+            this.clearl2ini = new System.Windows.Forms.Button();
+            this.savel2ini = new System.Windows.Forms.Button();
+            this.IniTextBox = new System.Windows.Forms.RichTextBox();
+            this.OpenL2iniText = new System.Windows.Forms.Button();
             this.DatTab = new System.Windows.Forms.TabPage();
-            this.FileNameCombo = new System.Windows.Forms.ListBox();
-            this.LoadBtn2 = new JButton();
-            this.SaveBtn2 = new JButton();
-            this.importBtn2 = new JButton();
-            this.exportBtn2 = new JButton();
-            this.startBtn2 = new JButton();
-            this.editorBtn = new JButton();
             this.lockBtn = new System.Windows.Forms.CheckBox();
+            this.editorBtn = new com.jds.PathEditor.classes.gui.JButton();
+            this.startBtn2 = new com.jds.PathEditor.classes.gui.JButton();
+            this.exportBtn2 = new com.jds.PathEditor.classes.gui.JButton();
+            this.importBtn2 = new com.jds.PathEditor.classes.gui.JButton();
+            this.SaveBtn2 = new com.jds.PathEditor.classes.gui.JButton();
+            this.LoadBtn2 = new com.jds.PathEditor.classes.gui.JButton();
+            this.FileNameCombo = new System.Windows.Forms.ListBox();
             this.Tabs = new System.Windows.Forms.TabControl();
             this.HideMenu.SuspendLayout();
             this.MainMenu.SuspendLayout();
@@ -283,6 +283,7 @@ namespace com.jds.PathEditor.classes.forms
             // path
             // 
             this.path.AutoSize = true;
+            this.path.BackColor = System.Drawing.Color. Transparent;
             this.path.Location = new System.Drawing.Point(12, 619);
             this.path.Name = "path";
             this.path.Size = new System.Drawing.Size(32, 14);
@@ -292,10 +293,9 @@ namespace com.jds.PathEditor.classes.forms
             // StatusLabel
             // 
             this.StatusLabel.AutoSize = true;
-            this.StatusLabel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.StatusLabel.Location = new System.Drawing.Point(13, 646);
             this.StatusLabel.Name = "StatusLabel";
-            this.StatusLabel.Size = new System.Drawing.Size(63, 13);
+            this.StatusLabel.Size = new System.Drawing.Size(70, 14);
             this.StatusLabel.TabIndex = 5;
             this.StatusLabel.Text = "StatusLabel";
             // 
@@ -324,10 +324,9 @@ namespace com.jds.PathEditor.classes.forms
             // 
             this.ChronicleInfo.AutoSize = true;
             this.ChronicleInfo.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ChronicleInfo.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ChronicleInfo.Location = new System.Drawing.Point(311, 4);
             this.ChronicleInfo.Name = "ChronicleInfo";
-            this.ChronicleInfo.Size = new System.Drawing.Size(67, 14);
+            this.ChronicleInfo.Size = new System.Drawing.Size(60, 14);
             this.ChronicleInfo.TabIndex = 11;
             this.ChronicleInfo.Text = "Chronicle:";
             // 
@@ -358,15 +357,73 @@ namespace com.jds.PathEditor.classes.forms
             this.IniTab.Text = "ini Files";
             this.IniTab.UseVisualStyleBackColor = true;
             // 
-            // OpenL2iniText
+            // NumLines
             // 
-            this.OpenL2iniText.Location = new System.Drawing.Point(352, 58);
-            this.OpenL2iniText.Name = "OpenL2iniText";
-            this.OpenL2iniText.Size = new System.Drawing.Size(131, 30);
-            this.OpenL2iniText.TabIndex = 0;
-            this.OpenL2iniText.Text = "Open";
-            this.OpenL2iniText.UseVisualStyleBackColor = true;
-            this.OpenL2iniText.Click += new System.EventHandler(this.OpenIniButton_Click);
+            this.NumLines.AutoSize = true;
+            this.NumLines.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NumLines.Location = new System.Drawing.Point(347, 215);
+            this.NumLines.Name = "NumLines";
+            this.NumLines.Size = new System.Drawing.Size(97, 13);
+            this.NumLines.TabIndex = 11;
+            this.NumLines.Text = "Number of lines:";
+            // 
+            // Counts
+            // 
+            this.Counts.AutoSize = true;
+            this.Counts.Location = new System.Drawing.Point(461, 214);
+            this.Counts.Name = "Counts";
+            this.Counts.Size = new System.Drawing.Size(14, 14);
+            this.Counts.TabIndex = 10;
+            this.Counts.Text = "0";
+            // 
+            // EncText
+            // 
+            this.EncText.AutoSize = true;
+            this.EncText.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.EncText.Location = new System.Drawing.Point(347, 185);
+            this.EncText.Name = "EncText";
+            this.EncText.Size = new System.Drawing.Size(60, 13);
+            this.EncText.TabIndex = 9;
+            this.EncText.Text = "Encoding:";
+            // 
+            // EnCod
+            // 
+            this.EnCod.AutoSize = true;
+            this.EnCod.Location = new System.Drawing.Point(422, 185);
+            this.EnCod.Name = "EnCod";
+            this.EnCod.Size = new System.Drawing.Size(14, 14);
+            this.EnCod.TabIndex = 8;
+            this.EnCod.Text = "0";
+            // 
+            // FileIniComboName
+            // 
+            this.FileIniComboName.Cursor = System.Windows.Forms.Cursors.Default;
+            this.FileIniComboName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.FileIniComboName.Location = new System.Drawing.Point(355, 17);
+            this.FileIniComboName.Name = "FileIniComboName";
+            this.FileIniComboName.Size = new System.Drawing.Size(128, 22);
+            this.FileIniComboName.TabIndex = 5;
+            this.FileIniComboName.SelectedIndexChanged += new System.EventHandler(this.FileIniComboName_SelectedIndexChanged);
+            // 
+            // clearl2ini
+            // 
+            this.clearl2ini.Location = new System.Drawing.Point(352, 130);
+            this.clearl2ini.Name = "clearl2ini";
+            this.clearl2ini.Size = new System.Drawing.Size(131, 30);
+            this.clearl2ini.TabIndex = 3;
+            this.clearl2ini.Text = "Clear";
+            this.clearl2ini.UseVisualStyleBackColor = true;
+            this.clearl2ini.Click += new System.EventHandler(this.clearl2ini_Click);
+            // 
+            // savel2ini
+            // 
+            this.savel2ini.Location = new System.Drawing.Point(352, 94);
+            this.savel2ini.Name = "savel2ini";
+            this.savel2ini.Size = new System.Drawing.Size(131, 30);
+            this.savel2ini.TabIndex = 4;
+            this.savel2ini.Text = "Save";
+            this.savel2ini.UseVisualStyleBackColor = true;
+            this.savel2ini.Click += new System.EventHandler(this.savel2ini_Click);
             // 
             // IniTextBox
             // 
@@ -379,73 +436,15 @@ namespace com.jds.PathEditor.classes.forms
             this.IniTextBox.TabIndex = 2;
             this.IniTextBox.Text = "";
             // 
-            // savel2ini
+            // OpenL2iniText
             // 
-            this.savel2ini.Location = new System.Drawing.Point(352, 94);
-            this.savel2ini.Name = "savel2ini";
-            this.savel2ini.Size = new System.Drawing.Size(131, 30);
-            this.savel2ini.TabIndex = 4;
-            this.savel2ini.Text = "Save";
-            this.savel2ini.UseVisualStyleBackColor = true;
-            this.savel2ini.Click += new System.EventHandler(this.savel2ini_Click);
-            // 
-            // clearl2ini
-            // 
-            this.clearl2ini.Location = new System.Drawing.Point(352, 130);
-            this.clearl2ini.Name = "clearl2ini";
-            this.clearl2ini.Size = new System.Drawing.Size(131, 30);
-            this.clearl2ini.TabIndex = 3;
-            this.clearl2ini.Text = "Clear";
-            this.clearl2ini.UseVisualStyleBackColor = true;
-            this.clearl2ini.Click += new System.EventHandler(this.clearl2ini_Click);
-            // 
-            // FileIniComboName
-            // 
-            this.FileIniComboName.Cursor = System.Windows.Forms.Cursors.Default;
-            this.FileIniComboName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.FileIniComboName.Location = new System.Drawing.Point(355, 17);
-            this.FileIniComboName.Name = "FileIniComboName";
-            this.FileIniComboName.Size = new System.Drawing.Size(128, 22);
-            this.FileIniComboName.TabIndex = 5;
-            this.FileIniComboName.SelectedIndexChanged += new System.EventHandler(this.FileIniComboName_SelectedIndexChanged);
-            // 
-            // EnCod
-            // 
-            this.EnCod.AutoSize = true;
-            this.EnCod.Location = new System.Drawing.Point(422, 185);
-            this.EnCod.Name = "EnCod";
-            this.EnCod.Size = new System.Drawing.Size(14, 14);
-            this.EnCod.TabIndex = 8;
-            this.EnCod.Text = "0";
-            // 
-            // EncText
-            // 
-            this.EncText.AutoSize = true;
-            this.EncText.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.EncText.Location = new System.Drawing.Point(347, 185);
-            this.EncText.Name = "EncText";
-            this.EncText.Size = new System.Drawing.Size(60, 13);
-            this.EncText.TabIndex = 9;
-            this.EncText.Text = "Encoding:";
-            // 
-            // Counts
-            // 
-            this.Counts.AutoSize = true;
-            this.Counts.Location = new System.Drawing.Point(461, 214);
-            this.Counts.Name = "Counts";
-            this.Counts.Size = new System.Drawing.Size(14, 14);
-            this.Counts.TabIndex = 10;
-            this.Counts.Text = "0";
-            // 
-            // NumLines
-            // 
-            this.NumLines.AutoSize = true;
-            this.NumLines.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.NumLines.Location = new System.Drawing.Point(347, 215);
-            this.NumLines.Name = "NumLines";
-            this.NumLines.Size = new System.Drawing.Size(97, 13);
-            this.NumLines.TabIndex = 11;
-            this.NumLines.Text = "Number of lines:";
+            this.OpenL2iniText.Location = new System.Drawing.Point(352, 58);
+            this.OpenL2iniText.Name = "OpenL2iniText";
+            this.OpenL2iniText.Size = new System.Drawing.Size(131, 30);
+            this.OpenL2iniText.TabIndex = 0;
+            this.OpenL2iniText.Text = "Open";
+            this.OpenL2iniText.UseVisualStyleBackColor = true;
+            this.OpenL2iniText.Click += new System.EventHandler(this.OpenIniButton_Click);
             // 
             // DatTab
             // 
@@ -465,95 +464,6 @@ namespace com.jds.PathEditor.classes.forms
             this.DatTab.Text = "dat Files";
             this.DatTab.UseVisualStyleBackColor = true;
             // 
-            // FileNameCombo
-            // 
-            this.FileNameCombo.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FileNameCombo.FormattingEnabled = true;
-            this.FileNameCombo.ItemHeight = 14;
-            this.FileNameCombo.Location = new System.Drawing.Point(23, 21);
-            this.FileNameCombo.Name = "FileNameCombo";
-            this.FileNameCombo.Size = new System.Drawing.Size(332, 522);
-            this.FileNameCombo.TabIndex = 5;
-            this.FileNameCombo.SelectedIndexChanged += new System.EventHandler(this.FileNameCombo_SelectedIndexChanged);
-            // 
-            // LoadBtn2
-            // 
-            this.LoadBtn2.DescriptionText = "";
-            this.LoadBtn2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LoadBtn2.HeaderText = "Load";
-            this.LoadBtn2.Image = Resources.LOAD;
-            this.LoadBtn2.ImageScalingSize = new System.Drawing.Size(16, 16);
-            this.LoadBtn2.Location = new System.Drawing.Point(361, 20);
-            this.LoadBtn2.Name = "LoadBtn2";
-            this.LoadBtn2.Size = new System.Drawing.Size(122, 50);
-            this.LoadBtn2.TabIndex = 8;
-            this.LoadBtn2.Click += new System.EventHandler(this.LoadBtn_Click);
-            // 
-            // SaveBtn2
-            // 
-            this.SaveBtn2.DescriptionText = "";
-            this.SaveBtn2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SaveBtn2.HeaderText = "Save";
-            this.SaveBtn2.Image = Resources.SAVE;
-            this.SaveBtn2.ImageScalingSize = new System.Drawing.Size(16, 16);
-            this.SaveBtn2.Location = new System.Drawing.Point(361, 80);
-            this.SaveBtn2.Name = "SaveBtn2";
-            this.SaveBtn2.Size = new System.Drawing.Size(122, 50);
-            this.SaveBtn2.TabIndex = 8;
-            this.SaveBtn2.Click += new System.EventHandler(this.SaveBtn_Click);
-            // 
-            // importBtn2
-            // 
-            this.importBtn2.DescriptionText = "";
-            this.importBtn2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.importBtn2.HeaderText = "Import";
-            this.importBtn2.Image = Resources.IMPORT;
-            this.importBtn2.ImageScalingSize = new System.Drawing.Size(16, 16);
-            this.importBtn2.Location = new System.Drawing.Point(361, 140);
-            this.importBtn2.Name = "importBtn2";
-            this.importBtn2.Size = new System.Drawing.Size(122, 50);
-            this.importBtn2.TabIndex = 8;
-            this.importBtn2.Click += new System.EventHandler(this.ImpBtn_Click);
-            // 
-            // exportBtn2
-            // 
-            this.exportBtn2.DescriptionText = "";
-            this.exportBtn2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exportBtn2.HeaderText = "Export";
-            this.exportBtn2.Image = Resources.EXPORT;
-            this.exportBtn2.ImageScalingSize = new System.Drawing.Size(16, 16);
-            this.exportBtn2.Location = new System.Drawing.Point(361, 200);
-            this.exportBtn2.Name = "exportBtn2";
-            this.exportBtn2.Size = new System.Drawing.Size(122, 50);
-            this.exportBtn2.TabIndex = 8;
-            this.exportBtn2.Click += new System.EventHandler(this.ExpBtn_Click);
-            // 
-            // startBtn2
-            // 
-            this.startBtn2.DescriptionText = "";
-            this.startBtn2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.startBtn2.HeaderText = "Start L2";
-            this.startBtn2.Image = Resources.START;
-            this.startBtn2.ImageScalingSize = new System.Drawing.Size(16, 16);
-            this.startBtn2.Location = new System.Drawing.Point(361, 493);
-            this.startBtn2.Name = "startBtn2";
-            this.startBtn2.Size = new System.Drawing.Size(122, 50);
-            this.startBtn2.TabIndex = 8;
-            this.startBtn2.Click += new System.EventHandler(this.StartL2_Click);
-            // 
-            // editorBtn
-            // 
-            this.editorBtn.DescriptionText = "";
-            this.editorBtn.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editorBtn.HeaderText = "Editor";
-            this.editorBtn.Image = Resources.editor;
-            this.editorBtn.ImageScalingSize = new System.Drawing.Size(16, 16);
-            this.editorBtn.Location = new System.Drawing.Point(361, 256);
-            this.editorBtn.Name = "editorBtn";
-            this.editorBtn.Size = new System.Drawing.Size(122, 50);
-            this.editorBtn.TabIndex = 8;
-            this.editorBtn.Click += new System.EventHandler(this.expToWindow_Click);
-            // 
             // lockBtn
             // 
             this.lockBtn.AutoSize = true;
@@ -564,6 +474,95 @@ namespace com.jds.PathEditor.classes.forms
             this.lockBtn.Text = "Lock?";
             this.lockBtn.UseVisualStyleBackColor = true;
             this.lockBtn.CheckedChanged += new System.EventHandler(this.lockBtn_CheckedChanged);
+            // 
+            // editorBtn
+            // 
+            this.editorBtn.DescriptionText = "";
+            this.editorBtn.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editorBtn.HeaderText = "Editor";
+            this.editorBtn.Image = global::com.jds.PathEditor.Resources.editor;
+            this.editorBtn.ImageScalingSize = new System.Drawing.Size(16, 16);
+            this.editorBtn.Location = new System.Drawing.Point(361, 256);
+            this.editorBtn.Name = "editorBtn";
+            this.editorBtn.Size = new System.Drawing.Size(122, 50);
+            this.editorBtn.TabIndex = 8;
+            this.editorBtn.Click += new System.EventHandler(this.expToWindow_Click);
+            // 
+            // startBtn2
+            // 
+            this.startBtn2.DescriptionText = "";
+            this.startBtn2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.startBtn2.HeaderText = "Start L2";
+            this.startBtn2.Image = global::com.jds.PathEditor.Resources.START;
+            this.startBtn2.ImageScalingSize = new System.Drawing.Size(16, 16);
+            this.startBtn2.Location = new System.Drawing.Point(361, 493);
+            this.startBtn2.Name = "startBtn2";
+            this.startBtn2.Size = new System.Drawing.Size(122, 50);
+            this.startBtn2.TabIndex = 8;
+            this.startBtn2.Click += new System.EventHandler(this.StartL2_Click);
+            // 
+            // exportBtn2
+            // 
+            this.exportBtn2.DescriptionText = "";
+            this.exportBtn2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exportBtn2.HeaderText = "Export";
+            this.exportBtn2.Image = global::com.jds.PathEditor.Resources.EXPORT;
+            this.exportBtn2.ImageScalingSize = new System.Drawing.Size(16, 16);
+            this.exportBtn2.Location = new System.Drawing.Point(361, 200);
+            this.exportBtn2.Name = "exportBtn2";
+            this.exportBtn2.Size = new System.Drawing.Size(122, 50);
+            this.exportBtn2.TabIndex = 8;
+            this.exportBtn2.Click += new System.EventHandler(this.ExpBtn_Click);
+            // 
+            // importBtn2
+            // 
+            this.importBtn2.DescriptionText = "";
+            this.importBtn2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.importBtn2.HeaderText = "Import";
+            this.importBtn2.Image = global::com.jds.PathEditor.Resources.IMPORT;
+            this.importBtn2.ImageScalingSize = new System.Drawing.Size(16, 16);
+            this.importBtn2.Location = new System.Drawing.Point(361, 140);
+            this.importBtn2.Name = "importBtn2";
+            this.importBtn2.Size = new System.Drawing.Size(122, 50);
+            this.importBtn2.TabIndex = 8;
+            this.importBtn2.Click += new System.EventHandler(this.ImpBtn_Click);
+            // 
+            // SaveBtn2
+            // 
+            this.SaveBtn2.DescriptionText = "";
+            this.SaveBtn2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SaveBtn2.HeaderText = "Save";
+            this.SaveBtn2.Image = global::com.jds.PathEditor.Resources.SAVE;
+            this.SaveBtn2.ImageScalingSize = new System.Drawing.Size(16, 16);
+            this.SaveBtn2.Location = new System.Drawing.Point(361, 80);
+            this.SaveBtn2.Name = "SaveBtn2";
+            this.SaveBtn2.Size = new System.Drawing.Size(122, 50);
+            this.SaveBtn2.TabIndex = 8;
+            this.SaveBtn2.Click += new System.EventHandler(this.SaveBtn_Click);
+            // 
+            // LoadBtn2
+            // 
+            this.LoadBtn2.DescriptionText = "";
+            this.LoadBtn2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LoadBtn2.HeaderText = "Load";
+            this.LoadBtn2.Image = global::com.jds.PathEditor.Resources.LOAD;
+            this.LoadBtn2.ImageScalingSize = new System.Drawing.Size(16, 16);
+            this.LoadBtn2.Location = new System.Drawing.Point(361, 20);
+            this.LoadBtn2.Name = "LoadBtn2";
+            this.LoadBtn2.Size = new System.Drawing.Size(122, 50);
+            this.LoadBtn2.TabIndex = 8;
+            this.LoadBtn2.Click += new System.EventHandler(this.LoadBtn_Click);
+            // 
+            // FileNameCombo
+            // 
+            this.FileNameCombo.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.FileNameCombo.FormattingEnabled = true;
+            this.FileNameCombo.ItemHeight = 14;
+            this.FileNameCombo.Location = new System.Drawing.Point(23, 21);
+            this.FileNameCombo.Name = "FileNameCombo";
+            this.FileNameCombo.Size = new System.Drawing.Size(332, 522);
+            this.FileNameCombo.TabIndex = 5;
+            this.FileNameCombo.SelectedIndexChanged += new System.EventHandler(this.FileNameCombo_SelectedIndexChanged);
             // 
             // Tabs
             // 
@@ -597,8 +596,8 @@ namespace com.jds.PathEditor.classes.forms
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Path Editor";
-            this.Load += new System.EventHandler(this.MainForm_Load);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.Resize += new System.EventHandler(this.MainForm_Resize);
             this.HideMenu.ResumeLayout(false);
             this.MainMenu.ResumeLayout(false);

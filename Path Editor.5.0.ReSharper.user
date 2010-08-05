@@ -8,21 +8,6 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ZoneName.cs" caret="1634" fromTop="38" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:TypesEditors.cs" caret="0" fromTop="0" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:AboutForm.cs" caret="0" fromTop="0" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:ASCF.cs" caret="533" fromTop="6" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:Eula.cs" caret="379" fromTop="0" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ProductName.cs" caret="521" fromTop="24" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:RideData.cs" caret="0" fromTop="0" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ItemPrime.cs" caret="0" fromTop="0" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:HairAccessoryLocGrp.cs" caret="0" fromTop="0" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:OptionData_Client.cs" caret="309" fromTop="15" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:parser/f:DatTool.cs" caret="761" fromTop="28" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:CNTRINT_PAIR.cs" caret="603" fromTop="0" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:mothers/f:DatParser.cs" caret="2414" fromTop="15" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:QuestName.cs" caret="7805" fromTop="91" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:NpcGrp.cs" caret="1508" fromTop="0" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:SkillSoundGrp.cs" caret="546" fromTop="18" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:SkillSoundSource.cs" caret="366" fromTop="15" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:WarningNotice.cs" caret="389" fromTop="18" />
@@ -33,43 +18,58 @@
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:INT.cs" caret="156" fromTop="0" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:BrItemGrp.cs" caret="773" fromTop="25" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:EtcItemGrp.cs" caret="0" fromTop="0" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="1665" fromTop="19" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="0" fromTop="0" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:SkillName.cs" caret="3181" fromTop="31" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ItemName.cs" caret="17261" fromTop="18" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:NpcName.cs" caret="2037" fromTop="15" />
+      <File id="AA0C00CB-8699-4F37-BFAE-40CA87ACC06D/d:Taskbar/f:TaskbarWindowManager.cs" caret="0" fromTop="0" />
+      <File id="AA0C00CB-8699-4F37-BFAE-40CA87ACC06D/d:Taskbar/f:TaskbarManager.cs" caret="9610" fromTop="5" />
+      <File id="AA0C00CB-8699-4F37-BFAE-40CA87ACC06D/d:Interop/f:CoreHelpers.cs" caret="1402" fromTop="15" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/f:Program.cs" caret="703" fromTop="23" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/f:dwmapi.cs" caret="3200" fromTop="5" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.designer.cs" caret="121" fromTop="4" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/f:Glass.cs" caret="8967" fromTop="0" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:gui/f:GlassLabel.cs" caret="480" fromTop="13" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:DatVersion.cs" caret="296" fromTop="13" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="4790" fromTop="43" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MTX.cs" caret="0" fromTop="0" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:CNTTXT_PAIR.cs" caret="0" fromTop="0" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:CNTINT_PAIR.cs" caret="0" fromTop="0" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:CNTRINT_PAIR.cs" caret="490" fromTop="19" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:ASCF.cs" caret="0" fromTop="0" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:QuestName.cs" caret="7447" fromTop="24" />
     </RecentFiles>
     <RecentEdits>
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:NpcGrp.cs" caret="1508" fromTop="7" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:SkillSoundSource.cs" caret="366" fromTop="15" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:WarningNotice.cs" caret="425" fromTop="20" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:NpcString.cs" caret="402" fromTop="19" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:BrItemGrp.cs" caret="929" fromTop="32" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:BrItemGrp.cs" caret="902" fromTop="30" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:BrItemGrp.cs" caret="919" fromTop="17" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:BrItemGrp.cs" caret="803" fromTop="24" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:BrItemGrp.cs" caret="928" fromTop="28" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:BrItemGrp.cs" caret="260" fromTop="0" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="9712" fromTop="26" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="446" fromTop="8" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="9633" fromTop="27" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="9600" fromTop="23" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="9444" fromTop="19" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ItemName.cs" caret="14924" fromTop="3" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ItemName.cs" caret="16810" fromTop="15" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ItemName.cs" caret="17717" fromTop="22" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ItemName.cs" caret="15184" fromTop="4" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ItemName.cs" caret="16481" fromTop="20" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ItemName.cs" caret="17277" fromTop="31" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ItemName.cs" caret="16702" fromTop="25" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ItemName.cs" caret="17277" fromTop="15" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ItemName.cs" caret="17699" fromTop="25" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:SkillName.cs" caret="3856" fromTop="22" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:SkillName.cs" caret="3510" fromTop="24" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:SkillName.cs" caret="3132" fromTop="17" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:NpcName.cs" caret="2696" fromTop="17" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:NpcName.cs" caret="2795" fromTop="19" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:NpcName.cs" caret="2466" fromTop="14" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:gui/f:GlassLabel.cs" caret="460" fromTop="9" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:gui/f:GlassLabel.cs" caret="460" fromTop="5" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:gui/f:GlassLabel.cs" caret="491" fromTop="22" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:gui/f:GlassLabel.cs" caret="376" fromTop="19" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:gui/f:GlassLabel.cs" caret="376" fromTop="14" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:gui/f:GlassLabel.cs" caret="376" fromTop="36" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:gui/f:GlassLabel.cs" caret="376" fromTop="5" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:gui/f:GlassLabel.cs" caret="376" fromTop="10" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:gui/f:GlassLabel.cs" caret="376" fromTop="15" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:gui/f:GlassLabel.cs" caret="363" fromTop="2" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:gui/f:GlassLabel.cs" caret="359" fromTop="2" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/f:Glass.cs" caret="10494" fromTop="40" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/f:Glass.cs" caret="10476" fromTop="28" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/f:Glass.cs" caret="10016" fromTop="14" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/f:Glass.cs" caret="102" fromTop="2" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/f:Glass.cs" caret="166" fromTop="6" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/f:Glass.cs" caret="6935" fromTop="6" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/f:Glass.cs" caret="4939" fromTop="5" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:gui/f:GlassLabel.cs" caret="480" fromTop="13" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="2707" fromTop="20" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="2218" fromTop="8" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="2726" fromTop="21" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="3020" fromTop="29" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:DatVersion.cs" caret="296" fromTop="13" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:QuestName.cs" caret="7549" fromTop="26" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:QuestName.cs" caret="5168" fromTop="18" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:QuestName.cs" caret="7104" fromTop="8" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:QuestName.cs" caret="7542" fromTop="21" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:QuestName.cs" caret="7542" fromTop="22" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:QuestName.cs" caret="7482" fromTop="25" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -86,9 +86,9 @@
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
       <Item value="dat" priority="0" />
-      <Item value="if" priority="10" />
+      <Item value="if" priority="13" />
       <Item value="field" priority="0" />
-      <Item value="else" priority="2" />
+      <Item value="else" priority="3" />
       <Item value="IType`0" priority="0" />
       <Item value="f" priority="8" />
       <Item value="_log" priority="1" />
@@ -96,8 +96,8 @@
       <Item value="nguid" priority="0" />
       <Item value="break" priority="0" />
       <Item value="Console`0" priority="7" />
-      <Item value="base" priority="4" />
-      <Item value="new" priority="1" />
+      <Item value="base" priority="5" />
+      <Item value="new" priority="5" />
       <Item value="UINT" priority="0" />
       <Item value="u" priority="1" />
       <Item value="ASCF`0" priority="0" />
@@ -115,19 +115,19 @@
       <Item value="short" priority="2" />
       <Item value="len2" priority="0" />
       <Item value="Current" priority="0" />
-      <Item value="public" priority="3" />
-      <Item value="static" priority="0" />
+      <Item value="public" priority="4" />
+      <Item value="static" priority="1" />
       <Item value="len" priority="2" />
       <Item value="GetMediumInt`0" priority="0" />
       <Item value="ArgumentOutOfRangeException`0" priority="0" />
       <Item value="int" priority="0" />
-      <Item value="override" priority="2" />
+      <Item value="override" priority="4" />
       <Item value="string" priority="0" />
       <Item value="name" priority="1" />
       <Item value="value" priority="0" />
       <Item value="#endregion" priority="0" />
       <Item value="SkillgrpInfo_Freya`0" priority="0" />
-      <Item value="null" priority="1" />
+      <Item value="null" priority="2" />
       <Item value="RecNo" priority="1" />
       <Item value="infos" priority="0" />
       <Item value="bool" priority="0" />
@@ -137,6 +137,36 @@
       <Item value="devString" priority="1" />
       <Item value="definition" priority="1" />
       <Item value="as" priority="0" />
+      <Item value="readonly" priority="0" />
+      <Item value="MARGINS" priority="0" />
+      <Item value="margins" priority="0" />
+      <Item value="TransparencyKey" priority="1" />
+      <Item value="SystemColorsChanged" priority="0" />
+      <Item value="SolidBrush`0" priority="2" />
+      <Item value="ClientRectangle" priority="0" />
+      <Item value="statusStrip1" priority="0" />
+      <Item value="Color`0" priority="3" />
+      <Item value="MainMenu" priority="0" />
+      <Item value="path" priority="3" />
+      <Item value="GlassLabel`0" priority="1" />
+      <Item value="DWMApi`0" priority="0" />
+      <Item value="compositionEnabled" priority="0" />
+      <Item value="e" priority="11" />
+      <Item value="Text" priority="1" />
+      <Item value="Font" priority="6" />
+      <Item value="Default" priority="0" />
+      <Item value="TextStyle`0" priority="0" />
+      <Item value="dttOpts" priority="0" />
+      <Item value="ForeColor" priority="0" />
+      <Item value="SystemBrushes`0" priority="0" />
+      <Item value="Brushes`0" priority="1" />
+      <Item value="SystemColors`0" priority="0" />
+      <Item value="Brush`0" priority="2" />
+      <Item value="TextureBrush`0" priority="0" />
+      <Item value="Paint" priority="0" />
+      <Item value="Graphics`0" priority="1" />
+      <Item value="Handle" priority="2" />
+      <Item value="Bounds" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:com.jds.PathEditor.classes.client.definitions.QuestNameInfo_Gracia_Final">
       <Item value="InitFieldValues`0" priority="0" />
@@ -208,6 +238,84 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:com.jds.PathEditor.classes.client.definitions.NpcNameInfo">
       <Item value="Id" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@com.jds.PathEditor.classes.windows.DWMApi">
+      <Item value="DwmExtendFrameIntoClientArea`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Drawing.Color">
+      <Item value="Lime" priority="1" />
+      <Item value="Transparent" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.PaintEventArgs">
+      <Item value="Graphics" priority="9" />
+      <Item value="ClipRectangle" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.Graphics">
+      <Item value="FillRectangle`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.StatusStrip">
+      <Item value="BackColor" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.MenuStrip">
+      <Item value="BackColor" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Label">
+      <Item value="BackColor" priority="1" />
+      <Item value="Text" priority="0" />
+      <Item value="Font" priority="0" />
+      <Item value="Bounds" priority="0" />
+      <Item value="ClientRectangle" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@MS.WindowsAPICodePack.Internal.CoreHelpers">
+      <Item value="RunningOnVista" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@com.jds.PathEditor.classes.windows.Glass">
+      <Item value="DrawText`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@com.jds.PathEditor.classes.windows.TextStyle">
+      <Item value="Glowing" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:com.jds.PathEditor.classes.windows.Glass+DTTOPTS">
+      <Item value="ptShadowOffset" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.TextFormatFlags">
+      <Item value="HorizontalCenter" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.Font">
+      <Item value="FontFamily" priority="0" />
+      <Item value="Size" priority="3" />
+      <Item value="Style" priority="0" />
+      <Item value="SizeInPoints" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.Drawing2D.GraphicsPath">
+      <Item value="AddString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Drawing.Brushes">
+      <Item value="Transparent" priority="1" />
+      <Item value="Lime" priority="0" />
+      <Item value="Black" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Drawing.Drawing2D.SmoothingMode">
+      <Item value="None" priority="0" />
+      <Item value="Default" priority="0" />
+      <Item value="AntiAlias" priority="0" />
+      <Item value="HighSpeed" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Drawing.SystemColors">
+      <Item value="ActiveBorder" priority="0" />
+      <Item value="Control" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Drawing.Graphics">
+      <Item value="FromHwnd`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@com.jds.PathEditor.classes.windows.GlassText">
+      <Item value="DrawTextOnGlass`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@com.jds.PathEditor.classes.forms.MainForm">
+      <Item value="Instance" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:com.jds.PathEditor.classes.forms.MainForm">
+      <Item value="Handle" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

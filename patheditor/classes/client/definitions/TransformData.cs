@@ -1,4 +1,4 @@
-﻿#region Using
+#region Using
 
 using com.jds.PathEditor.classes.client.mothers;
 using com.jds.PathEditor.classes.client.types;
@@ -57,10 +57,10 @@ namespace com.jds.PathEditor.classes.client.definitions
         public UINT weapon_id;
         public UNICODE transform_effect_a;
         public UNICODE transform_effect_b;
-        public UINT unk1;
-        public UINT unk2;
-        public UINT unk3;
-        public UINT unk4;
+        public UINT character_scale;
+        public UINT character_offset_x;
+        public UINT character_offset_y;
+        public UINT transform_data_end;
     }
 
     #endregion

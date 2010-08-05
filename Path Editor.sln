@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Path Editor", "patheditor\Path Editor.csproj", "{F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Log4 NET", "log4net-1.2.10\src\Log4 NET.csproj", "{F6A02431-167E-4347-BC43-65532C31CDB7}"

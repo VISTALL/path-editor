@@ -13,6 +13,9 @@ using com.jds.PathEditor.classes.parser;
 using com.jds.PathEditor.classes.services;
 using log4net;
 using Microsoft.WindowsAPICodePack.Taskbar;
+using com.jds.PathEditor.classes.windows;
+using System.Drawing;
+using MS.WindowsAPICodePack.Internal;
 
 #endregion
 
@@ -30,6 +33,7 @@ namespace com.jds.PathEditor.classes.forms
         internal DatFileType selectedFileType;
         internal string selectedIniComboName = "";
         internal IniFileType selectedIniFileType;
+        private static readonly MARGINS margins = new MARGINS(-1, 0 ,0 ,0);
 
         public static MainForm Instance
         {
@@ -63,8 +67,30 @@ namespace com.jds.PathEditor.classes.forms
         private MainForm()
         {
             InitializeComponent();
+            TransparencyKey = Color.Lime;
 
-            // Windows7Taskbar.AllowTaskbarWindowMessagesThroughUIPI();
+           /* if(CoreHelpers.RunningOnVista)
+            {
+                statusStrip1.BackColor = Color.Transparent;
+                path.BackColor = Color.Transparent;
+                DWMApi.DwmExtendFrameIntoClientArea(Handle, margins);
+            }
+
+            Paint += new PaintEventHandler(MainForm_Paint);*/
+        }
+
+    /*    void MainForm_Paint(object sender, PaintEventArgs e)
+        {
+            GlassText.DrawTextOnGlass(Handle, path.Text, path.Font, path.ClientRectangle, 10);
+        }*/
+
+        protected override void OnPaintBackground(PaintEventArgs e)
+        {
+            base.OnPaintBackground(e);
+          /*  if (CoreHelpers.RunningOnVista)
+            {
+                e.Graphics.FillRectangle(new SolidBrush(TransparencyKey), ClientRectangle);
+            }*/
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -152,7 +178,7 @@ namespace com.jds.PathEditor.classes.forms
             Forms_Update();
         }
 
-        private void Forms_Init(Boolean isReload, Boolean start)
+        private void Forms_Init(bool isReload, bool start)
         {
             if (isReload)
             {

@@ -131,16 +131,17 @@ namespace com.jds.PathEditor.classes.client.definitions
         public ASCF short_description;
         public CNTRINT_PAIR req_class;   //id of class that can do quest 
         public CNTRINT_PAIR req_item;    //id of items needed to do quest 
+        
         public UINT clan_pet_quest;      //0 = reg quest, 1 = pet/clan quest 
         public UINT req_quest_complete;  //id of quest that must be completed first 
         public UINT UNK_3;               //unknown all 0 
         public UINT area_id;             //area id (goddard, rune, giran, etc) 
         public UINT UNK_4;
+        
         public CNTRINT_PAIR tab5;
         public CNTRINT_PAIR tab6;
         public CNTRINT_PAIR tab7;
-
-    }  
+    }
     #endregion
 
     #region Parser
