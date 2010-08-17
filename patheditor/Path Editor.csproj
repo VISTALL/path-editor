@@ -135,6 +135,8 @@
     <Compile Include="classes\client\types\FLOAT_119.cs" />
     <Compile Include="classes\client\types\HEX.cs" />
     <Compile Include="classes\client\types\INT.cs" />
+    <Compile Include="classes\client\types\MAT.cs" />
+    <Compile Include="classes\client\types\MAT2.cs" />
     <Compile Include="classes\client\types\MTX.cs" />
     <Compile Include="classes\client\types\MTX2.cs" />
     <Compile Include="classes\client\types\MTX3.cs" />

@@ -180,7 +180,6 @@ namespace com.jds.PathEditor.classes.client.definitions
 
     #endregion
 
-
     #region Parser
 
     public class Etcitemgrp : DatParser

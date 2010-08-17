@@ -14,6 +14,7 @@ using com.jds.PathEditor.classes.services;
  * - Gracia 2 [WORK]
  * - Gracia Final [WORK]
  * - Gracia Plus [WORK]
+ * - Freya [WORK]
  */
 
 namespace com.jds.PathEditor.classes.client.definitions
@@ -261,7 +262,7 @@ namespace com.jds.PathEditor.classes.client.definitions
         public UNICODE icon3;
         public UNICODE icon4;
         public UNICODE icon5;
-        public UINT durability;
+        public INT durability;
         public UINT weight;
         public UINT material;
         public UINT crystallizable;
@@ -312,7 +313,7 @@ namespace com.jds.PathEditor.classes.client.definitions
         public UINT UNK_5;
         public UINT armor_type;
         public UINT crystal_type;
-        public UINT avoid_mod;
+        public INT avoid_mod;
         public UINT pdef;
         public UINT mdef;
         public UINT mpbonus;
