@@ -8,8 +8,6 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:NpcName.cs" caret="2037" fromTop="15" />
-      <File id="AA0C00CB-8699-4F37-BFAE-40CA87ACC06D/d:Taskbar/f:TaskbarWindowManager.cs" caret="0" fromTop="0" />
       <File id="AA0C00CB-8699-4F37-BFAE-40CA87ACC06D/d:Taskbar/f:TaskbarManager.cs" caret="9610" fromTop="5" />
       <File id="AA0C00CB-8699-4F37-BFAE-40CA87ACC06D/d:Interop/f:CoreHelpers.cs" caret="1402" fromTop="15" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/f:Program.cs" caret="703" fromTop="23" />
@@ -35,14 +33,13 @@
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:FILLER_90.cs" caret="0" fromTop="0" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:CNTRINT_PAIR.cs" caret="1676" fromTop="8" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:Recipe.cs" caret="948" fromTop="14" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:INT.cs" caret="914" fromTop="23" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MAT.cs" caret="1637" fromTop="27" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MAT2.cs" caret="763" fromTop="6" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MAT.cs" caret="1637" fromTop="27" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:INT.cs" caret="914" fromTop="23" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:SkillName.cs" caret="2710" fromTop="2" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:StaticObject.cs" caret="1403" fromTop="20" />
     </RecentFiles>
     <RecentEdits>
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:NpcGrp.cs" caret="6141" fromTop="24" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:NpcGrp.cs" caret="6073" fromTop="23" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:NpcGrp.cs" caret="6019" fromTop="13" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:NpcGrp.cs" caret="9610" fromTop="4" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:NpcGrp.cs" caret="10217" fromTop="26" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ArmorGrp.cs" caret="357" fromTop="7" />
@@ -70,6 +67,9 @@
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MAT.cs" caret="1637" fromTop="27" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MAT2.cs" caret="639" fromTop="13" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MAT2.cs" caret="1182" fromTop="17" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:StaticObject.cs" caret="1790" fromTop="40" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:StaticObject.cs" caret="1168" fromTop="18" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:StaticObject.cs" caret="1403" fromTop="20" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -128,7 +128,7 @@
       <Item value="#endregion" priority="0" />
       <Item value="SkillgrpInfo_Freya`0" priority="0" />
       <Item value="null" priority="2" />
-      <Item value="RecNo" priority="1" />
+      <Item value="RecNo" priority="2" />
       <Item value="infos" priority="0" />
       <Item value="bool" priority="0" />
       <Item value="RConfig`0" priority="3" />
@@ -136,7 +136,7 @@
       <Item value="String`0" priority="1" />
       <Item value="devString" priority="1" />
       <Item value="definition" priority="1" />
-      <Item value="as" priority="0" />
+      <Item value="as" priority="1" />
       <Item value="readonly" priority="0" />
       <Item value="MARGINS" priority="0" />
       <Item value="margins" priority="0" />
@@ -232,7 +232,7 @@
       <Item value="Text" priority="2" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:com.jds.PathEditor.classes.client.mothers.DatParser">
-      <Item value="ParseMain`0" priority="1" />
+      <Item value="ParseMain`0" priority="2" />
       <Item value="CompileMain`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:com.jds.PathEditor.classes.client.definitions.ItemNameInfo_Gracia_Final">

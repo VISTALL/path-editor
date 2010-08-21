@@ -1,8 +1,10 @@
 ﻿#region Using
 
 using System;
+using System.IO;
 using com.jds.PathEditor.classes.client.mothers;
 using com.jds.PathEditor.classes.client.types;
+using com.jds.PathEditor.classes.services;
 
 #endregion
 
@@ -56,6 +58,23 @@ namespace com.jds.PathEditor.classes.client.definitions
         public override Definition getDefinition()
         {
             return new StaticObjectInfo();
+        }
+
+        public override Definition ParseMain(BinaryReader f, int RecNo)
+        {
+            StaticObjectInfo info = (StaticObjectInfo)base.ParseMain(f, RecNo);
+            String devString = " (id: " + info.id + ")";
+
+            if (RConfig.Instance.DevelopMode && !info.Name.EndsWith(devString))
+            {
+                info.Name = info.Name + devString;
+            }
+            else if (!RConfig.Instance.DevelopMode && info.Name.EndsWith(devString))
+            {
+                info.Name = info.Name.Replace(devString, "");
+            }
+
+            return info;
         }
     }
 
