@@ -17,7 +17,6 @@
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:CNTINT_PAIR.cs" caret="0" fromTop="0" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:QuestName.cs" caret="7447" fromTop="24" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:ASCF.cs" caret="0" fromTop="0" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.designer.cs" caret="121" fromTop="4" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="4790" fromTop="43" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:gui/f:GlassLabel.cs" caret="374" fromTop="9" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:NpcGrp.cs" caret="9431" fromTop="10" />
@@ -36,13 +35,11 @@
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MAT2.cs" caret="763" fromTop="6" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MAT.cs" caret="1637" fromTop="27" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:INT.cs" caret="914" fromTop="23" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:SkillName.cs" caret="2710" fromTop="2" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:StaticObject.cs" caret="1403" fromTop="20" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:SkillName.cs" caret="2710" fromTop="2" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.designer.cs" caret="24670" fromTop="12" />
     </RecentFiles>
     <RecentEdits>
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:NpcGrp.cs" caret="9610" fromTop="4" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:NpcGrp.cs" caret="10217" fromTop="26" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ArmorGrp.cs" caret="357" fromTop="7" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ArmorGrp.cs" caret="9438" fromTop="26" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ArmorGrp.cs" caret="7783" fromTop="8" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:EtcItemGrp.cs" caret="4932" fromTop="12" />
@@ -70,6 +67,9 @@
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:StaticObject.cs" caret="1790" fromTop="40" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:StaticObject.cs" caret="1168" fromTop="18" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:StaticObject.cs" caret="1403" fromTop="20" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:SkillName.cs" caret="3946" fromTop="2" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.designer.cs" caret="25568" fromTop="17" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.designer.cs" caret="24762" fromTop="4" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -333,6 +333,10 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.IO.BinaryWriter">
       <Item value="Write`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@com.jds.PathEditor.Resources">
+      <Item value="IMPORT" priority="0" />
+      <Item value="EXPORT" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

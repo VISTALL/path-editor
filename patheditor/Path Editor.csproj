@@ -270,7 +270,6 @@
     <Content Include="Resources\find.png" />
     <None Include="Resources\Fire.png" />
     <Content Include="Resources\l2.bmp" />
-    <None Include="Resources\logo.png" />
     <Content Include="Resources\menu-open.png" />
     <Content Include="Resources\menu-saveall.png" />
     <Content Include="Resources\nextfile.png" />

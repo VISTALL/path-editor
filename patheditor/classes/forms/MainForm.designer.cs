@@ -519,7 +519,7 @@ namespace com.jds.PathEditor.classes.forms
             this.importBtn2.DescriptionText = "";
             this.importBtn2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.importBtn2.HeaderText = "Import";
-            this.importBtn2.Image = global::com.jds.PathEditor.Resources.IMPORT;
+            this.importBtn2.Image = global::com.jds.PathEditor.Resources. IMPORT;
             this.importBtn2.ImageScalingSize = new System.Drawing.Size(16, 16);
             this.importBtn2.Location = new System.Drawing.Point(361, 140);
             this.importBtn2.Name = "importBtn2";
