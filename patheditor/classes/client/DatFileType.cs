@@ -15,7 +15,7 @@
         Entereventgrp,
         Etcitemgrp,
         Eula, 
-        ExceptionMiniMapData, //new high five
+        ExceptionMiniMapData, //
         GameTip,
         Hairaccessorylocgrp,
         Hennagrp,
@@ -32,7 +32,7 @@
         NpcString, 
         Obscene,
         OptionData_Client,
-        PostEffectData,  //new high five
+        PostEffectData,  //
         ProductName,
         QuestName,
         RaidData,

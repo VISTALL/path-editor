@@ -11,7 +11,7 @@ namespace com.jds.PathEditor.classes.client.definitions
     #region Definition
     public class PostEffectData_Info : Definition
     {
-        public UINT id;
+        public UINT effect_id;
         public UNICODE effect_name;
         public UINT effect_sort;
         public UINT effect_play_type;
