@@ -119,6 +119,7 @@
     <Compile Include="classes\client\definitions\WeaponGrp.cs" />
     <Compile Include="classes\client\definitions\ZoneName.cs" />
     <Compile Include="classes\client\definitions\ExceptionMiniMapData.cs" />
+    <Compile Include="classes\client\definitions\MantleException.cs" />
     <Compile Include="classes\client\IniFileType.cs" />
     <Compile Include="classes\client\ListColor.cs" />
     <Compile Include="classes\client\mothers\DatParser.cs" />
@@ -135,6 +136,7 @@
     <Compile Include="classes\client\types\FILLER_90.cs" />
     <Compile Include="classes\client\types\FLOAT.cs" />
     <Compile Include="classes\client\types\FLOAT_119.cs" />
+    <Compile Include="classes\client\types\FOR_INTASCF.cs" />
     <Compile Include="classes\client\types\HEX.cs" />
     <Compile Include="classes\client\types\INT.cs" />
     <Compile Include="classes\client\types\MAT.cs" />

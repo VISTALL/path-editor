@@ -1,12 +1,14 @@
-using System;
+﻿using System;
 using System.IO;
 using com.jds.PathEditor.classes.client.mothers;
+using com.jds.PathEditor.classes.lm;
+using com.jds.PathEditor.classes.parser;
 
 namespace com.jds.PathEditor.classes.client.types
 {
-   public class MAT2 : IType
+    public class FOR_INTASCF : IType
     {
-        public MAT2()
+        public FOR_INTASCF()
         {
             Value = "";
         }
@@ -18,14 +20,14 @@ namespace com.jds.PathEditor.classes.client.types
 
         public IType read(BinaryReader b)
         {
-            int MatCnt = b.ReadInt32();
-            int foundation = b.ReadInt32();
-            Value = foundation + ",";
-            for (int i = 0; i < MatCnt; i++)
+            int size = b.ReadInt32();
+            for(int i = 0; i < size; i ++)
             {
-                Value += "[" + b.ReadInt32() + ":" + b.ReadInt32() + "]";
-                if (i < MatCnt - 1)
-                    Value += ",";
+                int id = b.ReadInt32();
+                String text = ConvertUtilities.replaceIn(DatTool.ReadString(b));
+                Value += "(" + id + ":" + text + ")";
+                if (i < size - 1)
+                    Value += DatTool.DELIMITER;
             }
 
             return this;
@@ -33,14 +35,13 @@ namespace com.jds.PathEditor.classes.client.types
 
         public IType write(BinaryWriter f)
         {
-            string[] TmpStr = Value.Split(new[] { ',' });
-            f.Write(TmpStr.Length - 1);
-            f.Write(Convert.ToInt32(TmpStr[0]));
-            for (int i = 1; i < TmpStr.Length; i++)
+            string[] values = Value.Split(DatTool.DELIMITER);
+            f.Write(Convert.ToInt32(values.Length));
+            foreach (string parseS in values)
             {
-                String[] t = TmpStr[i].Split(':');
-                f.Write(Convert.ToInt32(t[0]));
-                f.Write(Convert.ToInt32(t[1]));
+                string[] v = parseS.Replace("(", "").Replace(")", "").Split(':');
+                f.Write(Convert.ToInt32(v[0]));
+                DatTool.WriteString(f, ConvertUtilities.replaceIn(v[1]));
             }
 
             return this;
@@ -61,5 +62,5 @@ namespace com.jds.PathEditor.classes.client.types
         {
             return Value.ToString();
         }
-   }
+    }
 }

@@ -24,7 +24,7 @@
         ItemName,
         ItemPrime,
         Logongrp,
-        MantleException, //new high five
+        MantleException, //
         Mobskillanimgrp, //
         MusicInfo,
         Npcgrp,

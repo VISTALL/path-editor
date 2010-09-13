@@ -3,29 +3,17 @@
     <string />
     <integer />
     <boolean>
+      <setting name="livetemplates.csharp.usevar">False</setting>
       <setting name="SolutionAnalysisEnabled">True</setting>
     </boolean>
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:ASCF.cs" caret="0" fromTop="0" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="4790" fromTop="43" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:gui/f:GlassLabel.cs" caret="374" fromTop="9" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:NpcGrp.cs" caret="9431" fromTop="10" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ItemPrime.cs" caret="0" fromTop="0" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ItemName.cs" caret="6692" fromTop="36" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ArmorGrp.cs" caret="9564" fromTop="15" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:EtcItemGrp.cs" caret="4907" fromTop="37" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:WeaponGrp.cs" caret="9171" fromTop="40" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:DatVersion.cs" caret="287" fromTop="13" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MTX2.cs" caret="0" fromTop="0" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MTX.cs" caret="0" fromTop="0" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:FILLER_360.cs" caret="0" fromTop="0" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:FILLER_90.cs" caret="0" fromTop="0" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:CNTRINT_PAIR.cs" caret="1676" fromTop="8" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:Recipe.cs" caret="948" fromTop="14" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MAT2.cs" caret="763" fromTop="6" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MAT.cs" caret="1637" fromTop="27" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:INT.cs" caret="914" fromTop="23" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:StaticObject.cs" caret="1403" fromTop="20" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:SkillName.cs" caret="2710" fromTop="2" />
@@ -33,43 +21,56 @@
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:CharGrp.cs" caret="0" fromTop="0" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:Eula.cs" caret="0" fromTop="0" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:parser/f:DatTool.cs" caret="3904" fromTop="5" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:UNICODE.cs" caret="720" fromTop="12" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:DatFileType.cs" caret="805" fromTop="27" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:OptionData_Client.cs" caret="0" fromTop="0" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ProductName.cs" caret="1824" fromTop="19" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:PostEffectData.cs" caret="533" fromTop="21" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:UNICODE.cs" caret="236" fromTop="7" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ProductName.cs" caret="250" fromTop="0" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:Properties/f:AssemblyInfo.cs" caret="0" fromTop="0" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:PostEffectData.cs" caret="360" fromTop="12" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ExceptionMiniMapData.cs" caret="614" fromTop="21" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:ASCF_PAIR.cs" caret="494" fromTop="11" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:CNTINT_PAIR.cs" caret="262" fromTop="0" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:HEX.cs" caret="167" fromTop="5" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MTX.cs" caret="0" fromTop="0" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:CNTTXT_PAIR.cs" caret="888" fromTop="15" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MAT.cs" caret="1070" fromTop="12" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:ASCF.cs" caret="236" fromTop="7" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:Recipe.cs" caret="0" fromTop="0" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:FOR_INTASCF.cs" caret="887" fromTop="27" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:MantleException.cs" caret="423" fromTop="3" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MAT2.cs" caret="1336" fromTop="7" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:DatFileType.cs" caret="604" fromTop="25" />
     </RecentFiles>
     <RecentEdits>
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:Recipe.cs" caret="872" fromTop="20" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:Recipe.cs" caret="1588" fromTop="14" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:Recipe.cs" caret="1575" fromTop="34" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:Recipe.cs" caret="873" fromTop="7" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MAT2.cs" caret="286" fromTop="11" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MAT2.cs" caret="195" fromTop="7" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:Recipe.cs" caret="1207" fromTop="23" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MAT2.cs" caret="1662" fromTop="30" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MAT.cs" caret="1637" fromTop="27" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MAT2.cs" caret="639" fromTop="13" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MAT2.cs" caret="1182" fromTop="17" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:StaticObject.cs" caret="1790" fromTop="40" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:StaticObject.cs" caret="1168" fromTop="18" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:StaticObject.cs" caret="1403" fromTop="20" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:SkillName.cs" caret="3946" fromTop="2" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.designer.cs" caret="25568" fromTop="17" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.designer.cs" caret="24762" fromTop="4" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:DatFileType.cs" caret="368" fromTop="15" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:DatFileType.cs" caret="130" fromTop="4" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:DatFileType.cs" caret="906" fromTop="17" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:DatFileType.cs" caret="1099" fromTop="25" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:DatFileType.cs" caret="1295" fromTop="33" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:DatFileType.cs" caret="630" fromTop="13" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:DatFileType.cs" caret="814" fromTop="27" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:PostEffectData.cs" caret="276" fromTop="8" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:PostEffectData.cs" caret="141" fromTop="3" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:PostEffectData.cs" caret="141" fromTop="4" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:PostEffectData.cs" caret="602" fromTop="24" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:PostEffectData.cs" caret="373" fromTop="16" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:PostEffectData.cs" caret="533" fromTop="21" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:PostEffectData.cs" caret="189" fromTop="4" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:PostEffectData.cs" caret="1199" fromTop="24" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:PostEffectData.cs" caret="1153" fromTop="21" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:PostEffectData.cs" caret="914" fromTop="16" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:PostEffectData.cs" caret="914" fromTop="30" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:PostEffectData.cs" caret="625" fromTop="16" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:PostEffectData.cs" caret="887" fromTop="14" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:PostEffectData.cs" caret="912" fromTop="10" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:DatFileType.cs" caret="784" fromTop="21" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ExceptionMiniMapData.cs" caret="711" fromTop="31" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ExceptionMiniMapData.cs" caret="903" fromTop="35" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:PostEffectData.cs" caret="360" fromTop="12" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ExceptionMiniMapData.cs" caret="624" fromTop="21" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:DatFileType.cs" caret="398" fromTop="16" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ExceptionMiniMapData.cs" caret="614" fromTop="21" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:CNTINT_PAIR.cs" caret="271" fromTop="0" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:FOR_INTASCF.cs" caret="15" fromTop="0" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:FOR_INTASCF.cs" caret="290" fromTop="7" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:FOR_INTASCF.cs" caret="1795" fromTop="28" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:FOR_INTASCF.cs" caret="1679" fromTop="19" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:FOR_INTASCF.cs" caret="1679" fromTop="17" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:FOR_INTASCF.cs" caret="1343" fromTop="10" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:MantleException.cs" caret="481" fromTop="27" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:MantleException.cs" caret="668" fromTop="31" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:MantleException.cs" caret="399" fromTop="13" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MAT2.cs" caret="1353" fromTop="7" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:FOR_INTASCF.cs" caret="1502" fromTop="16" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:FOR_INTASCF.cs" caret="732" fromTop="5" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:FOR_INTASCF.cs" caret="1056" fromTop="22" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:DatFileType.cs" caret="604" fromTop="25" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -90,9 +91,9 @@
       <Item value="field" priority="0" />
       <Item value="else" priority="3" />
       <Item value="IType`0" priority="0" />
-      <Item value="f" priority="9" />
+      <Item value="f" priority="11" />
       <Item value="_log" priority="1" />
-      <Item value="return" priority="9" />
+      <Item value="return" priority="11" />
       <Item value="nguid" priority="0" />
       <Item value="break" priority="0" />
       <Item value="Console`0" priority="7" />
@@ -100,7 +101,7 @@
       <Item value="new" priority="5" />
       <Item value="UINT" priority="0" />
       <Item value="u" priority="1" />
-      <Item value="ASCF`0" priority="0" />
+      <Item value="ASCF`0" priority="1" />
       <Item value="a" priority="0" />
       <Item value="Definition`0" priority="1" />
       <Item value="DatFileType`0" priority="1" />
@@ -120,11 +121,11 @@
       <Item value="len" priority="2" />
       <Item value="GetMediumInt`0" priority="0" />
       <Item value="ArgumentOutOfRangeException`0" priority="0" />
-      <Item value="int" priority="1" />
+      <Item value="int" priority="4" />
       <Item value="override" priority="4" />
       <Item value="string" priority="2" />
       <Item value="name" priority="1" />
-      <Item value="value" priority="0" />
+      <Item value="value" priority="1" />
       <Item value="#endregion" priority="0" />
       <Item value="SkillgrpInfo_Freya`0" priority="0" />
       <Item value="null" priority="2" />
@@ -133,7 +134,7 @@
       <Item value="bool" priority="0" />
       <Item value="RConfig`0" priority="3" />
       <Item value="info" priority="5" />
-      <Item value="String`0" priority="1" />
+      <Item value="String`0" priority="4" />
       <Item value="devString" priority="1" />
       <Item value="definition" priority="1" />
       <Item value="as" priority="1" />
@@ -170,14 +171,32 @@
       <Item value="NpcGrpInfo_HighFive`0" priority="0" />
       <Item value="private" priority="0" />
       <Item value="MAT`0" priority="0" />
-      <Item value="Value" priority="1" />
+      <Item value="Value" priority="3" />
       <Item value="decimal" priority="0" />
-      <Item value="this" priority="1" />
+      <Item value="this" priority="2" />
       <Item value="RecipeInfo_C3`0" priority="0" />
-      <Item value="b" priority="1" />
+      <Item value="b" priority="3" />
       <Item value="foundation" priority="0" />
       <Item value="TmpStr" priority="1" />
       <Item value="t" priority="0" />
+      <Item value="uint" priority="0" />
+      <Item value="UNICODE`0" priority="0" />
+      <Item value="UINT`0" priority="0" />
+      <Item value="FLOAT`0" priority="0" />
+      <Item value="for" priority="0" />
+      <Item value="i" priority="1" />
+      <Item value="size" priority="0" />
+      <Item value="id" priority="0" />
+      <Item value="text" priority="0" />
+      <Item value="L2EncDec`0" priority="0" />
+      <Item value="DatTool`0" priority="2" />
+      <Item value="foreach" priority="0" />
+      <Item value="parseS" priority="0" />
+      <Item value="mothers" priority="1" />
+      <Item value="v" priority="1" />
+      <Item value="Convert`0" priority="0" />
+      <Item value="values" priority="0" />
+      <Item value="Length" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:com.jds.PathEditor.classes.client.definitions.QuestNameInfo_Gracia_Final">
       <Item value="InitFieldValues`0" priority="0" />
@@ -186,7 +205,7 @@
       <Item value="GetValue`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.IO.BinaryReader">
-      <Item value="ReadInt32`0" priority="2" />
+      <Item value="ReadInt32`0" priority="4" />
       <Item value="BaseStream" priority="3" />
       <Item value="ReadBoolean`0" priority="0" />
       <Item value="ReadByte`0" priority="1" />
@@ -243,8 +262,8 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.String">
       <Item value="EndsWith`0" priority="0" />
-      <Item value="Replace`0" priority="0" />
-      <Item value="Split`0" priority="0" />
+      <Item value="Replace`0" priority="2" />
+      <Item value="Split`0" priority="2" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:com.jds.PathEditor.classes.client.definitions.SkillNameInfo">
       <Item value="Level" priority="0" />
@@ -332,11 +351,19 @@
       <Item value="Handle" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.IO.BinaryWriter">
-      <Item value="Write`0" priority="0" />
+      <Item value="Write`0" priority="1" />
+      <Item value="BaseStream" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@com.jds.PathEditor.Resources">
       <Item value="IMPORT" priority="0" />
       <Item value="EXPORT" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@com.jds.PathEditor.classes.parser.DatTool">
+      <Item value="ReadString`0" priority="0" />
+      <Item value="DELIMITER" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Convert">
+      <Item value="ToInt32`0" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>
