@@ -8,14 +8,6 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="AA0C00CB-8699-4F37-BFAE-40CA87ACC06D/d:Taskbar/f:TaskbarManager.cs" caret="9610" fromTop="5" />
-      <File id="AA0C00CB-8699-4F37-BFAE-40CA87ACC06D/d:Interop/f:CoreHelpers.cs" caret="1402" fromTop="15" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/f:Program.cs" caret="703" fromTop="23" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/f:dwmapi.cs" caret="3200" fromTop="5" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/f:Glass.cs" caret="8967" fromTop="0" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:CNTTXT_PAIR.cs" caret="0" fromTop="0" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:CNTINT_PAIR.cs" caret="0" fromTop="0" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:QuestName.cs" caret="7447" fromTop="24" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:ASCF.cs" caret="0" fromTop="0" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="4790" fromTop="43" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:gui/f:GlassLabel.cs" caret="374" fromTop="9" />
@@ -38,21 +30,16 @@
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:StaticObject.cs" caret="1403" fromTop="20" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:SkillName.cs" caret="2710" fromTop="2" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.designer.cs" caret="24670" fromTop="12" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:CharGrp.cs" caret="0" fromTop="0" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:Eula.cs" caret="0" fromTop="0" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:parser/f:DatTool.cs" caret="3904" fromTop="5" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:UNICODE.cs" caret="720" fromTop="12" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:DatFileType.cs" caret="805" fromTop="27" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:OptionData_Client.cs" caret="0" fromTop="0" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ProductName.cs" caret="1824" fromTop="19" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:PostEffectData.cs" caret="533" fromTop="21" />
     </RecentFiles>
     <RecentEdits>
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ArmorGrp.cs" caret="9438" fromTop="26" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ArmorGrp.cs" caret="7783" fromTop="8" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:EtcItemGrp.cs" caret="4932" fromTop="12" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:Recipe.cs" caret="1243" fromTop="12" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:Recipe.cs" caret="1588" fromTop="20" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MAT.cs" caret="308" fromTop="9" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MAT.cs" caret="232" fromTop="9" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MAT.cs" caret="665" fromTop="21" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MAT.cs" caret="793" fromTop="10" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MAT.cs" caret="693" fromTop="13" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MAT.cs" caret="1206" fromTop="28" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MAT.cs" caret="1342" fromTop="21" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:Recipe.cs" caret="485" fromTop="3" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:Recipe.cs" caret="872" fromTop="20" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:Recipe.cs" caret="1588" fromTop="14" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:Recipe.cs" caret="1575" fromTop="34" />
@@ -70,6 +57,19 @@
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:SkillName.cs" caret="3946" fromTop="2" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.designer.cs" caret="25568" fromTop="17" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.designer.cs" caret="24762" fromTop="4" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:DatFileType.cs" caret="368" fromTop="15" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:DatFileType.cs" caret="130" fromTop="4" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:DatFileType.cs" caret="906" fromTop="17" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:DatFileType.cs" caret="1099" fromTop="25" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:DatFileType.cs" caret="1295" fromTop="33" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:DatFileType.cs" caret="630" fromTop="13" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:DatFileType.cs" caret="814" fromTop="27" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:PostEffectData.cs" caret="276" fromTop="8" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:PostEffectData.cs" caret="141" fromTop="3" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:PostEffectData.cs" caret="141" fromTop="4" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:PostEffectData.cs" caret="602" fromTop="24" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:PostEffectData.cs" caret="373" fromTop="16" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:PostEffectData.cs" caret="533" fromTop="21" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -115,7 +115,7 @@
       <Item value="short" priority="2" />
       <Item value="len2" priority="0" />
       <Item value="Current" priority="0" />
-      <Item value="public" priority="6" />
+      <Item value="public" priority="7" />
       <Item value="static" priority="1" />
       <Item value="len" priority="2" />
       <Item value="GetMediumInt`0" priority="0" />
@@ -218,7 +218,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:@com.jds.PathEditor.classes.client.DatVersion">
       <Item value="Freya" priority="7" />
-      <Item value="High_Five" priority="2" />
+      <Item value="High_Five" priority="3" />
       <Item value="Gracia_1__Gracia_2" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Int16">

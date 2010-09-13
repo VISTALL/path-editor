@@ -3,7 +3,7 @@
     public enum DatFileType
     {
         ActionName,
-        AdditionalEffect, //new freya work
+        AdditionalEffect,
         Armorgrp,
         BrItemGrp,
         CastleName,
@@ -14,7 +14,8 @@
         Creditgrp,
         Entereventgrp,
         Etcitemgrp,
-        Eula, //not work
+        Eula, 
+        ExceptionMiniMapData, //new high five
         GameTip,
         Hairaccessorylocgrp,
         Hennagrp,
@@ -23,17 +24,19 @@
         ItemName,
         ItemPrime,
         Logongrp,
+        MantleException, //new high five
         Mobskillanimgrp, //
         MusicInfo,
         Npcgrp,
         NpcName,
-        NpcString, //new freya work
+        NpcString, 
         Obscene,
         OptionData_Client,
+        PostEffectData,  //new high five
         ProductName,
         QuestName,
         RaidData,
-        RideData, //work
+        RideData, //
         Recipe, //
         ScenePlayerData,
         ServerName,
@@ -41,7 +44,7 @@
         Skillgrp, //
         SkillName, //
         Skillsoundgrp, //
-        SkillSoundSource, //new frey work
+        SkillSoundSource, //
         StaticObject,
         SymbolName,
         SysString, //
@@ -49,7 +52,7 @@
         TransformData,
         Variationeffectgrp, //
         Vehiclepartsgrp,
-        WarningNotice, //new freya work
+        WarningNotice, //
         Weapongrp,
         ZoneName //
     }
