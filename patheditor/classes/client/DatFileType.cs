@@ -3,11 +3,12 @@
     public enum DatFileType
     {
         ActionName,
-        AdditionalEffect,
+        AdditionalEffect, 
+        AdditionalItemgrp,
         Armorgrp,
-        BrItemGrp,
+        BrItemGrp,  // deleted (replaced by AdditionalItemgrp)
         CastleName,
-        //Chargrp, //not work
+        //Chargrp,  // not work
         CharCreategrp,
         ClassInfo,
         CommandName,
@@ -15,45 +16,45 @@
         Entereventgrp,
         Etcitemgrp,
         Eula, 
-        ExceptionMiniMapData, //
+        ExceptionMiniMapData,
         GameTip,
         Hairaccessorylocgrp,
         Hennagrp,
         HuntingZone,
         InstantZoneData,
         ItemName,
-        ItemPrime,
+        ItemPrime,    // deleted?
         Logongrp,
-        MantleException, //
-        Mobskillanimgrp, //
+        MantleException, 
+        Mobskillanimgrp, 
         MusicInfo,
         Npcgrp,
         NpcName,
         NpcString, 
         Obscene,
         OptionData_Client,
-        PostEffectData,  //
+        PostEffectData, 
         ProductName,
         QuestName,
         RaidData,
-        RideData, //
-        Recipe, //
+        RideData, 
+        Recipe, 
         ScenePlayerData,
         ServerName,
         ShortcutAlias,
-        Skillgrp, //
-        SkillName, //
-        Skillsoundgrp, //
-        SkillSoundSource, //
+        Skillgrp, 
+        SkillName, 
+        Skillsoundgrp, 
+        SkillSoundSource, 
         StaticObject,
         SymbolName,
-        SysString, //
+        SysString, 
         SystemMsg,
         TransformData,
-        Variationeffectgrp, //
+        Variationeffectgrp, 
         Vehiclepartsgrp,
-        WarningNotice, //
+        WarningNotice, 
         Weapongrp,
-        ZoneName //
+        ZoneName 
     }
 }

@@ -69,6 +69,7 @@
     <Compile Include="classes\client\DatVersion.cs" />
     <Compile Include="classes\client\definitions\ActionName.cs" />
     <Compile Include="classes\client\definitions\AdditionalEffect.cs" />
+    <Compile Include="classes\client\definitions\AdditionalItemgrp.cs" />
     <Compile Include="classes\client\definitions\ArmorGrp.cs" />
     <Compile Include="classes\client\definitions\BrItemGrp.cs" />
     <Compile Include="classes\client\definitions\CastleName.cs" />

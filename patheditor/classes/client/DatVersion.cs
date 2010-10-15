@@ -12,6 +12,7 @@
         Gracia_Final,
         Gracia_Plus__Epilogue,
         Freya,
-        High_Five
+        High_Five,
+        Anniversary
     }
 }

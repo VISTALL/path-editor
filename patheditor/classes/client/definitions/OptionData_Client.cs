@@ -11,6 +11,8 @@ using com.jds.PathEditor.classes.client.types;
  * - Gracia 2 [WORK]
  * - Gracia Final [WORK]
  * - Gracia Plus [WORK]
+ * - Freya [WORK]
+ * - High Five [WORK]
  */
 
 namespace com.jds.PathEditor.classes.client.definitions

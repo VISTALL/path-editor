@@ -2,8 +2,10 @@
 
 using System;
 using System.ComponentModel;
+using System.IO;
 using com.jds.PathEditor.classes.client.mothers;
 using com.jds.PathEditor.classes.client.types;
+using com.jds.PathEditor.classes.services;
 
 #endregion
 
@@ -13,6 +15,8 @@ using com.jds.PathEditor.classes.client.types;
  * - Gracia 2 [WORK]
  * - Gracia Final [WORK]
  * - Gracia Plus [WORK]
+ * - Freya [WORK]
+ * - High Five [WORK]
  * 
  * - Property Editor
  */
@@ -56,6 +60,24 @@ namespace com.jds.PathEditor.classes.client.definitions
         public override Definition getDefinition()
         {
             return new SysStringInfo();
+        }
+
+        public override Definition ParseMain(BinaryReader f, int RecNo)
+        {
+            SysStringInfo info = (SysStringInfo)base.ParseMain(f, RecNo);
+
+            String devString = " (id: " + info.Id + ")";
+
+            if (RConfig.Instance.DevelopMode && !info.Name.EndsWith(devString))
+            {
+                info.Name = info.Name + devString;
+            }
+            else if (!RConfig.Instance.DevelopMode && info.Name.EndsWith(devString))
+            {
+                info.Name = info.Name.Replace(devString, "");
+            }
+
+            return info;
         }
     }
 
