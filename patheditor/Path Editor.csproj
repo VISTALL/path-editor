@@ -65,7 +65,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="classes\client\DatFileType.cs" />
+    <Compile Include="classes\client\DatFiles.cs" />
     <Compile Include="classes\client\DatVersion.cs" />
     <Compile Include="classes\client\definitions\ActionName.cs" />
     <Compile Include="classes\client\definitions\AdditionalEffect.cs" />
@@ -121,7 +121,9 @@
     <Compile Include="classes\client\definitions\ZoneName.cs" />
     <Compile Include="classes\client\definitions\ExceptionMiniMapData.cs" />
     <Compile Include="classes\client\definitions\MantleException.cs" />
-    <Compile Include="classes\client\IniFileType.cs" />
+    <Compile Include="classes\client\IniFiles.cs" />
+    <Compile Include="classes\client\IntFiles.cs" />
+    <Compile Include="classes\client\Lineage2Ver.cs" />
     <Compile Include="classes\client\ListColor.cs" />
     <Compile Include="classes\client\mothers\DatParser.cs" />
     <Compile Include="classes\client\mothers\Definition.cs" />
@@ -201,9 +203,6 @@
     <Compile Include="classes\forms\SplashForm.Designer.cs">
       <DependentUpon>SplashForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="classes\gui\GlassLabel.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="classes\gui\JButton.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -219,8 +218,10 @@
     <Compile Include="classes\services\Message.cs" />
     <Compile Include="classes\services\RConfig.cs" />
     <Compile Include="classes\services\TypesEditors.cs" />
-    <Compile Include="classes\windows\dwmapi.cs" />
-    <Compile Include="classes\windows\Glass.cs" />
+    <Compile Include="classes\windows\SystemInfo.cs" />
+    <Compile Include="classes\windows\windows7\ITaskbarList3.cs" />
+    <Compile Include="classes\windows\windows7\ThumbnailProgressState.cs" />
+    <Compile Include="classes\windows\windows7\Windows7Taskbar.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources.Designer.cs">
@@ -287,10 +288,6 @@
       <Project>{F6A02431-167E-4347-BC43-65532C31CDB7}</Project>
       <Name>Log4 NET</Name>
     </ProjectReference>
-    <ProjectReference Include="..\windows7support\Windows 7 Support.csproj">
-      <Project>{AA0C00CB-8699-4F37-BFAE-40CA87ACC06D}</Project>
-      <Name>Windows 7 Support</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="classes\forms\AboutForm.resx">
@@ -338,6 +335,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

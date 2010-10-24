@@ -49,7 +49,7 @@ namespace com.jds.PathEditor.classes.forms
             this.PasteR = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.SelectAll = new System.Windows.Forms.ToolStripMenuItem();
-            this.path = new GlassLabel();
+            this.path = new System.Windows.Forms.Label();
             this.StatusLabel = new System.Windows.Forms.Label();
             this.ChLabel = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -283,7 +283,7 @@ namespace com.jds.PathEditor.classes.forms
             // path
             // 
             this.path.AutoSize = true;
-            this.path.BackColor = System.Drawing.Color. Transparent;
+            this.path.BackColor = System.Drawing.Color.Transparent;
             this.path.Location = new System.Drawing.Point(12, 619);
             this.path.Name = "path";
             this.path.Size = new System.Drawing.Size(32, 14);
@@ -354,7 +354,7 @@ namespace com.jds.PathEditor.classes.forms
             this.IniTab.Padding = new System.Windows.Forms.Padding(3);
             this.IniTab.Size = new System.Drawing.Size(489, 552);
             this.IniTab.TabIndex = 1;
-            this.IniTab.Text = "ini Files";
+            this.IniTab.Text = "ini/int Files";
             this.IniTab.UseVisualStyleBackColor = true;
             // 
             // NumLines
@@ -519,7 +519,7 @@ namespace com.jds.PathEditor.classes.forms
             this.importBtn2.DescriptionText = "";
             this.importBtn2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.importBtn2.HeaderText = "Import";
-            this.importBtn2.Image = global::com.jds.PathEditor.Resources. IMPORT;
+            this.importBtn2.Image = global::com.jds.PathEditor.Resources.IMPORT;
             this.importBtn2.ImageScalingSize = new System.Drawing.Size(16, 16);
             this.importBtn2.Location = new System.Drawing.Point(361, 140);
             this.importBtn2.Name = "importBtn2";
@@ -627,7 +627,6 @@ namespace com.jds.PathEditor.classes.forms
         public System.Windows.Forms.ProgressBar StatusProgress;
         public System.Windows.Forms.Label StatusLabel;
         private System.Windows.Forms.Label ChLabel;
-        private System.Windows.Forms.Label path;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripMenuItem MenuFile;
         private System.Windows.Forms.ToolStripMenuItem OpenFolder;
@@ -670,6 +669,7 @@ namespace com.jds.PathEditor.classes.forms
         private JButton LoadBtn2;
         private System.Windows.Forms.ListBox FileNameCombo;
         private System.Windows.Forms.TabControl Tabs;
+        private System.Windows.Forms.Label path;
     }
 }
 

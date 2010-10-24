@@ -10,8 +10,8 @@
   <add key="CLEAR_BUTTON" value="Clear" />
   <add key="LOCK" value="Lock?" />
   <!--Main Tabs-->
-  <add key="DAT_TAB" value="dat Files" />  
-  <add key="INI_TAB" value="ini Files" />
+  <add key="DAT_TAB" value="*.dat Files" />
+  <add key="INI_TAB" value="*.ini/*.int Files" />
   <!--Main Menu-->
   <add key="MENU_FILE" value="File" /> 
   <add key="MENU_SERVICE" value="Service" />

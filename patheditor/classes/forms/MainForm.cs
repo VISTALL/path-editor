@@ -3,19 +3,20 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing;
 using System.IO;
 using System.Reflection;
 using System.Text;
 using System.Windows.Forms;
+
 using com.jds.PathEditor.classes.client;
 using com.jds.PathEditor.classes.client.mothers;
 using com.jds.PathEditor.classes.parser;
 using com.jds.PathEditor.classes.services;
-using log4net;
-using Microsoft.WindowsAPICodePack.Taskbar;
 using com.jds.PathEditor.classes.windows;
-using System.Drawing;
-using MS.WindowsAPICodePack.Internal;
+using log4net;
+using com.jds.PathEditor.classes.windows.windows7;
+
 
 #endregion
 
@@ -30,10 +31,9 @@ namespace com.jds.PathEditor.classes.forms
         public DatParser DatInfo;
 
         internal string selectedComboName = "";
-        internal DatFileType selectedFileType;
-        internal string selectedIniComboName = "";
-        internal IniFileType selectedIniFileType;
-        private static readonly MARGINS margins = new MARGINS(-1, 0 ,0 ,0);
+        internal DatFiles SelectedFiles;
+        private string selectedIniComboName = "";
+        private object selectedIniIntFile;
 
         public static MainForm Instance
         {
@@ -67,30 +67,6 @@ namespace com.jds.PathEditor.classes.forms
         private MainForm()
         {
             InitializeComponent();
-            TransparencyKey = Color.Lime;
-
-           /* if(CoreHelpers.RunningOnVista)
-            {
-                statusStrip1.BackColor = Color.Transparent;
-                path.BackColor = Color.Transparent;
-                DWMApi.DwmExtendFrameIntoClientArea(Handle, margins);
-            }
-
-            Paint += new PaintEventHandler(MainForm_Paint);*/
-        }
-
-    /*    void MainForm_Paint(object sender, PaintEventArgs e)
-        {
-            GlassText.DrawTextOnGlass(Handle, path.Text, path.Font, path.ClientRectangle, 10);
-        }*/
-
-        protected override void OnPaintBackground(PaintEventArgs e)
-        {
-            base.OnPaintBackground(e);
-          /*  if (CoreHelpers.RunningOnVista)
-            {
-                e.Graphics.FillRectangle(new SolidBrush(TransparencyKey), ClientRectangle);
-            }*/
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -149,13 +125,13 @@ namespace com.jds.PathEditor.classes.forms
                 return;
 
             selectedComboName = FileNameCombo.Items[FileNameCombo.SelectedIndex].ToString();
-            String[] TmpStr = Enum.GetNames(typeof (DatFileType));
+            String[] TmpStr = Enum.GetNames(typeof (DatFiles));
 
             for (int i = 0; i < TmpStr.Length; i++)
             {
                 if (selectedComboName.StartsWith(TmpStr[i].ToLower()))
                 {
-                    selectedFileType = (DatFileType) i;
+                    SelectedFiles = (DatFiles) i;
                     break;
                 }
             }
@@ -186,14 +162,15 @@ namespace com.jds.PathEditor.classes.forms
                 //*.dat
                 FileNameCombo.Items.Clear();
                 FileIniComboName.Items.Clear();
-
-                // Грузим *.dat
+                
                 if (Directory.Exists(RConfig.Instance.LineageDirectory))
                 {
-                    var current = new DirectoryInfo(RConfig.Instance.LineageDirectory);
+                    DirectoryInfo current = new DirectoryInfo(RConfig.Instance.LineageDirectory);
+                    
+                    // Грузим *.dat
                     foreach (FileInfo info in current.GetFiles("*.dat"))
                     {
-                        foreach (String name in Enum.GetNames(typeof (DatFileType)))
+                        foreach (String name in Enum.GetNames(typeof (DatFiles)))
                         {
                             String FileName = Path.GetFileNameWithoutExtension(info.FullName);
                             if (FileName.ToLower().StartsWith(name.ToLower()))
@@ -203,15 +180,26 @@ namespace com.jds.PathEditor.classes.forms
                             }
                         }
                     }
-                }
 
-                // Грузим *.ini
-                if (Directory.Exists(RConfig.Instance.LineageDirectory))
-                {
-                    var current = new DirectoryInfo(RConfig.Instance.LineageDirectory);
+                   
+                    // Грузим *.ini
                     foreach (FileInfo info in current.GetFiles("*.ini"))
                     {
-                        foreach (String name in Enum.GetNames(typeof (IniFileType)))
+                        foreach (String name in Enum.GetNames(typeof(IniFiles)))
+                        {
+                            String FileName = Path.GetFileNameWithoutExtension(info.FullName);
+                            if (FileName.ToLower().StartsWith(name.ToLower()))
+                            {
+                                FileIniComboName.Items.Add(info.Name.ToLower());
+                                break;
+                            }
+                        }
+                    }
+
+                    // Грузим *.int
+                    foreach (FileInfo info in current.GetFiles("*.int"))
+                    {
+                        foreach (String name in Enum.GetNames(typeof(IntFiles)))
                         {
                             String FileName = Path.GetFileNameWithoutExtension(info.FullName);
                             if (FileName.ToLower().StartsWith(name.ToLower()))
@@ -312,7 +300,7 @@ namespace com.jds.PathEditor.classes.forms
         {
             try
             {
-                Type t = Type.GetType("com.jds.PathEditor.classes.client.definitions." + selectedFileType);
+                Type t = Type.GetType("com.jds.PathEditor.classes.client.definitions." + SelectedFiles);
 
                 object instance = t.InvokeMember(null, BindingFlags.CreateInstance, null,
                                                  null,
@@ -679,8 +667,7 @@ namespace com.jds.PathEditor.classes.forms
             StatusProgress.Maximum = max;
             StatusProgress.Visible = true;
 
-            if (TaskbarManager.IsPlatformSupported)
-                TaskbarManager.Instance.SetProgressState(TaskbarProgressBarState.Normal);
+            Windows7Taskbar.SetProgressState(Handle, ThumbnailProgressState.Normal);
         }
 
         public void onEnd()
@@ -690,16 +677,14 @@ namespace com.jds.PathEditor.classes.forms
             StatusProgress.Value = 0;
             StatusProgress.Visible = false;
 
-            if (TaskbarManager.IsPlatformSupported)
-                TaskbarManager.Instance.SetProgressState(TaskbarProgressBarState.NoProgress);
+            Windows7Taskbar.SetProgressState(Handle, ThumbnailProgressState.NoProgress);
         }
 
         public void setValue(int v)
         {
             StatusProgress.Value = v;
 
-            if (TaskbarManager.IsPlatformSupported)
-                TaskbarManager.Instance.SetProgressValue(v, StatusProgress.Maximum);
+            Windows7Taskbar.SetProgressValue(Handle, v, StatusProgress.Maximum);
         }
 
         #endregion
@@ -708,15 +693,13 @@ namespace com.jds.PathEditor.classes.forms
 
         private void OpenIniButton_Click(object sender, EventArgs e)
         {
-            if (selectedIniComboName == null)
+            if (selectedIniComboName == null || selectedIniIntFile == null)
                 return;
+
+            Lineage2Ver ver = (Lineage2Ver)selectedIniIntFile.GetType().GetField(selectedIniIntFile.ToString()).GetCustomAttributes(typeof(Lineage2Ver), true)[0];
 
             // пожалуста подождите
             StatusLabel.Text = Localizate.getMessage(Word.PLEASE_WAIT);
-
-            int cod = 111;
-            if (selectedIniComboName.StartsWith("l2.ini") || selectedIniComboName.StartsWith("user.ini"))
-                cod = 413;
 
             if (!File.Exists(Path.Combine(RConfig.Instance.LineageDirectory, selectedIniComboName)))
             {
@@ -744,7 +727,7 @@ namespace com.jds.PathEditor.classes.forms
                 savel2ini.Enabled = true;
                 clearl2ini.Enabled = true;
                 IniTextBox.Enabled = true;
-                EnCod.Text = cod.ToString();
+                EnCod.Text = ver.Ver.ToString();
                 Char c = '\n';
                 String[] st = IniTextBox.Text.Split(c);
                 Counts.Text = st.Length.ToString();
@@ -774,12 +757,12 @@ namespace com.jds.PathEditor.classes.forms
 
         private void savel2ini_Click(object sender, EventArgs e)
         {
-            int cod = 111;
-            if (selectedIniComboName.StartsWith("l2.ini") || selectedIniComboName.StartsWith("user.ini"))
-                cod = 413;
+            if (selectedIniComboName == null || selectedIniIntFile == null)
+                return;
+
+            Lineage2Ver ver = (Lineage2Ver)selectedIniIntFile.GetType().GetField(selectedIniIntFile.ToString()).GetCustomAttributes(typeof(Lineage2Ver), true)[0];
 
             string dst_fname = Path.Combine(RConfig.Instance.LineageDirectory, selectedIniComboName);
-
 
             if (RConfig.Instance.SaveBakFiles)
             {
@@ -797,7 +780,7 @@ namespace com.jds.PathEditor.classes.forms
 
             IniTextBox.SaveFile(dst_fname, RichTextBoxStreamType.PlainText);
 
-            L2EncDec.Encrypt(selectedIniComboName, cod);
+            L2EncDec.Encrypt(selectedIniComboName, ver.Ver);
 
             clearl2ini_Click(sender, e);
         }
@@ -844,17 +827,38 @@ namespace com.jds.PathEditor.classes.forms
         {
             if (FileIniComboName.SelectedIndex == -1)
                 return;
+
             selectedIniComboName = FileIniComboName.Items[FileIniComboName.SelectedIndex].ToString();
-
-            String[] TmpStr = Enum.GetNames(typeof (IniFileType));
-
-            for (int i = 0; i < TmpStr.Length; i++)
+            if(selectedIniComboName.EndsWith(".ini"))
             {
-                if (selectedIniComboName.StartsWith(TmpStr[i].ToLower()))
+                String[] TmpStr = Enum.GetNames(typeof (IniFiles));
+
+                for (int i = 0; i < TmpStr.Length; i++)
                 {
-                    selectedIniFileType = (IniFileType) i;
-                    break;
+                    if (selectedIniComboName.StartsWith(TmpStr[i].ToLower()))
+                    {
+                        selectedIniIntFile = (IniFiles) i;
+                        break;
+                    }
                 }
+            }
+            else if (selectedIniComboName.EndsWith(".int"))
+            {
+                String[] TmpStr = Enum.GetNames(typeof(IntFiles));
+
+                for (int i = 0; i < TmpStr.Length; i++)
+                {
+                    if (selectedIniComboName.StartsWith(TmpStr[i].ToLower()))
+                    {
+                        selectedIniIntFile = (IntFiles)i;
+                        break;
+                    }
+                }
+            }
+
+            if(selectedIniIntFile == null)
+            {
+                return;
             }
 
             Forms_Init(false, false);

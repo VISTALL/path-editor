@@ -10,8 +10,8 @@
   <add key="CLEAR_BUTTON" value="Очистить" />
   <add key="LOCK" value="Блокировать?" />
   <!--Main Tabs-->
-  <add key="DAT_TAB" value="dat Файлы" />  
-  <add key="INI_TAB" value="ini Файлы" /> 
+  <add key="DAT_TAB" value="*.dat Файлы" />
+  <add key="INI_TAB" value="*.ini/*.int Файлы" />
   <!--Main Menu-->
   <add key="MENU_FILE" value="Файл" /> 
   <add key="MENU_SERVICE" value="Сервис" />
