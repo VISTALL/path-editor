@@ -9,7 +9,6 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MTX.cs" caret="0" fromTop="0" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:CNTTXT_PAIR.cs" caret="888" fromTop="15" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MAT.cs" caret="1070" fromTop="12" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:Recipe.cs" caret="0" fromTop="0" />
@@ -34,42 +33,43 @@
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:IntFiles.cs" caret="1375" fromTop="51" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/f:SystemInfo.cs" caret="180" fromTop="5" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/d:windows7/f:ITaskbarList3.cs" caret="820" fromTop="24" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.designer.cs" caret="2962" fromTop="19" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.designer.cs" caret="34784" fromTop="19" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/d:windows7/f:ThumbnailProgressState.cs" caret="189" fromTop="4" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="5454" fromTop="4" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/d:windows7/f:Windows7Taskbar.cs" caret="112" fromTop="0" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="260" fromTop="0" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="35533" fromTop="20" />
     </RecentFiles>
     <RecentEdits>
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="27394" fromTop="21" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="25247" fromTop="22" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="25245" fromTop="8" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="25261" fromTop="10" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:IntFiles.cs" caret="1382" fromTop="14" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:IntFiles.cs" caret="178" fromTop="6" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:DatFiles.cs" caret="65" fromTop="1" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:IntFiles.cs" caret="897" fromTop="36" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:IntFiles.cs" caret="1239" fromTop="33" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:IntFiles.cs" caret="1375" fromTop="21" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/d:windows7/f:ITaskbarList3.cs" caret="112" fromTop="1" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="27716" fromTop="363" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/d:windows7/f:ThumbnailProgressState.cs" caret="58" fromTop="1" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/d:windows7/f:ThumbnailProgressState.cs" caret="784" fromTop="26" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/d:windows7/f:Windows7Taskbar.cs" caret="73" fromTop="1" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/d:windows7/f:Windows7Taskbar.cs" caret="1962" fromTop="38" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/d:windows7/f:Windows7Taskbar.cs" caret="1712" fromTop="28" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/f:SystemInfo.cs" caret="793" fromTop="10" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/d:windows7/f:ITaskbarList3.cs" caret="943" fromTop="26" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/d:windows7/f:Windows7Taskbar.cs" caret="1031" fromTop="19" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/f:SystemInfo.cs" caret="165" fromTop="5" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.designer.cs" caret="33976" fromTop="19" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.designer.cs" caret="34784" fromTop="19" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="221" fromTop="8" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="126" fromTop="4" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="399" fromTop="13" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.designer.cs" caret="2962" fromTop="19" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.designer.cs" caret="34784" fromTop="19" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="24300" fromTop="19" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="24642" fromTop="20" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="24828" fromTop="15" />
       <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="5658" fromTop="26" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="35546" fromTop="20" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="35546" fromTop="26" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="35546" fromTop="26" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="35554" fromTop="26" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="1781" fromTop="16" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="10415" fromTop="22" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="4064" fromTop="27" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="4035" fromTop="22" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="2957" fromTop="16" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="2958" fromTop="22" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="2776" fromTop="16" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="4035" fromTop="15" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="4036" fromTop="37" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="4957" fromTop="24" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="870" fromTop="20" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="5838" fromTop="9" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="6127" fromTop="13" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="31262" fromTop="22" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="35554" fromTop="22" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="35533" fromTop="20" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -86,7 +86,7 @@
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
       <Item value="dat" priority="0" />
-      <Item value="if" priority="15" />
+      <Item value="if" priority="18" />
       <Item value="field" priority="0" />
       <Item value="else" priority="4" />
       <Item value="IType`0" priority="0" />
@@ -94,17 +94,17 @@
       <Item value="_log" priority="1" />
       <Item value="return" priority="12" />
       <Item value="nguid" priority="0" />
-      <Item value="break" priority="0" />
-      <Item value="Console`0" priority="7" />
+      <Item value="break" priority="2" />
+      <Item value="Console`0" priority="8" />
       <Item value="base" priority="6" />
-      <Item value="new" priority="5" />
+      <Item value="new" priority="6" />
       <Item value="UINT" priority="0" />
       <Item value="u" priority="1" />
       <Item value="ASCF`0" priority="1" />
       <Item value="a" priority="0" />
       <Item value="Definition`0" priority="1" />
       <Item value="DatFileType`0" priority="1" />
-      <Item value="DatVersion`0" priority="2" />
+      <Item value="DatVersion`0" priority="3" />
       <Item value="NpcGrpInfo_Freya`0" priority="1" />
       <Item value="Stream`0" priority="0" />
       <Item value="byte" priority="3" />
@@ -115,7 +115,7 @@
       <Item value="short" priority="2" />
       <Item value="len2" priority="0" />
       <Item value="Current" priority="0" />
-      <Item value="public" priority="8" />
+      <Item value="public" priority="9" />
       <Item value="static" priority="1" />
       <Item value="len" priority="2" />
       <Item value="GetMediumInt`0" priority="0" />
@@ -127,13 +127,13 @@
       <Item value="value" priority="1" />
       <Item value="#endregion" priority="0" />
       <Item value="SkillgrpInfo_Freya`0" priority="0" />
-      <Item value="null" priority="3" />
+      <Item value="null" priority="5" />
       <Item value="RecNo" priority="3" />
       <Item value="infos" priority="0" />
       <Item value="bool" priority="0" />
-      <Item value="RConfig`0" priority="3" />
+      <Item value="RConfig`0" priority="4" />
       <Item value="info" priority="5" />
-      <Item value="String`0" priority="4" />
+      <Item value="String`0" priority="7" />
       <Item value="devString" priority="1" />
       <Item value="definition" priority="1" />
       <Item value="as" priority="1" />
@@ -168,7 +168,7 @@
       <Item value="Handle" priority="2" />
       <Item value="Bounds" priority="0" />
       <Item value="NpcGrpInfo_HighFive`0" priority="0" />
-      <Item value="private" priority="0" />
+      <Item value="private" priority="2" />
       <Item value="MAT`0" priority="0" />
       <Item value="Value" priority="3" />
       <Item value="decimal" priority="0" />
@@ -182,7 +182,7 @@
       <Item value="UNICODE`0" priority="0" />
       <Item value="UINT`0" priority="0" />
       <Item value="FLOAT`0" priority="0" />
-      <Item value="for" priority="0" />
+      <Item value="for" priority="1" />
       <Item value="i" priority="1" />
       <Item value="size" priority="0" />
       <Item value="id" priority="0" />
@@ -206,6 +206,19 @@
       <Item value="FieldAccessException`0" priority="0" />
       <Item value="fieldInfo" priority="0" />
       <Item value="StatusProgress" priority="0" />
+      <Item value="List" priority="0" />
+      <Item value="List&lt;string&gt;" priority="0" />
+      <Item value="subs" priority="0" />
+      <Item value="switch" priority="0" />
+      <Item value="subkey" priority="1" />
+      <Item value="case" priority="1" />
+      <Item value="_lastFolders" priority="1" />
+      <Item value="void" priority="1" />
+      <Item value="_AppDomain`0" priority="0" />
+      <Item value="addLastFolder`0" priority="0" />
+      <Item value="sub" priority="2" />
+      <Item value="lastFoldersToolStripMenuItem" priority="0" />
+      <Item value="true" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:com.jds.PathEditor.classes.client.definitions.QuestNameInfo_Gracia_Final">
       <Item value="InitFieldValues`0" priority="0" />
@@ -224,7 +237,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Console">
       <Item value="Write`0" priority="0" />
-      <Item value="WriteLine`0" priority="6" />
+      <Item value="WriteLine`0" priority="7" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:com.jds.PathEditor.classes.client.types.UINT">
       <Item value="read`0" priority="0" />
@@ -238,14 +251,15 @@
       <Item value="Seek`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@com.jds.PathEditor.classes.services.RConfig">
-      <Item value="Instance" priority="5" />
+      <Item value="Instance" priority="6" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:com.jds.PathEditor.classes.services.RConfig">
       <Item value="DatVersionAsEnum" priority="3" />
       <Item value="DevelopMode" priority="2" />
+      <Item value="addLastFolder`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@com.jds.PathEditor.classes.client.DatVersion">
-      <Item value="Freya" priority="7" />
+      <Item value="Freya" priority="8" />
       <Item value="High_Five" priority="3" />
       <Item value="Gracia_1__Gracia_2" priority="0" />
     </ItemStatistics>
@@ -409,6 +423,16 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Forms.ListBox">
       <Item value="Items" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Contains`0" priority="0" />
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.Win32.RegistryKey">
+      <Item value="GetSubKeyNames`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ToolStripMenuItem">
+      <Item value="HasDropDownItems" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

@@ -878,6 +878,7 @@ namespace com.jds.PathEditor.classes.forms
             if (DirectoryDialog.ShowDialog() == DialogResult.OK)
             {
                 RConfig.Instance.LineageDirectory = DirectoryDialog.SelectedPath;
+                RConfig.Instance.addLastFolder(DirectoryDialog.SelectedPath);
                 RConfig.Instance.save();
                 Forms_Init(true, false);
                 Forms_Update();
@@ -1043,5 +1044,15 @@ namespace com.jds.PathEditor.classes.forms
         }
 
         #endregion
+
+        private void lastFoldersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lastFoldersToolsOpening(object sender, EventArgs e)
+        {
+       
+        }
     }
 }

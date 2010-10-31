@@ -18,9 +18,9 @@ namespace com.jds.PathEditor.classes.services
         private readonly Dictionary<String, Dictionary<String, int>> _columnSize =
             new Dictionary<String, Dictionary<String, int>>();
 
+        private List<String> _lastFolders = new List<String>();
         private Color _colorEditor = Color.FromArgb(64, 64, 64);
-
-        private DatVersion _datVersion = (DatVersion) Enum.Parse(typeof (DatVersion), "Interlude");
+        private DatVersion _datVersion = (DatVersion) Enum.Parse(typeof (DatVersion), "Freya");
         private String _fileToRun = "";
         private String _language = "english.xml";
         private String _lineageDirectory = "";
@@ -48,8 +48,7 @@ namespace com.jds.PathEditor.classes.services
             {
                 _textEncoding = (String) key.GetValue("TextEncoding", "UTF-8");
                 _language = (String) key.GetValue("Language", "english.xml");
-                _datVersion =
-                    (DatVersion) Enum.Parse(typeof (DatVersion), (String) key.GetValue("DatVersion", "Interlude"));
+                _datVersion =  (DatVersion) Enum.Parse(typeof (DatVersion), (String) key.GetValue("DatVersion", "Interlude"));
                 _useTray = Boolean.Parse((String) key.GetValue("UseTray", "false"));
                 _miniOnStart = Boolean.Parse((String) key.GetValue("MinimizeOnStart", "false"));
                 _lineageDirectory = (String) key.GetValue("LineageDirectory", "");
@@ -59,26 +58,42 @@ namespace com.jds.PathEditor.classes.services
                                               int.Parse((String) key.GetValue("ListG", "64")),
                                               int.Parse((String) key.GetValue("ListB", "64")));
 
-                String[] subs = key.GetSubKeyNames();
 
-                foreach (String subkey in subs)
+                RegistryKey sub = Registry.CurrentUser;
+                sub = sub.OpenSubKey(KEY + "\\LastFolders");
+
+                if (sub != null)
                 {
-                    if (subkey == null)
-                        return;
-
-                    RegistryKey sub = Registry.CurrentUser;
-                    sub = sub.OpenSubKey(KEY + "\\" + subkey);
-
-                    if (sub != null)
+                    foreach (String subkey in sub.GetSubKeyNames())
                     {
-                        if (!_columnSize.ContainsKey(subkey))
-                        {
-                            _columnSize[subkey] = new Dictionary<string, int>();
-                        }
+                        addLastFolder(subkey);
+                    }
+                }
+                
+                sub = Registry.CurrentUser;
+                sub = sub.OpenSubKey(KEY + "\\ColumnSizes");
 
-                        foreach (String value in sub.GetValueNames())
+                if (sub != null)
+                {
+                    foreach (String subkey in sub.GetSubKeyNames())
+                    {
+                        if (subkey == null)
+                            return;
+
+                        sub = Registry.CurrentUser;
+                        sub = sub.OpenSubKey(KEY + "\\ColumnSizes\\" + subkey);
+
+                        if (sub != null)
                         {
-                            _columnSize[subkey].Add(value, (int) sub.GetValue(value, 0));
+                            if (!_columnSize.ContainsKey(subkey))
+                            {
+                                _columnSize[subkey] = new Dictionary<string, int>();
+                            }
+
+                            foreach (String value in sub.GetValueNames())
+                            {
+                                _columnSize[subkey].Add(value, (int)sub.GetValue(value, 0));
+                            }
                         }
                     }
                 }
@@ -104,7 +119,7 @@ namespace com.jds.PathEditor.classes.services
 
             foreach (String keys in _columnSize.Keys)
             {
-                RegistryKey subkey = key.CreateSubKey(keys);
+                RegistryKey subkey = key.CreateSubKey("ColumnSizes\\" + keys);
 
                 if (_columnSize.ContainsKey(keys))
                 {
@@ -275,6 +290,12 @@ namespace com.jds.PathEditor.classes.services
         }
 
         #endregion
+
+        public void addLastFolder(String f)
+        {
+            if(!_lastFolders.Contains(f))
+                _lastFolders.Add(f);
+        }
 
         public static RConfig Instance
         {

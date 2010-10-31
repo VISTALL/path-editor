@@ -76,6 +76,7 @@ namespace com.jds.PathEditor.classes.forms
             this.LoadBtn2 = new com.jds.PathEditor.classes.gui.JButton();
             this.FileNameCombo = new System.Windows.Forms.ListBox();
             this.Tabs = new System.Windows.Forms.TabControl();
+            this.lastFoldersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HideMenu.SuspendLayout();
             this.MainMenu.SuspendLayout();
             this.RightClick.SuspendLayout();
@@ -151,6 +152,7 @@ namespace com.jds.PathEditor.classes.forms
             // 
             this.MenuFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.OpenFolder,
+            this.lastFoldersToolStripMenuItem,
             this.toolStripSeparator1,
             this.exit});
             this.MenuFile.Name = "MenuFile";
@@ -160,19 +162,19 @@ namespace com.jds.PathEditor.classes.forms
             // OpenFolder
             // 
             this.OpenFolder.Name = "OpenFolder";
-            this.OpenFolder.Size = new System.Drawing.Size(136, 22);
+            this.OpenFolder.Size = new System.Drawing.Size(152, 22);
             this.OpenFolder.Text = "OpenFolder";
             this.OpenFolder.Click += new System.EventHandler(this.OpenFolder_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(133, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
             // 
             // exit
             // 
             this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(136, 22);
+            this.exit.Size = new System.Drawing.Size(152, 22);
             this.exit.Text = "Exit";
             this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
@@ -575,6 +577,14 @@ namespace com.jds.PathEditor.classes.forms
             this.Tabs.Size = new System.Drawing.Size(497, 579);
             this.Tabs.TabIndex = 4;
             // 
+            // lastFoldersToolStripMenuItem
+            // 
+            this.lastFoldersToolStripMenuItem.Name = "lastFoldersToolStripMenuItem";
+            this.lastFoldersToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.lastFoldersToolStripMenuItem.Text = "Last Folders";
+            this.lastFoldersToolStripMenuItem.DropDownOpening += new System.EventHandler(this.lastFoldersToolsOpening);
+            this.lastFoldersToolStripMenuItem.Click += new System.EventHandler(this.lastFoldersToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -670,6 +680,7 @@ namespace com.jds.PathEditor.classes.forms
         private System.Windows.Forms.ListBox FileNameCombo;
         private System.Windows.Forms.TabControl Tabs;
         private System.Windows.Forms.Label path;
+        private System.Windows.Forms.ToolStripMenuItem lastFoldersToolStripMenuItem;
     }
 }
 
