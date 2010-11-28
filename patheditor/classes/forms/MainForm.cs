@@ -24,7 +24,7 @@ namespace com.jds.PathEditor.classes.forms
 {
     public partial class MainForm : Form
     {
-        private static readonly ILog _log = LogManager.GetLogger(typeof (MainForm));
+        private static readonly ILog _log = LogManager.GetLogger(typeof(MainForm));
         private static MainForm _instance;
 
         internal List<Definition> DatDatas;
@@ -125,26 +125,16 @@ namespace com.jds.PathEditor.classes.forms
                 return;
 
             selectedComboName = FileNameCombo.Items[FileNameCombo.SelectedIndex].ToString();
-            String[] TmpStr = Enum.GetNames(typeof (DatFiles));
+            String[] TmpStr = Enum.GetNames(typeof(DatFiles));
 
             for (int i = 0; i < TmpStr.Length; i++)
             {
                 if (selectedComboName.StartsWith(TmpStr[i].ToLower()))
                 {
-                    SelectedFiles = (DatFiles) i;
+                    SelectedFiles = (DatFiles)i;
                     break;
                 }
             }
-
-            /*	if (selectedComboName.StartsWith("eula"))
-			{
-				SaveBtn2.Enabled = false;
-				importBtn2.Enabled = false;
-				exportBtn2.Enabled = false;
-				LoadBtn2.Enabled = true;
-				editorBtn.Enabled = false;
-				return;
-			}*/
 
             Forms_Init(false, false);
             LoadBtn2.Enabled = true;
@@ -162,15 +152,15 @@ namespace com.jds.PathEditor.classes.forms
                 //*.dat
                 FileNameCombo.Items.Clear();
                 FileIniComboName.Items.Clear();
-                
+
                 if (Directory.Exists(RConfig.Instance.LineageDirectory))
                 {
                     DirectoryInfo current = new DirectoryInfo(RConfig.Instance.LineageDirectory);
-                    
+
                     // Грузим *.dat
                     foreach (FileInfo info in current.GetFiles("*.dat"))
                     {
-                        foreach (String name in Enum.GetNames(typeof (DatFiles)))
+                        foreach (String name in Enum.GetNames(typeof(DatFiles)))
                         {
                             String FileName = Path.GetFileNameWithoutExtension(info.FullName);
                             if (FileName.ToLower().StartsWith(name.ToLower()))
@@ -181,7 +171,7 @@ namespace com.jds.PathEditor.classes.forms
                         }
                     }
 
-                   
+
                     // Грузим *.ini
                     foreach (FileInfo info in current.GetFiles("*.ini"))
                     {
@@ -217,6 +207,7 @@ namespace com.jds.PathEditor.classes.forms
             exportBtn2.Enabled = false;
             LoadBtn2.Enabled = false;
             SaveBtn2.Enabled = false;
+            _mergeButton.Enabled = false;
 
             OpenL2iniText.Enabled = false;
             savel2ini.Enabled = false;
@@ -234,6 +225,8 @@ namespace com.jds.PathEditor.classes.forms
 
             // Set Datas
             DatInfo_init();
+
+            updateLastFolders();
         }
 
         private void Forms_Update()
@@ -294,6 +287,9 @@ namespace com.jds.PathEditor.classes.forms
             NumLines.Text = Localizate.getMessage(Word.NUMBER_OF_LINES);
             //eulaPage.Text = Localizate.getMessage(Word.LICENSE);
             lockBtn.Text = Localizate.getMessage(Word.LOCK);
+            lastFoldersToolStripMenuItem.Text = Localizate.getMessage(Word.LAST_FOLDERS);
+
+            updateLastFolders();
         }
 
         private void DatInfo_init()
@@ -304,16 +300,16 @@ namespace com.jds.PathEditor.classes.forms
 
                 object instance = t.InvokeMember(null, BindingFlags.CreateInstance, null,
                                                  null,
-                                                 new object[] {});
+                                                 new object[] { });
                 if (instance != null)
-                    DatInfo = (DatParser) instance;
+                    DatInfo = (DatParser)instance;
                 else
                     DatInfo = new DatParser();
                 DatDatas = new List<Definition>();
             }
             catch (Exception e)
             {
-               _log.Info(e.StackTrace, e);
+                _log.Info(e.StackTrace, e);
             }
         }
 
@@ -354,6 +350,7 @@ namespace com.jds.PathEditor.classes.forms
                 exportBtn2.Enabled = true;
                 SaveBtn2.Enabled = true;
                 editorBtn.Enabled = true;
+                _mergeButton.Enabled = true;
             }
             catch (Exception ex)
             {
@@ -445,7 +442,7 @@ namespace com.jds.PathEditor.classes.forms
                 FileNameCombo.Enabled = false;
                 Enabled = false;
 
-                ImportDialog.InitialDirectory = Application.StartupPath;
+                ImportDialog.InitialDirectory = RConfig.Instance.LineageDirectory;
                 ImportDialog.FileName = selectedComboName.Substring(0, selectedComboName.LastIndexOf("."));
                 ImportDialog.Filter = "Tab-SeparatedValues files (*.tsv)|*.tsv";
                 ImportDialog.FilterIndex = 1;
@@ -456,20 +453,20 @@ namespace com.jds.PathEditor.classes.forms
                     DatInfo_init();
                     string line = "";
                     Encoding enc = Encoding.GetEncoding(RConfig.Instance.TextEncoding);
-                    var sr = new StreamReader(ImportDialog.FileName, enc);
+                    StreamReader sr = new StreamReader(ImportDialog.FileName, enc);
 
-                    onStart((int) sr.BaseStream.Length);
+                    onStart((int)sr.BaseStream.Length);
 
                     while ((line = sr.ReadLine()) != null)
                     {
                         if (line.StartsWith("#"))
                             continue;
 
-                        String[] TmpStr = line.Split(new[] {'\t'});
+                        String[] TmpStr = line.Split(new[] { '\t' });
 
                         for (int i = 0; i < TmpStr.Length; i++)
                         {
-                            TmpStr[i] = TmpStr[i].Trim(new[] {'"'});
+                            TmpStr[i] = TmpStr[i].Trim(new[] { '"' });
                         }
 
                         Definition item = DatInfo.getDefinition();
@@ -490,7 +487,7 @@ namespace com.jds.PathEditor.classes.forms
 
                             if (obj is IType)
                             {
-                                var format = (IType) obj;
+                                var format = (IType)obj;
 
                                 format.parse(TmpStr[j], TmpStr, j, out j);
 
@@ -504,7 +501,7 @@ namespace com.jds.PathEditor.classes.forms
                         }
 
                         DatDatas.Add(item);
-                        setValue((int) sr.BaseStream.Length);
+                        setValue((int)sr.BaseStream.Length);
                         RecNo++;
                     }
                     sr.Close();
@@ -584,7 +581,7 @@ namespace com.jds.PathEditor.classes.forms
 
                         if (obj is IType)
                         {
-                            var type = (IType) obj;
+                            var type = (IType)obj;
 
                             type.writeHeader(FName, sr);
                         }
@@ -614,7 +611,7 @@ namespace com.jds.PathEditor.classes.forms
 
                                 if (obj is IType)
                                 {
-                                    var type = (IType) obj;
+                                    var type = (IType)obj;
                                     TmpStr = type.ToString();
                                 }
                                 else
@@ -712,7 +709,7 @@ namespace com.jds.PathEditor.classes.forms
                 BinaryReader f = L2EncDec.Decrypt(selectedIniComboName, Encoding.Default);
                 if (f == null)
                     return;
-                char[] IniText = f.ReadChars((int) f.BaseStream.Length);
+                char[] IniText = f.ReadChars((int)f.BaseStream.Length);
                 f.Close();
                 IniTextBox.Text = new String(IniText);
             }
@@ -829,15 +826,15 @@ namespace com.jds.PathEditor.classes.forms
                 return;
 
             selectedIniComboName = FileIniComboName.Items[FileIniComboName.SelectedIndex].ToString();
-            if(selectedIniComboName.EndsWith(".ini"))
+            if (selectedIniComboName.EndsWith(".ini"))
             {
-                String[] TmpStr = Enum.GetNames(typeof (IniFiles));
+                String[] TmpStr = Enum.GetNames(typeof(IniFiles));
 
                 for (int i = 0; i < TmpStr.Length; i++)
                 {
                     if (selectedIniComboName.StartsWith(TmpStr[i].ToLower()))
                     {
-                        selectedIniIntFile = (IniFiles) i;
+                        selectedIniIntFile = (IniFiles)i;
                         break;
                     }
                 }
@@ -856,7 +853,7 @@ namespace com.jds.PathEditor.classes.forms
                 }
             }
 
-            if(selectedIniIntFile == null)
+            if (selectedIniIntFile == null)
             {
                 return;
             }
@@ -877,13 +874,10 @@ namespace com.jds.PathEditor.classes.forms
 
             if (DirectoryDialog.ShowDialog() == DialogResult.OK)
             {
-                RConfig.Instance.LineageDirectory = DirectoryDialog.SelectedPath;
-                RConfig.Instance.addLastFolder(DirectoryDialog.SelectedPath);
-                RConfig.Instance.save();
-                Forms_Init(true, false);
-                Forms_Update();
+                openDirectory(DirectoryDialog.SelectedPath);
             }
         }
+
 
         private void exit_Click(object sender, EventArgs e)
         {
@@ -949,7 +943,7 @@ namespace com.jds.PathEditor.classes.forms
 
         private void ChLabel_Click(object sender, EventArgs e)
         {
-            var arg = (MouseEventArgs) e;
+            var arg = (MouseEventArgs)e;
             if (arg.Button == MouseButtons.Left)
             {
                 var dlg = new SettingsForm();
@@ -1045,14 +1039,73 @@ namespace com.jds.PathEditor.classes.forms
 
         #endregion
 
-        private void lastFoldersToolStripMenuItem_Click(object sender, EventArgs e)
+        #region Last Folders
+        protected void updateLastFolders()
         {
+            lastFoldersToolStripMenuItem.DropDownItems.Clear();
+            if (RConfig.Instance.LastFolders.Count == 0)
+            {
+                ToolStripMenuItem empty = new ToolStripMenuItem(Localizate.getMessage(Word.EMPTY));
+                empty.Enabled = false;
+                lastFoldersToolStripMenuItem.DropDownItems.Add(empty);
+                return;
+            }
 
+            foreach (String s in RConfig.Instance.LastFolders)
+            {
+                ToolStripMenuItem itemOpen = new ToolStripMenuItem(s);
+                itemOpen.Click += new EventHandler(itemOpen_Click);
+
+                lastFoldersToolStripMenuItem.DropDownItems.Add(itemOpen);
+            }
+
+            lastFoldersToolStripMenuItem.DropDownItems.Add(new ToolStripSeparator());
+
+            ToolStripMenuItem item = new ToolStripMenuItem(Localizate.getMessage(Word.CLEAR_BUTTON));
+            item.Click += new EventHandler(clearClick);
+
+            lastFoldersToolStripMenuItem.DropDownItems.Add(item);
         }
 
-        private void lastFoldersToolsOpening(object sender, EventArgs e)
+        private void itemOpen_Click(object sender, EventArgs e)
         {
-       
+            openDirectory(((ToolStripMenuItem)sender).Text);
         }
+
+        private void clearClick(object sender, EventArgs e)
+        {
+            RConfig.Instance.LastFolders.Clear();
+            RConfig.Instance.save();
+            updateLastFolders();
+        }
+
+        private void openDirectory(string p)
+        {
+            RConfig.Instance.LineageDirectory = p;
+            RConfig.Instance.addLastFolder(p);
+            RConfig.Instance.save();
+            Forms_Init(true, false);
+            Forms_Update();
+        }
+        
+        #endregion
+
+        #region Merge Button
+        private void _mergeButton_Click(object sender, EventArgs e)
+        {
+            ImportDialog.InitialDirectory = RConfig.Instance.LineageDirectory;
+            ImportDialog.FileName = selectedComboName.Substring(0, selectedComboName.LastIndexOf("."));
+            ImportDialog.Filter = "Tab-SeparatedValues files (*.tsv)|*.tsv";
+            ImportDialog.FilterIndex = 1;
+            ImportDialog.RestoreDirectory = true;
+
+            if (ImportDialog.ShowDialog() == DialogResult.OK)
+            {
+                MergeForm f = new MergeForm(DatInfo);
+                f.readSecond(ImportDialog.FileName);
+                f.ShowDialog(this);
+            }
+        }
+        #endregion
     }
 }

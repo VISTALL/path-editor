@@ -64,9 +64,11 @@ namespace com.jds.PathEditor.classes.services
 
                 if (sub != null)
                 {
-                    foreach (String subkey in sub.GetSubKeyNames())
+                    foreach (String val in sub.GetValueNames())
                     {
-                        addLastFolder(subkey);
+                        String value = sub.GetValue(val) as String;
+
+                        addLastFolder(value);
                     }
                 }
                 
@@ -117,9 +119,11 @@ namespace com.jds.PathEditor.classes.services
             key.SetValue("ListG", _colorEditor.G);
             key.SetValue("ListB", _colorEditor.B);
 
+            RegistryKey subkey = null;
+            
             foreach (String keys in _columnSize.Keys)
             {
-                RegistryKey subkey = key.CreateSubKey("ColumnSizes\\" + keys);
+                subkey = key.CreateSubKey("ColumnSizes\\" + keys);
 
                 if (_columnSize.ContainsKey(keys))
                 {
@@ -128,6 +132,18 @@ namespace com.jds.PathEditor.classes.services
                         subkey.SetValue(key2, _columnSize[keys][key2]);
                     }
                 }
+            }
+
+            key.DeleteSubKey("LastFolders\\", false);
+
+            subkey = key.CreateSubKey("LastFolders\\"); 
+
+            int i = 0;
+            foreach (String last in _lastFolders)
+            {
+                subkey.SetValue("Folder" + i, last);
+
+                i++;
             }
         }
 
@@ -291,11 +307,21 @@ namespace com.jds.PathEditor.classes.services
 
         #endregion
 
+        #region Last Folders
         public void addLastFolder(String f)
         {
             if(!_lastFolders.Contains(f))
                 _lastFolders.Add(f);
         }
+
+        public List<String> LastFolders
+        {
+            get
+            {
+                return _lastFolders;
+            }
+        }
+        #endregion
 
         public static RConfig Instance
         {

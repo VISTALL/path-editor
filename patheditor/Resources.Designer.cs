@@ -130,6 +130,13 @@ namespace com.jds.PathEditor {
             }
         }
         
+        internal static System.Drawing.Bitmap MERGE {
+            get {
+                object obj = ResourceManager.GetObject("MERGE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap Preferences {
             get {
                 object obj = ResourceManager.GetObject("Preferences", resourceCulture);

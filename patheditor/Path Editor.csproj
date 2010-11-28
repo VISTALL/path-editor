@@ -17,7 +17,7 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>3.5</OldToolsVersion>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -32,6 +32,7 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -179,6 +180,12 @@
     <Compile Include="classes\forms\MainForm.designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="classes\forms\MergeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="classes\forms\MergeForm.Designer.cs">
+      <DependentUpon>MergeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="classes\forms\MessageBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,7 +222,7 @@
     <Compile Include="classes\parser\DatTool.cs" />
     <Compile Include="classes\parser\L2EncDec.cs" />
     <Compile Include="classes\services\LogService.cs" />
-    <Compile Include="classes\services\Message.cs" />
+    <Compile Include="classes\services\Localizate.cs" />
     <Compile Include="classes\services\RConfig.cs" />
     <Compile Include="classes\services\TypesEditors.cs" />
     <Compile Include="classes\windows\SystemInfo.cs" />
@@ -231,6 +238,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="Resources\Preferences.png" />
     <None Include="Resources\Information.png" />
     <None Include="Resources\Help.png" />
@@ -277,6 +285,7 @@
     <Content Include="Resources\l2.bmp" />
     <Content Include="Resources\menu-open.png" />
     <Content Include="Resources\menu-saveall.png" />
+    <None Include="Resources\MERGE.png" />
     <Content Include="Resources\nextfile.png" />
     <Content Include="Resources\notepad.ico" />
     <Content Include="Resources\prevfile.png" />
@@ -308,6 +317,9 @@
     <EmbeddedResource Include="classes\forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="classes\forms\MergeForm.resx">
+      <DependentUpon>MergeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="classes\forms\MessageBox.resx">
       <DependentUpon>MessageBox.cs</DependentUpon>

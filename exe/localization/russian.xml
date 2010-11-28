@@ -69,7 +69,10 @@
   <add key="PLEASE_SELECT_SYSTEM_FOLDER" value="Виберите папку System клиента Lineage 2" /> 
   <add key="COMPLETE_PATH_SYSTEM_FOLDER" value="Закончечилась процедура пропачения папки System" />
   <add key="FILE_NOT_FOUND" value="Файл не найден..." />
-	<add key="LICENSE" value="Лицензия" />
-	<!--Editor-->
-	<add key="EDITOR" value="Редактор" />	
+  <add key="LICENSE" value="Лицензия" />
+  <!--Editor-->
+  <add key="EDITOR" value="Редактор" />
+  <!--Last folders-->
+  <add key="EMPTY" value="Пусто" />
+  <add key="LAST_FOLDERS" value="Последнии папки" />
 </localization>

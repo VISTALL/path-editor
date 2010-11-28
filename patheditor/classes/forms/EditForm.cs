@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
 using com.jds.PathEditor.classes.client;
@@ -145,7 +144,7 @@ namespace com.jds.PathEditor.classes.forms
         private void _listView_RetrieveVirtualItem(object sender, RetrieveVirtualItemEventArgs e)
         {
             int index = e.ItemIndex;
-            ListViewItem item = _items.ElementAt(index);
+            ListViewItem item = _items[index];
             e.Item = item;
         }
 

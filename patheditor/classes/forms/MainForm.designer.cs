@@ -33,6 +33,7 @@ namespace com.jds.PathEditor.classes.forms
             this.MainMenu = new System.Windows.Forms.MenuStrip();
             this.MenuFile = new System.Windows.Forms.ToolStripMenuItem();
             this.OpenFolder = new System.Windows.Forms.ToolStripMenuItem();
+            this.lastFoldersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exit = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuService = new System.Windows.Forms.ToolStripMenuItem();
@@ -76,7 +77,7 @@ namespace com.jds.PathEditor.classes.forms
             this.LoadBtn2 = new com.jds.PathEditor.classes.gui.JButton();
             this.FileNameCombo = new System.Windows.Forms.ListBox();
             this.Tabs = new System.Windows.Forms.TabControl();
-            this.lastFoldersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this._mergeButton = new com.jds.PathEditor.classes.gui.JButton();
             this.HideMenu.SuspendLayout();
             this.MainMenu.SuspendLayout();
             this.RightClick.SuspendLayout();
@@ -162,19 +163,25 @@ namespace com.jds.PathEditor.classes.forms
             // OpenFolder
             // 
             this.OpenFolder.Name = "OpenFolder";
-            this.OpenFolder.Size = new System.Drawing.Size(152, 22);
+            this.OpenFolder.Size = new System.Drawing.Size(136, 22);
             this.OpenFolder.Text = "OpenFolder";
             this.OpenFolder.Click += new System.EventHandler(this.OpenFolder_Click);
+            // 
+            // lastFoldersToolStripMenuItem
+            // 
+            this.lastFoldersToolStripMenuItem.Name = "lastFoldersToolStripMenuItem";
+            this.lastFoldersToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.lastFoldersToolStripMenuItem.Text = "Last Folders";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(133, 6);
             // 
             // exit
             // 
             this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(152, 22);
+            this.exit.Size = new System.Drawing.Size(136, 22);
             this.exit.Text = "Exit";
             this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
@@ -450,6 +457,7 @@ namespace com.jds.PathEditor.classes.forms
             // 
             // DatTab
             // 
+            this.DatTab.Controls.Add(this._mergeButton);
             this.DatTab.Controls.Add(this.lockBtn);
             this.DatTab.Controls.Add(this.editorBtn);
             this.DatTab.Controls.Add(this.startBtn2);
@@ -469,7 +477,7 @@ namespace com.jds.PathEditor.classes.forms
             // lockBtn
             // 
             this.lockBtn.AutoSize = true;
-            this.lockBtn.Location = new System.Drawing.Point(361, 322);
+            this.lockBtn.Location = new System.Drawing.Point(364, 380);
             this.lockBtn.Name = "lockBtn";
             this.lockBtn.Size = new System.Drawing.Size(57, 18);
             this.lockBtn.TabIndex = 8;
@@ -484,7 +492,7 @@ namespace com.jds.PathEditor.classes.forms
             this.editorBtn.HeaderText = "Editor";
             this.editorBtn.Image = global::com.jds.PathEditor.Resources.editor;
             this.editorBtn.ImageScalingSize = new System.Drawing.Size(16, 16);
-            this.editorBtn.Location = new System.Drawing.Point(361, 256);
+            this.editorBtn.Location = new System.Drawing.Point(361, 312);
             this.editorBtn.Name = "editorBtn";
             this.editorBtn.Size = new System.Drawing.Size(122, 50);
             this.editorBtn.TabIndex = 8;
@@ -577,13 +585,18 @@ namespace com.jds.PathEditor.classes.forms
             this.Tabs.Size = new System.Drawing.Size(497, 579);
             this.Tabs.TabIndex = 4;
             // 
-            // lastFoldersToolStripMenuItem
+            // _mergeButton
             // 
-            this.lastFoldersToolStripMenuItem.Name = "lastFoldersToolStripMenuItem";
-            this.lastFoldersToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.lastFoldersToolStripMenuItem.Text = "Last Folders";
-            this.lastFoldersToolStripMenuItem.DropDownOpening += new System.EventHandler(this.lastFoldersToolsOpening);
-            this.lastFoldersToolStripMenuItem.Click += new System.EventHandler(this.lastFoldersToolStripMenuItem_Click);
+            this._mergeButton.DescriptionText = "";
+            this._mergeButton.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._mergeButton.HeaderText = "Merge";
+            this._mergeButton.Image = global::com.jds.PathEditor.Resources.MERGE;
+            this._mergeButton.ImageScalingSize = new System.Drawing.Size(16, 16);
+            this._mergeButton.Location = new System.Drawing.Point(361, 256);
+            this._mergeButton.Name = "_mergeButton";
+            this._mergeButton.Size = new System.Drawing.Size(122, 50);
+            this._mergeButton.TabIndex = 9;
+            this._mergeButton.Click += new System.EventHandler(this._mergeButton_Click);
             // 
             // MainForm
             // 
@@ -681,6 +694,7 @@ namespace com.jds.PathEditor.classes.forms
         private System.Windows.Forms.TabControl Tabs;
         private System.Windows.Forms.Label path;
         private System.Windows.Forms.ToolStripMenuItem lastFoldersToolStripMenuItem;
+        private JButton _mergeButton;
     }
 }
 

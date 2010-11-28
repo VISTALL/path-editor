@@ -3,73 +3,30 @@
     <string />
     <integer />
     <boolean>
-      <setting name="livetemplates.csharp.usevar">False</setting>
+      <setting name="livetemplates.csharp.usevar">True</setting>
       <setting name="SolutionAnalysisEnabled">False</setting>
     </boolean>
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:CNTTXT_PAIR.cs" caret="888" fromTop="15" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MAT.cs" caret="1070" fromTop="12" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:Recipe.cs" caret="0" fromTop="0" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:FOR_INTASCF.cs" caret="887" fromTop="27" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:MantleException.cs" caret="423" fromTop="3" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:MAT2.cs" caret="1336" fromTop="7" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:types/f:ASCF.cs" caret="906" fromTop="10" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:OptionData_Client.cs" caret="283" fromTop="8" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:VehiclePartsGrp.cs" caret="1131" fromTop="19" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ScenePlayerData.cs" caret="0" fromTop="0" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:SymbolName.cs" caret="0" fromTop="0" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:SystemMsg.cs" caret="0" fromTop="0" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:SkillName.cs" caret="2711" fromTop="2" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:SysString.cs" caret="1483" fromTop="10" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:ItemPrime.cs" caret="534" fromTop="20" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:DatVersion.cs" caret="318" fromTop="14" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:BrItemGrp.cs" caret="461" fromTop="15" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/d:definitions/f:AdditionalItemgrp.cs" caret="159" fromTop="4" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:Lineage2Ver.cs" caret="132" fromTop="3" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:IniFiles.cs" caret="0" fromTop="0" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:DatFiles.cs" caret="65" fromTop="1" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:client/f:IntFiles.cs" caret="1375" fromTop="51" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/f:SystemInfo.cs" caret="180" fromTop="5" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/d:windows7/f:ITaskbarList3.cs" caret="820" fromTop="24" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.designer.cs" caret="34784" fromTop="19" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/d:windows7/f:ThumbnailProgressState.cs" caret="189" fromTop="4" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/d:windows7/f:Windows7Taskbar.cs" caret="112" fromTop="0" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="260" fromTop="0" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="35533" fromTop="20" />
+      <File id="d:&amp;/f:Microsoft.Win32.RegistryKey.cs/l:F!?Temp?_ReSharper.Path Editor.-18152796?DecompilerCache?metadata?mscorlib-69b6?Microsoft.Win32.RegistryKey.cs" caret="1993" fromTop="19" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:EditForm.cs" caret="6900" fromTop="59" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.designer.cs" caret="30086" fromTop="17" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MergeForm.cs" caret="398" fromTop="16" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="37511" fromTop="23" />
     </RecentFiles>
     <RecentEdits>
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:windows/f:SystemInfo.cs" caret="165" fromTop="5" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.designer.cs" caret="34784" fromTop="19" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="221" fromTop="8" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="126" fromTop="4" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="399" fromTop="13" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.designer.cs" caret="34784" fromTop="19" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="24300" fromTop="19" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="24642" fromTop="20" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="24828" fromTop="15" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="5658" fromTop="26" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="35546" fromTop="20" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="35546" fromTop="26" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="35546" fromTop="26" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="35554" fromTop="26" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="1781" fromTop="16" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="10415" fromTop="22" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="4064" fromTop="27" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="4035" fromTop="22" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="2957" fromTop="16" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="2958" fromTop="22" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="2776" fromTop="16" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="4035" fromTop="15" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="4036" fromTop="37" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="4957" fromTop="24" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:services/f:RConfig.cs" caret="870" fromTop="20" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="5838" fromTop="9" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="6127" fromTop="13" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="31262" fromTop="22" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="35554" fromTop="22" />
-      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="35533" fromTop="20" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:EditForm.cs" caret="73" fromTop="2" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:EditForm.cs" caret="4626" fromTop="15" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:EditForm.cs" caret="9023" fromTop="59" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.designer.cs" caret="29714" fromTop="11" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="12896" fromTop="21" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="6952" fromTop="18" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="17075" fromTop="0" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="36998" fromTop="9" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="15907" fromTop="10" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MergeForm.cs" caret="398" fromTop="16" />
+      <File id="F430DDC8-DD82-4A1C-B26F-5CDFC3BF66AE/d:classes/d:forms/f:MainForm.cs" caret="37511" fromTop="23" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -92,7 +49,7 @@
       <Item value="IType`0" priority="0" />
       <Item value="f" priority="13" />
       <Item value="_log" priority="1" />
-      <Item value="return" priority="12" />
+      <Item value="return" priority="13" />
       <Item value="nguid" priority="0" />
       <Item value="break" priority="2" />
       <Item value="Console`0" priority="8" />
@@ -115,7 +72,7 @@
       <Item value="short" priority="2" />
       <Item value="len2" priority="0" />
       <Item value="Current" priority="0" />
-      <Item value="public" priority="9" />
+      <Item value="public" priority="10" />
       <Item value="static" priority="1" />
       <Item value="len" priority="2" />
       <Item value="GetMediumInt`0" priority="0" />
@@ -189,7 +146,7 @@
       <Item value="text" priority="0" />
       <Item value="L2EncDec`0" priority="0" />
       <Item value="DatTool`0" priority="2" />
-      <Item value="foreach" priority="0" />
+      <Item value="foreach" priority="1" />
       <Item value="parseS" priority="0" />
       <Item value="mothers" priority="1" />
       <Item value="v" priority="1" />
@@ -206,19 +163,20 @@
       <Item value="FieldAccessException`0" priority="0" />
       <Item value="fieldInfo" priority="0" />
       <Item value="StatusProgress" priority="0" />
-      <Item value="List" priority="0" />
+      <Item value="List" priority="1" />
       <Item value="List&lt;string&gt;" priority="0" />
       <Item value="subs" priority="0" />
       <Item value="switch" priority="0" />
       <Item value="subkey" priority="1" />
       <Item value="case" priority="1" />
-      <Item value="_lastFolders" priority="1" />
+      <Item value="_lastFolders" priority="2" />
       <Item value="void" priority="1" />
       <Item value="_AppDomain`0" priority="0" />
       <Item value="addLastFolder`0" priority="0" />
       <Item value="sub" priority="2" />
-      <Item value="lastFoldersToolStripMenuItem" priority="0" />
+      <Item value="lastFoldersToolStripMenuItem" priority="3" />
       <Item value="true" priority="0" />
+      <Item value="ColorDepth`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:com.jds.PathEditor.classes.client.definitions.QuestNameInfo_Gracia_Final">
       <Item value="InitFieldValues`0" priority="0" />
@@ -257,6 +215,7 @@
       <Item value="DatVersionAsEnum" priority="3" />
       <Item value="DevelopMode" priority="2" />
       <Item value="addLastFolder`0" priority="0" />
+      <Item value="LineageDirectory" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@com.jds.PathEditor.classes.client.DatVersion">
       <Item value="Freya" priority="8" />
@@ -432,7 +391,12 @@
       <Item value="GetSubKeyNames`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Forms.ToolStripMenuItem">
-      <Item value="HasDropDownItems" priority="0" />
+      <Item value="HasDropDownItems" priority="1" />
+      <Item value="DropDownItems" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ToolStripItemCollection">
+      <Item value="Clear`0" priority="0" />
+      <Item value="Add`0" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

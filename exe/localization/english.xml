@@ -69,7 +69,10 @@
   <add key="PLEASE_SELECT_SYSTEM_FOLDER" value="Please select System folder of client Lineage 2" /> 
   <add key="COMPLETE_PATH_SYSTEM_FOLDER" value="Complete path system" />
   <add key="FILE_NOT_FOUND" value="File not found" />
-	<add key="LICENSE" value="License" />
-	<!--Editor-->
-	<add key="EDITOR" value="Editor" />
+  <add key="LICENSE" value="License" />
+  <!--Editor-->
+  <add key="EDITOR" value="Editor" />
+  <!--Last folders-->
+  <add key="EMPTY" value="Empty" />
+  <add key="LAST_FOLDERS" value="Last Folders" />
 </localization>

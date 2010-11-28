@@ -67,7 +67,9 @@ namespace com.jds.PathEditor.classes.services
         MINIMIZED_ON_START_L2,
         LICENSE,
         EDITOR,
-        LOCK
+        LOCK,
+        EMPTY,
+        LAST_FOLDERS
     }
 
     public class Localizate

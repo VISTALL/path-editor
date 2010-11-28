@@ -4,7 +4,7 @@ using com.jds.PathEditor.classes.client.mothers;
 
 namespace com.jds.PathEditor.classes.client.types
 {
-    public class UINT : IType
+    public class UINT : IType, IComparable<UINT>
     {
         public UINT()
         {
@@ -43,6 +43,21 @@ namespace com.jds.PathEditor.classes.client.types
         public override string ToString()
         {
             return Value.ToString();
+        }
+
+        public int CompareTo(UINT obj)
+        {
+            return Value.CompareTo(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return Value.GetHashCode();
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is UINT ? Value == ((UINT)obj).Value : false;
         }
     }
 }
