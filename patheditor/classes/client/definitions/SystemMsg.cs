@@ -162,16 +162,27 @@ namespace com.jds.PathEditor.classes.client.definitions
 
         public override Definition ParseMain(BinaryReader f, int RecNo)
         {
-            var info = new SystemMsgInfo();
+            SystemMsgInfo info = new SystemMsgInfo();
             info = (SystemMsgInfo) base.ReadFieldValue(f, info, "id", "sys_msg_ref");
             if (RConfig.Instance.DatVersionAsEnum >= DatVersion.Interlude)
                 info = (SystemMsgInfo) base.ReadFieldValue(f, info, "UNK_1_1", "type");
+
+            String devString = " (id: " + info.Id + ")";
+
+            if (RConfig.Instance.DevelopMode && !info.Message.EndsWith(devString))
+            {
+                info.Message = info.Message + devString;
+            }
+            else if (!RConfig.Instance.DevelopMode && info.Message.EndsWith(devString))
+            {
+                info.Message = info.Message.Replace(devString, "");
+            }
             return info;
         }
 
         public override void CompileMain(BinaryWriter f, List<Definition> infos, int RecNo)
         {
-            var info = (SystemMsgInfo) infos[RecNo];
+            SystemMsgInfo info = (SystemMsgInfo)infos[RecNo];
             base.WriteFieldValue(f, info, "id", "sys_msg_ref");
             if (RConfig.Instance.DatVersionAsEnum >= DatVersion.Interlude)
                 base.WriteFieldValue(f, info, "UNK_1_1", "type");
