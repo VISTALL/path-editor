@@ -18,6 +18,7 @@
         Eula, 
         ExceptionMiniMapData,
         GameTip,
+        GoodsIcon,
         Hairaccessorylocgrp,
         Hennagrp,
         HuntingZone,

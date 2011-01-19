@@ -83,6 +83,7 @@
     <Compile Include="classes\client\definitions\EtcItemGrp.cs" />
     <Compile Include="classes\client\definitions\Eula.cs" />
     <Compile Include="classes\client\definitions\GameTip.cs" />
+    <Compile Include="classes\client\definitions\GoodsIcon.cs" />
     <Compile Include="classes\client\definitions\HairAccessoryLocGrp.cs" />
     <Compile Include="classes\client\definitions\HennaGrp.cs" />
     <Compile Include="classes\client\definitions\HuntingZone.cs" />
