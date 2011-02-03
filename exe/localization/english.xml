@@ -8,6 +8,7 @@
   <add key="START_BUTTON" value="Start" />
   <add key="OPEN_BUTTON" value="Open" />
   <add key="CLEAR_BUTTON" value="Clear" />
+  <add key="MERGE_BUTTON" value="Merge" />
   <add key="LOCK" value="Lock?" />
   <!--Main Tabs-->
   <add key="DAT_TAB" value="*.dat Files" />

@@ -16,6 +16,7 @@ namespace com.jds.PathEditor.classes.services
         START_BUTTON,
         OPEN_BUTTON,
         CLEAR_BUTTON,
+        MERGE_BUTTON,
         DAT_TAB,
         INI_TAB,
         MENU_FILE,

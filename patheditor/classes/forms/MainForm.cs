@@ -258,6 +258,7 @@ namespace com.jds.PathEditor.classes.forms
             exportBtn2.HeaderText = Localizate.getMessage(Word.EXPORT_BUTTON);
             startBtn2.HeaderText = Localizate.getMessage(Word.START_BUTTON);
             editorBtn.HeaderText = Localizate.getMessage(Word.EDITOR);
+            _mergeButton.HeaderText = Localizate.getMessage(Word.MERGE_BUTTON);
 
             //SaveBtn2.HeaderText = Message.getMessage("IMPORT_BUTTON");
             //ExpBtn.Text = Message.getMessage("EXPORT_BUTTON");

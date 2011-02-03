@@ -9,6 +9,7 @@
   <add key="OPEN_BUTTON" value="Открыть" />
   <add key="CLEAR_BUTTON" value="Очистить" />
   <add key="LOCK" value="Блокировать?" />
+  <add key="MERGE_BUTTON" value="Слить" />
   <!--Main Tabs-->
   <add key="DAT_TAB" value="*.dat Файлы" />
   <add key="INI_TAB" value="*.ini/*.int Файлы" />
@@ -67,7 +68,7 @@
   <add key="ERROR" value="Ошибка" /> 
   <add key="SYSTEM_FOLDER_IS_EMPTY" value="Папка System пуста" />  
   <add key="PLEASE_SELECT_SYSTEM_FOLDER" value="Виберите папку System клиента Lineage 2" /> 
-  <add key="COMPLETE_PATH_SYSTEM_FOLDER" value="Закончечилась процедура пропачения папки System" />
+  <add key="COMPLETE_PATH_SYSTEM_FOLDER" value="Конец пропачения папки System" />
   <add key="FILE_NOT_FOUND" value="Файл не найден..." />
   <add key="LICENSE" value="Лицензия" />
   <!--Editor-->
