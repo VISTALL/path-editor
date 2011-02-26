@@ -95,8 +95,8 @@ namespace com.jds.PathEditor.classes.client.definitions
         public UINT UNK_3;               //unknown all 0 
         public UINT area_id;             //area id (goddard, rune, giran, etc) 
         public UINT UNK_4;
-        public CNTRINT_PAIR tab5;
-        public CNTRINT_PAIR tab6;
+        public CNTRINT_PAIR reward_item_ids;
+        public CNTRINT_PAIR reward_item_counts;
 
     }
    
@@ -138,8 +138,8 @@ namespace com.jds.PathEditor.classes.client.definitions
         public UINT area_id;             //area id (goddard, rune, giran, etc) 
         public UINT UNK_4;
         
-        public CNTRINT_PAIR tab5;
-        public CNTRINT_PAIR tab6;
+        public CNTRINT_PAIR reward_item_ids;
+        public CNTRINT_PAIR reward_item_counts;
         public CNTRINT_PAIR tab7;
     }
     #endregion
@@ -178,7 +178,7 @@ namespace com.jds.PathEditor.classes.client.definitions
 
                 dat = (QuestNameInfo_Gracia_Final) base.ReadFieldValue(f, dat, "id", "get_item_in_quest");
                 dat = (QuestNameInfo_Gracia_Final) base.ReadFieldValue(f, dat, "UNK_1", "short_description");
-                dat = (QuestNameInfo_Gracia_Final)base.ReadFieldValue(f, dat, "req_class", "tab6");
+                dat = (QuestNameInfo_Gracia_Final)base.ReadFieldValue(f, dat, "req_class", "reward_item_counts");
                 info = dat;
             }
             else
@@ -210,7 +210,7 @@ namespace com.jds.PathEditor.classes.client.definitions
                 var info = (QuestNameInfo_Gracia_Final) infos[RecNo];
                 base.WriteFieldValue(f, info, "id", "get_item_in_quest");
                 base.WriteFieldValue(f, info, "UNK_1", "short_description");
-                base.WriteFieldValue(f, info, "req_class", "tab6");
+                base.WriteFieldValue(f, info, "req_class", "reward_item_counts");
             }
             else
             {
