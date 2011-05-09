@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -68,7 +68,6 @@
     <Compile Include="classes\client\definitions\ActionName.cs" />
     <Compile Include="classes\client\definitions\AdditionalEffect.cs" />
     <Compile Include="classes\client\definitions\AdditionalItemgrp.cs" />
-    <Compile Include="classes\client\definitions\AlterSkillData.cs" />
     <Compile Include="classes\client\definitions\ArmorGrp.cs" />
     <Compile Include="classes\client\definitions\BrItemGrp.cs" />
     <Compile Include="classes\client\definitions\CastleName.cs" />
