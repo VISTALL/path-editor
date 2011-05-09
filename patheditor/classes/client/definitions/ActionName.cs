@@ -3,6 +3,7 @@
 using System;
 using com.jds.PathEditor.classes.client.mothers;
 using com.jds.PathEditor.classes.client.types;
+using com.jds.PathEditor.classes.services;
 
 #endregion
 
@@ -111,6 +112,27 @@ namespace com.jds.PathEditor.classes.client.definitions
         public override Definition getDefinition()
         {
             return new ActionNameInfo();
+        }
+
+        public override Definition ParseMain(System.IO.BinaryReader f, int RecNo)
+        {
+            ActionNameInfo definition = base.ParseMain(f, RecNo) as ActionNameInfo;
+            if (definition == null)
+            {
+                return null;
+            }
+            String devString = " (id: " + definition.Id + ")";
+
+            if (RConfig.Instance.DevelopMode && !definition.Name.EndsWith(devString))
+            {
+                definition.Name = definition.Name + devString;
+            }
+            else if (!RConfig.Instance.DevelopMode && definition.Name.EndsWith(devString))
+            {
+                definition.Name = definition.Name.Replace(devString, "");
+            }
+
+            return definition;
         }
     }
 

@@ -162,8 +162,12 @@ namespace com.jds.PathEditor.classes.forms
                     {
                         foreach (String name in Enum.GetNames(typeof(DatFiles)))
                         {
+                            String name0 = name;
+                            if (name0.StartsWith("_"))
+                                name0 = name.Replace("_", "");
+
                             String FileName = Path.GetFileNameWithoutExtension(info.FullName);
-                            if (FileName.ToLower().StartsWith(name.ToLower()))
+                            if (FileName.ToLower().StartsWith(name0.ToLower()))
                             {
                                 FileNameCombo.Items.Add(info.Name.ToLower());
                                 break;

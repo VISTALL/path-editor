@@ -13,6 +13,7 @@
         Gracia_Plus__Epilogue,
         Freya,
         High_Five,
-        Anniversary
+        Anniversary,
+        Goddness_of_Destruction
     }
 }

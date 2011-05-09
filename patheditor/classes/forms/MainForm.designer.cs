@@ -68,6 +68,7 @@ namespace com.jds.PathEditor.classes.forms
             this.IniTextBox = new System.Windows.Forms.RichTextBox();
             this.OpenL2iniText = new System.Windows.Forms.Button();
             this.DatTab = new System.Windows.Forms.TabPage();
+            this._mergeButton = new com.jds.PathEditor.classes.gui.JButton();
             this.lockBtn = new System.Windows.Forms.CheckBox();
             this.editorBtn = new com.jds.PathEditor.classes.gui.JButton();
             this.startBtn2 = new com.jds.PathEditor.classes.gui.JButton();
@@ -77,7 +78,6 @@ namespace com.jds.PathEditor.classes.forms
             this.LoadBtn2 = new com.jds.PathEditor.classes.gui.JButton();
             this.FileNameCombo = new System.Windows.Forms.ListBox();
             this.Tabs = new System.Windows.Forms.TabControl();
-            this._mergeButton = new com.jds.PathEditor.classes.gui.JButton();
             this.HideMenu.SuspendLayout();
             this.MainMenu.SuspendLayout();
             this.RightClick.SuspendLayout();
@@ -474,6 +474,19 @@ namespace com.jds.PathEditor.classes.forms
             this.DatTab.Text = "dat Files";
             this.DatTab.UseVisualStyleBackColor = true;
             // 
+            // _mergeButton
+            // 
+            this._mergeButton.DescriptionText = "";
+            this._mergeButton.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._mergeButton.HeaderText = "Merge";
+            this._mergeButton.Image = global::com.jds.PathEditor.Resources.MERGE;
+            this._mergeButton.ImageScalingSize = new System.Drawing.Size(16, 16);
+            this._mergeButton.Location = new System.Drawing.Point(361, 256);
+            this._mergeButton.Name = "_mergeButton";
+            this._mergeButton.Size = new System.Drawing.Size(122, 50);
+            this._mergeButton.TabIndex = 9;
+            this._mergeButton.Click += new System.EventHandler(this._mergeButton_Click);
+            // 
             // lockBtn
             // 
             this.lockBtn.AutoSize = true;
@@ -584,19 +597,6 @@ namespace com.jds.PathEditor.classes.forms
             this.Tabs.SelectedIndex = 0;
             this.Tabs.Size = new System.Drawing.Size(497, 579);
             this.Tabs.TabIndex = 4;
-            // 
-            // _mergeButton
-            // 
-            this._mergeButton.DescriptionText = "";
-            this._mergeButton.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._mergeButton.HeaderText = "Merge";
-            this._mergeButton.Image = global::com.jds.PathEditor.Resources.MERGE;
-            this._mergeButton.ImageScalingSize = new System.Drawing.Size(16, 16);
-            this._mergeButton.Location = new System.Drawing.Point(361, 256);
-            this._mergeButton.Name = "_mergeButton";
-            this._mergeButton.Size = new System.Drawing.Size(122, 50);
-            this._mergeButton.TabIndex = 9;
-            this._mergeButton.Click += new System.EventHandler(this._mergeButton_Click);
             // 
             // MainForm
             // 
