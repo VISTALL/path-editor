@@ -97,6 +97,7 @@
     <Compile Include="classes\client\definitions\OptionData_Client.cs" />
     <Compile Include="classes\client\definitions\PostEffectData.cs" />
     <Compile Include="classes\client\definitions\ProductName.cs" />
+    <Compile Include="classes\client\definitions\QuestMarkConditionData.cs" />
     <Compile Include="classes\client\definitions\QuestName.cs" />
     <Compile Include="classes\client\definitions\RaidData.cs" />
     <Compile Include="classes\client\definitions\Recipe.cs" />

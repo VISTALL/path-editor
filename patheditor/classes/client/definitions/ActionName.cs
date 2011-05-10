@@ -13,6 +13,7 @@ using com.jds.PathEditor.classes.services;
  * - Gracia 2 [WORK]
  * - Gracia Final [WORK]
  * - Gracia Plus [WORK]
+ * - CT3 [WORK]
  * 
  * - Property Editor
  */
@@ -103,6 +104,23 @@ namespace com.jds.PathEditor.classes.client.definitions
         }
     }
 
+    /**
+     * @author VISTALL 
+     */
+    public class ActionNameInfo_CT3 : Definition
+    {
+        public UINT tag;
+        public UINT id;
+        public INT type;
+        public UINT category;
+        public CNTRINT_PAIR cat2;
+        public ASCF cmd;
+        public ASCF icon;
+        public ASCF icon_ex;
+        public ASCF desc;
+        public INT toggle_group_id;
+        public UNICODE command;
+    }
     #endregion
 
     #region Parser
@@ -111,28 +129,33 @@ namespace com.jds.PathEditor.classes.client.definitions
     {
         public override Definition getDefinition()
         {
+            if (RConfig.Instance.DatVersionAsEnum >= DatVersion.Goddness_of_Destruction)
+                return new ActionNameInfo_CT3();
             return new ActionNameInfo();
         }
 
         public override Definition ParseMain(System.IO.BinaryReader f, int RecNo)
         {
-            ActionNameInfo definition = base.ParseMain(f, RecNo) as ActionNameInfo;
-            if (definition == null)
+            Definition def = base.ParseMain(f, RecNo);
+            if (RConfig.Instance.DatVersionAsEnum >= DatVersion.Goddness_of_Destruction)
             {
-                return null;
+                //
             }
-            String devString = " (id: " + definition.Id + ")";
+            else
+            {
+                ActionNameInfo definition = def as ActionNameInfo;
+                if (definition == null)
+                    return null;
+                String devString = " (id: " + definition.Id + ")";
 
-            if (RConfig.Instance.DevelopMode && !definition.Name.EndsWith(devString))
-            {
-                definition.Name = definition.Name + devString;
-            }
-            else if (!RConfig.Instance.DevelopMode && definition.Name.EndsWith(devString))
-            {
-                definition.Name = definition.Name.Replace(devString, "");
+                if (RConfig.Instance.DevelopMode && !definition.Name.EndsWith(devString))
+                    definition.Name = definition.Name + devString;
+                else if (!RConfig.Instance.DevelopMode && definition.Name.EndsWith(devString))
+                    definition.Name = definition.Name.Replace(devString, "");
             }
 
-            return definition;
+
+            return def;
         }
     }
 

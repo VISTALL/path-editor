@@ -312,7 +312,7 @@ namespace com.jds.PathEditor.classes.forms
             // 
             this.ChLabel.AutoSize = true;
             this.ChLabel.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ChLabel.Location = new System.Drawing.Point(384, 4);
+            this.ChLabel.Location = new System.Drawing.Point(370, 4);
             this.ChLabel.Name = "ChLabel";
             this.ChLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ChLabel.Size = new System.Drawing.Size(39, 14);

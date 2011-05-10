@@ -47,8 +47,8 @@
         PawnAnimData, //TODO new CT3
         PostEffectData, 
         ProductName,
-        QuestMarkConditionData, //TODO new CT3
-        QuestName,
+        QuestMarkConditionData, 
+        QuestName, //TODO check CT3
         RaidData,
         RideData, 
         Recipe, 
