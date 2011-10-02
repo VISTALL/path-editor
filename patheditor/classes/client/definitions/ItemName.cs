@@ -278,7 +278,7 @@ namespace com.jds.PathEditor.classes.client.definitions
         public ASCF UNK1_9;//
         public UINT special_enchant_amount;//
         public ASCF special_enchant_desc;//
-        public UINT UNK2;//
+        public UINT color_id;//
 
         public override string ToString()
         {
@@ -619,17 +619,17 @@ namespace com.jds.PathEditor.classes.client.definitions
             }
         }
         #endregion
-        #region UNK2
-        [Description("UNK_2")]
-        public uint UNK_2
+        #region ColorId
+        [Description("ColorId")]
+        public uint ColorId
         {
             get
             {
-                return UNK2.Value;
+                return color_id.Value;
             }
             set
             {
-                UNK2.Value = value;
+                color_id.Value = value;
             }
         }
         #endregion
@@ -666,7 +666,7 @@ namespace com.jds.PathEditor.classes.client.definitions
                 info = (ItemNameInfo_Gracia_Final) ReadFieldValue(f, info, "UNK1_1", "UNK1_9");
                 info = (ItemNameInfo_Gracia_Final) ReadFieldValue(f, info, "special_enchant_amount");
                 info = (ItemNameInfo_Gracia_Final) ReadFieldValue(f, info, "special_enchant_desc");
-                info = (ItemNameInfo_Gracia_Final) ReadFieldValue(f, info, "UNK2");
+                info = (ItemNameInfo_Gracia_Final) ReadFieldValue(f, info, "color_id");
 
                 String devString = " (id: " + info.id + ")";
 
@@ -721,7 +721,7 @@ namespace com.jds.PathEditor.classes.client.definitions
                 base.WriteFieldValue(f, info, "UNK1_1", "UNK1_9");
                 base.WriteFieldValue(f, info, "special_enchant_amount");
                 base.WriteFieldValue(f, info, "special_enchant_desc");
-                base.WriteFieldValue(f, info, "UNK2");
+                base.WriteFieldValue(f, info, "color_id");
             }
             else
             {

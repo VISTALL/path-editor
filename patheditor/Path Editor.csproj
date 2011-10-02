@@ -79,6 +79,7 @@
     <Compile Include="classes\client\definitions\EnterEventGrp.cs" />
     <Compile Include="classes\client\definitions\EtcItemGrp.cs" />
     <Compile Include="classes\client\definitions\Eula.cs" />
+    <Compile Include="classes\client\definitions\FlyMoveName.cs" />
     <Compile Include="classes\client\definitions\GameTip.cs" />
     <Compile Include="classes\client\definitions\GoodsIcon.cs" />
     <Compile Include="classes\client\definitions\HairAccessoryLocGrp.cs" />
@@ -87,6 +88,7 @@
     <Compile Include="classes\client\definitions\InstantZoneData.cs" />
     <Compile Include="classes\client\definitions\ItemName.cs" />
     <Compile Include="classes\client\definitions\ItemPrime.cs" />
+    <Compile Include="classes\client\definitions\ItemStatData.cs" />
     <Compile Include="classes\client\definitions\LogonGrp.cs" />
     <Compile Include="classes\client\definitions\MobSkillAnimGrp.cs" />
     <Compile Include="classes\client\definitions\MusicInfo.cs" />
@@ -114,6 +116,7 @@
     <Compile Include="classes\client\definitions\SysString.cs" />
     <Compile Include="classes\client\definitions\SystemMsg.cs" />
     <Compile Include="classes\client\definitions\TransformData.cs" />
+    <Compile Include="classes\client\definitions\UsmMovieData.cs" />
     <Compile Include="classes\client\definitions\VariationEffectGrp.cs" />
     <Compile Include="classes\client\definitions\VehiclePartsGrp.cs" />
     <Compile Include="classes\client\definitions\WarningNotice.cs" />

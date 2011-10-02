@@ -24,7 +24,7 @@
         Eula, 
         ExceptionMiniMapData,
         FlashConfig,  //TODO new CT3
-        FlyMoveName, //TODO new CT3
+        FlyMoveName,
         GameTip,
         GoodsIcon,
         Hairaccessorylocgrp,
@@ -33,7 +33,7 @@
         InstantZoneData,
         ItemName,
         //ItemPrime,    // deleted? (replaced by AdditionalItemgrp)?
-        ItemStatData, //TODO new CT3
+        ItemStatData,
         Logongrp,
         MantleException, 
         Mobskillanimgrp, 
@@ -66,7 +66,7 @@
         SysString, 
         SystemMsg,
         TransformData,
-        UsmMovieData, //TODO new CT3
+        UsmMovieData,
         Variationeffectgrp, 
         Vehiclepartsgrp,
         WarningNotice, 

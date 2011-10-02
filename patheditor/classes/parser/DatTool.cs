@@ -157,12 +157,12 @@ namespace com.jds.PathEditor.classes.parser
             {
                 int LByte = len & 0x3F;
                 int HByte = len >> 6;
-                f.Write((byte) (LByte | 0x40));
-                f.Write((byte) HByte);
+                f.Write((byte)(LByte | 0x40));
+                f.Write((byte)HByte);
             }
             else
             {
-                f.Write((byte) len);
+                f.Write((byte)len);
             }
         }
 

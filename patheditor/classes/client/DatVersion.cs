@@ -14,6 +14,6 @@
         Freya,
         High_Five,
         Anniversary,
-        Goddness_of_Destruction
+        CT3_Awakening
     }
 }

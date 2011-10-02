@@ -151,6 +151,41 @@ namespace com.jds.PathEditor.classes.client.definitions
         public ASCF_PAIR npc_end;
         public UINT use_zoomincam;
     }
+
+    public class NpcGrpInfo_CT3 : Definition
+    {
+        /**
+         * by VISTALL
+         */
+        public UINT tag;
+        public UNICODE npc_class;
+        public UNICODE mesh;
+        public CNTTXT_PAIR tex1;
+        public CNTTXT_PAIR tex2;
+        public CNTRINT_PAIR dtab1;
+        public FLOAT npc_speed;
+        public CNTTXT_PAIR UNK_0_NEW;
+        public CNTTXT_PAIR snd1;
+        public CNTTXT_PAIR snd2;
+        public CNTTXT_PAIR snd3;
+        public UINT rb_effect_on;
+        public UNICODE rb_effect;
+        public FLOAT rb_effect_fl;
+        public CNTRINT_PAIR UNK_1_NEW;
+        public CNTRINT_PAIR UNK_2_NEW; 
+        public UNICODE effect;
+        public UINT UNK_2;
+        public FLOAT sound_rad;
+        public FLOAT sound_vol;
+        public FLOAT sound_rnd;
+        public UINT quest_be;
+        public UINT class_lim;
+        public ASCF_PAIR npc_end;
+        public UINT use_zoomincam;
+        public UINT summon_sort;
+        public UINT summon_max_count;
+        public UINT summon_grade;
+    }
     #endregion
 
     #region Parser
@@ -159,6 +194,9 @@ namespace com.jds.PathEditor.classes.client.definitions
     {
         public override Definition getDefinition()
         {
+            if (RConfig.Instance.DatVersionAsEnum >= DatVersion.CT3_Awakening)
+                return new NpcGrpInfo_CT3();
+
             if (RConfig.Instance.DatVersionAsEnum >= DatVersion. High_Five)
                 return new NpcGrpInfo_HighFive(); 
             
@@ -174,7 +212,25 @@ namespace com.jds.PathEditor.classes.client.definitions
         public override Definition ParseMain(BinaryReader f, int RecNo)
         {
             Definition dat;
-            if (RConfig.Instance.DatVersionAsEnum >= DatVersion. High_Five)
+            if (RConfig.Instance.DatVersionAsEnum >= DatVersion.CT3_Awakening)
+            {
+                var info = new NpcGrpInfo_CT3();
+                info.InitFieldValues();
+
+                info = (NpcGrpInfo_CT3)base.ReadFieldValue(f, info, "tag", "npc_speed");
+                info = (NpcGrpInfo_CT3)base.ReadFieldValue(f, info, "UNK_0_NEW");
+                info = (NpcGrpInfo_CT3)base.ReadFieldValue(f, info, "snd1", "snd3");
+
+                info = (NpcGrpInfo_CT3)base.ReadFieldValue(f, info, "rb_effect_on");
+                if (info.rb_effect_on.Value == 1)
+                    info = (NpcGrpInfo_CT3)base.ReadFieldValue(f, info, "rb_effect", "rb_effect_fl");
+
+                info = (NpcGrpInfo_CT3)base.ReadFieldValue(f, info, "UNK_1_NEW", "UNK_2_NEW");
+                info = (NpcGrpInfo_CT3)base.ReadFieldValue(f, info, "effect", "summon_grade");
+
+                dat = info;
+            } 
+            else if (RConfig.Instance.DatVersionAsEnum >= DatVersion.High_Five)
             {
                 var info = new NpcGrpInfo_HighFive();
                 info.InitFieldValues();

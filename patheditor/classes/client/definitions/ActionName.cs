@@ -129,7 +129,7 @@ namespace com.jds.PathEditor.classes.client.definitions
     {
         public override Definition getDefinition()
         {
-            if (RConfig.Instance.DatVersionAsEnum >= DatVersion.Goddness_of_Destruction)
+            if (RConfig.Instance.DatVersionAsEnum >= DatVersion.CT3_Awakening)
                 return new ActionNameInfo_CT3();
             return new ActionNameInfo();
         }
@@ -137,7 +137,7 @@ namespace com.jds.PathEditor.classes.client.definitions
         public override Definition ParseMain(System.IO.BinaryReader f, int RecNo)
         {
             Definition def = base.ParseMain(f, RecNo);
-            if (RConfig.Instance.DatVersionAsEnum >= DatVersion.Goddness_of_Destruction)
+            if (RConfig.Instance.DatVersionAsEnum >= DatVersion.CT3_Awakening)
             {
                 //
             }
